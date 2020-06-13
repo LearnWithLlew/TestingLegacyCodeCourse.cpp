@@ -17,7 +17,7 @@ start-process https://github.com/GreatWebGuy/MobTime/releases
 
 
 #Set desktop
- set-itemproperty -path "HKCU:Control Panel\Desktop" -name WallPaper -value c:\Code\LearnWithLlew\TestingLegacyCodeCourse.cpp\Resources\desktop_background.png
+ set-itemproperty -path "HKCU:Control Panel\Desktop" -name WallPaper -value c:\Code\TestingLegacyCodeCourse.cpp\Resources\desktop_background_dark.png
  RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True
 
 
