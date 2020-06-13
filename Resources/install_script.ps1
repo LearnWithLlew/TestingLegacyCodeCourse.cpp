@@ -1,3 +1,6 @@
+# To run this script directly run :
+# iwr -useb https://raw.githubusercontent.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/master/Resources/install_script.ps1 | iex
+
 iwr -useb cin.st | iex
 cinst -y vscode win-no-annoy cygwin googlechrome git anydesk.install github-desktop notepadplusplus beyondcompare araxismerge clion-ide visualstudio2019-workload-vctools
 
