@@ -1,5 +1,5 @@
 # To run this script directly, run this in an elevated admin PowerShell prompt:
-#     Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/master/Resources/install_script.ps1 | Invoke-Expression
+#     Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/master/Resources/install_script_example.ps1 | Invoke-Expression
 
 #install chocolatey
 iwr -useb cin.st | iex
