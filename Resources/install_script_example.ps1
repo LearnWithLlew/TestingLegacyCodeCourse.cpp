@@ -5,11 +5,11 @@
 iwr -useb cin.st | iex
 
 #install common tools
-cinst -y vscode win-no-annoy git github-desktop anydesk.install googlechrome
+choco install -y vscode win-no-annoy git github-desktop anydesk.install googlechrome
 start-process https://github.com/GreatWebGuy/MobTime/releases
 
 #install project specific tools 
-cinst -y cygwin notepadplusplus beyondcompare araxismerge clion-ide visualstudio2019-workload-vctools
+choco install -y cygwin notepadplusplus beyondcompare araxismerge clion-ide visualstudio2019-workload-vctools
 
 # Clone repo
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp.git C:\Code\TestingLegacyCodeCourse.cpp
