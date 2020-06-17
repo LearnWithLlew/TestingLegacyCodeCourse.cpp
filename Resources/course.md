@@ -10,7 +10,7 @@
     * Confirmation: See what areas of TrigMath.h are green (covered)
 * [x] Test Asin() completely
     * Confirmation: See 100% coverage of the method
-* [ ] Test TrigMath completely
+* [x] Test TrigMath completely
     * Confirmation: See 100% coverage of the code
     * Code Coverage reached: ______%
 * [ ] Explanations and Retrospective
