@@ -6,9 +6,9 @@
     * Confirmation: See failure message
 * [x] Get the test to pass
     * Confirmation: See green result
-* [ ] Run test coverage
+* [x] Run test coverage
     * Confirmation: See what areas of TrigMath.h are green (covered)
-* [ ] Test Asin() completely
+* [x] Test Asin() completely
     * Confirmation: See 100% coverage of the method
 * [ ] Test TrigMath completely
     * Confirmation: See 100% coverage of the code
