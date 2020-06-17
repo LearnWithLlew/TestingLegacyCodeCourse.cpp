@@ -4,6 +4,8 @@
 #include <iostream>
 
 TEST_CASE("Add full breakpoints") {
+    // Code to be inserted in to .idea/workspace.xml.
+    // You must manually create the first breakpoint, and then quit CLion.
     std::cout << "\n\n\n";
     for(int i = 1; i <= 177; ++i )
     {
