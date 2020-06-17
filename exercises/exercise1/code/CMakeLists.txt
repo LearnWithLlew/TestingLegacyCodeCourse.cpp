@@ -1,3 +1,1 @@
-cmake_minimum_required(VERSION 3.8)
-project(TestingFunctionalCodeKataCode CXX)
-add_library(TestingFunctionalCodeKataCode INTERFACE)
+add_library(exercise1_library INTERFACE)

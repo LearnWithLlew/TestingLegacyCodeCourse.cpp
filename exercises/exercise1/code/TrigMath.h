@@ -5,6 +5,7 @@
 #ifndef CATCHPLAYGROUND_TRIGMATH_H
 #define CATCHPLAYGROUND_TRIGMATH_H
 
+#define _USE_MATH_DEFINES
 #include <math.h>
 #include <cmath>
 
