@@ -2,9 +2,9 @@
 
 ## Testing Functional Code
 
-* [ ] Run first test
+* [x] Run first test
     * Confirmation: See failure message
-* [ ] Get the test to pass
+* [x] Get the test to pass
     * Confirmation: See green result
 * [ ] Run test coverage
     * Confirmation: See what areas of TrigMath.h are green (covered)
