@@ -1,5 +1,5 @@
 #include <catch2/catch.hpp>
-#include "../code/Legacy.h"
+#include "Legacy.h"
 
 TEST_CASE("Test Legacy")
 {

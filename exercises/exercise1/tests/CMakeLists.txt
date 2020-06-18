@@ -5,4 +5,4 @@ set(SOURCE_FILES
         Test.cpp
         )
 add_executable(exercise1 ${SOURCE_FILES} )
-target_link_libraries(exercise1 Catch2::Catch2)
+target_link_libraries(exercise1 exercise1_library Catch2::Catch2)
