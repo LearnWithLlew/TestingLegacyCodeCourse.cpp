@@ -4,6 +4,7 @@
 iwr -useb cin.st | iex
 cinst -y vscode win-no-annoy git github-desktop anydesk.install googlechrome
 start-process https://github.com/GreatWebGuy/MobTime/releases
+Set-Service Audiosrv -StartupType Automatic
 
 cinst -y cygwin notepadplusplus beyondcompare araxismerge clion-ide visualstudio2019-workload-vctools
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp.git C:\Code\TestingLegacyCodeCourse.cpp
