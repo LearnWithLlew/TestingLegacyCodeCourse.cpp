@@ -9,7 +9,7 @@
 # Set up build spaces
 
 & "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
-Push-Location C:\Code\TestingLegacyCodeCourse.cpp-copy2
+Push-Location C:\Code\TestingLegacyCodeCourse.cpp
 mkdir  -force cmake-build-vs2019-x64
 Push-Location cmake-build-vs2019-x64
 cmake -G "Visual Studio 16 2019" -A Win64 ..
