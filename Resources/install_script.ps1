@@ -26,18 +26,42 @@ choco install -y git github-desktop
 # Diff Tools
 choco install -y beyondcompare araxismerge
 
-choco install -y cygwin notepadplusplus clion-ide visualstudio2019-workload-vctools
+# -------------------------------------------------------
+# IDEs and editors
+choco install -y clion-ide
+choco install -y visualstudio2019community
+choco install -y visualstudio2019-workload-nativedesktop
+
+# TODO Install these VS extensions manually
+# https://stackoverflow.com/questions/30574829/how-to-install-visual-studio-gallery-extensions-from-command-line
+# Extensions to install:
+#  Catch2 test adapter:
+#    https://marketplace.visualstudio.com/items?itemName=JohnnyHendriks.ext01
+#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/JohnnyHendriks/vsextensions/ext01/1.5.1/vspackage
+#  OpenCppCoverage
+#    https://marketplace.visualstudio.com/items?itemName=OpenCppCoverage.OpenCppCoveragePlugin
+#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/OpenCppCoverage/vsextensions/OpenCppCoveragePlugin/0.9.7.1/vspackage
+#  VSColorOutput
+#    https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput
+#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MikeWard-AnnArbor/vsextensions/VSColorOutput/2.71/vspackage
+
+# Cannot get OpenCppCoverage working - logged an issue:
+#  https://github.com/OpenCppCoverage/OpenCppCoveragePlugin/issues/38
 
 # -------------------------------------------------------
 # Clone repo
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp.git C:\Code\TestingLegacyCodeCourse.cpp
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/approvals/ApprovalTests.cpp.StarterProject.git C:\Code\ApprovalTests.cpp.StarterProject
 
-# Other c++ compilers
+# -------------------------------------------------------
+# CygWin
+# choco install -y cygwin
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages gcc-core
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages make
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages gcc-g++
-# choco install -y visualstudio2019buildtools
+
+# -------------------------------------------------------
+# mingw
 # choco install -y mingw
 
 
