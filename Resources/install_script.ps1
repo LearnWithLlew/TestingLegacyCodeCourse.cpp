@@ -11,9 +11,13 @@ choco feature disable -n=showDownloadProgress
 
 # -------------------------------------------------------
 #install common tools
-choco install -y vscode win-no-annoy git github-desktop anydesk.install googlechrome notepadplusplus
+choco install -y vscode win-no-annoy anydesk.install googlechrome notepadplusplus
 start-process https://github.com/GreatWebGuy/MobTime/releases
 Set-Service Audiosrv -StartupType Automatic
+
+# -------------------------------------------------------
+# Version Control
+choco install -y git github-desktop
 
 #install project specific tools
 choco install -y cygwin notepadplusplus beyondcompare araxismerge clion-ide visualstudio2019-workload-vctools
