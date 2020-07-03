@@ -6,9 +6,15 @@
     * Confirmation: See failure message
 * [ ] Get the test to pass
     * Confirmation: See green result
-* [ ] Run test coverage
-    * Confirmation: See what areas of TrigMath.h are green (covered)
 * [ ] Test asin() completely
+    * [ ] Check coverage of asin() with break points
+        * [ ] Add a breakpoint on every line of asin()
+        * [ ] Remove breakpoint when hit
+        * Confirmation: No more breakpoints in asin()
+    * [ ] Install OpenCppCoverage in Visual Studio
+        * Confirmation: Visual Studio's Tools menu has "Run OpenCppCoverage"
+    * [ ] Run test coverage
+        * Confirmation: See what areas of TrigMath.h are green (covered)
     * Confirmation: See 100% coverage of the method
 * [ ] Test TrigMath completely
     * Confirmation: See 100% coverage of the code
