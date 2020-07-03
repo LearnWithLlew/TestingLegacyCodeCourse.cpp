@@ -1,6 +1,9 @@
 # To run this script directly, run this in an elevated admin PowerShell prompt:
 #     Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/master/Resources/install_script.ps1 | Invoke-Expression
 
+# You may need to run this to enable scripts to be run:
+#     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
 #install chocolatey
 iwr -useb cin.st | iex
 
