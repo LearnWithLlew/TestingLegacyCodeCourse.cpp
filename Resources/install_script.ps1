@@ -19,8 +19,14 @@ Set-Service Audiosrv -StartupType Automatic
 # Version Control
 choco install -y git github-desktop
 
+# -------------------------------------------------------
 #install project specific tools
-choco install -y cygwin notepadplusplus beyondcompare araxismerge clion-ide visualstudio2019-workload-vctools
+
+# -------------------------------------------------------
+# Diff Tools
+choco install -y beyondcompare araxismerge
+
+choco install -y cygwin notepadplusplus clion-ide visualstudio2019-workload-vctools
 
 # -------------------------------------------------------
 # Clone repo
