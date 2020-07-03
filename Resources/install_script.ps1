@@ -9,7 +9,7 @@ Invoke-WebRequest -useb cin.st | Invoke-Expression
 choco feature disable -n=showDownloadProgress
 
 #install common tools
-choco install -y vscode win-no-annoy git github-desktop anydesk.install googlechrome
+choco install -y vscode win-no-annoy git github-desktop anydesk.install googlechrome notepadplusplus
 start-process https://github.com/GreatWebGuy/MobTime/releases
 Set-Service Audiosrv -StartupType Automatic
 
