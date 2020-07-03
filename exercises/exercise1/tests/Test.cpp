@@ -1,5 +1,5 @@
 #include <catch2/catch.hpp>
-#include "../code/TrigMath.h"
+#include "TrigMath.h"
 
 #include <iostream>
 
