@@ -12,7 +12,7 @@
 Push-Location C:\Code\TestingLegacyCodeCourse.cpp
 mkdir  -force cmake-build-vs2019-x64
 Push-Location cmake-build-vs2019-x64
-cmake -G "Visual Studio 16 2019" -A Win64 ..
+cmake -G "Visual Studio 16 2019" -A x64 ..
 Pop-Location
 Pop-Location
 
