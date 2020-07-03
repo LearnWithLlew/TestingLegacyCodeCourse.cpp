@@ -33,22 +33,6 @@ choco install -y clion-ide
 choco install -y visualstudio2019community
 choco install -y visualstudio2019-workload-nativedesktop
 
-# TODO Install these VS extensions manually
-# https://stackoverflow.com/questions/30574829/how-to-install-visual-studio-gallery-extensions-from-command-line
-# Extensions to install:
-#  Catch2 test adapter:
-#    https://marketplace.visualstudio.com/items?itemName=JohnnyHendriks.ext01
-#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/JohnnyHendriks/vsextensions/ext01/1.5.1/vspackage
-#  OpenCppCoverage
-#    https://marketplace.visualstudio.com/items?itemName=OpenCppCoverage.OpenCppCoveragePlugin
-#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/OpenCppCoverage/vsextensions/OpenCppCoveragePlugin/0.9.7.1/vspackage
-#  VSColorOutput
-#    https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput
-#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MikeWard-AnnArbor/vsextensions/VSColorOutput/2.71/vspackage
-
-# Cannot get OpenCppCoverage working - logged an issue:
-#  https://github.com/OpenCppCoverage/OpenCppCoveragePlugin/issues/38
-
 # -------------------------------------------------------
 # Build tools
 choco install -y cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
