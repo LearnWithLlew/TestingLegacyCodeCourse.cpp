@@ -49,6 +49,11 @@ choco install -y visualstudio2019-workload-nativedesktop
 #  https://github.com/OpenCppCoverage/OpenCppCoveragePlugin/issues/38
 
 # -------------------------------------------------------
+# Build tools
+choco install -y cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
+choco install -y ninja conan
+
+# -------------------------------------------------------
 # Clone repo
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp.git C:\Code\TestingLegacyCodeCourse.cpp
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/approvals/ApprovalTests.cpp.StarterProject.git C:\Code\ApprovalTests.cpp.StarterProject
