@@ -1,90 +1,90 @@
 #include "TrigMath.h"
 
-double TrigMath::SinRaw(int idx) {
+double TrigMath::sinRaw(int idx) {
     return SIN_TABLE[idx & SIN_MASK];
 }
 
-double TrigMath::CosRaw(int idx) {
+double TrigMath::cosRaw(int idx) {
     return SIN_TABLE[(idx + COS_OFFSET) & SIN_MASK];
 }
 
-double TrigMath::Mxatan(double arg) {
+double TrigMath::mxatan(double arg) {
     auto argsq = arg * arg;
     auto value = (((p4 * argsq + p3) * argsq + p2) * argsq + p1) * argsq + p0;
     value /= ((((argsq + q4) * argsq + q3) * argsq + q2) * argsq + q1) * argsq + q0;
     return value * arg;
 }
 
-double TrigMath::Msatan(double arg) {
+double TrigMath::msatan(double arg) {
     if (arg < sq2m1)
-        return Mxatan(arg);
+        return mxatan(arg);
     if (arg > sq2p1)
-        return HALF_PI - Mxatan(1 / arg);
-    return HALF_PI / 2 + Mxatan((arg - 1) / (arg + 1));
+        return HALF_PI - mxatan(1 / arg);
+    return HALF_PI / 2 + mxatan((arg - 1) / (arg + 1));
 }
 
-void TrigMath::CreateSinTable() {
+void TrigMath::createSinTable() {
     for (auto i = 0; i < SIN_SIZE; i++)
         SIN_TABLE[i] = sin(i * TWO_PI / SIN_SIZE);
 }
 
 TrigMath::TrigMath() {
-    CreateSinTable();
+    createSinTable();
 }
 
-double TrigMath::Sin(double angle) {
-    return SinRaw(Floor(angle * SIN_CONVERSION_FACTOR));
+double TrigMath::sin(double angle) {
+    return sinRaw(floor(angle * SIN_CONVERSION_FACTOR));
 }
 
-int TrigMath::Floor(double a) {
+int TrigMath::floor(double a) {
     return (int) a;
 }
 
-double TrigMath::Cos(double angle) {
-    return CosRaw(Floor(angle * SIN_CONVERSION_FACTOR));
+double TrigMath::cos(double angle) {
+    return cosRaw(floor(angle * SIN_CONVERSION_FACTOR));
 }
 
-double TrigMath::Tan(double angle) {
-    auto idx = Floor(angle * SIN_CONVERSION_FACTOR);
-    return SinRaw(idx) / CosRaw(idx);
+double TrigMath::tan(double angle) {
+    auto idx = floor(angle * SIN_CONVERSION_FACTOR);
+    return sinRaw(idx) / cosRaw(idx);
 }
 
-double TrigMath::Sec(double angle) {
-    return 1 / Cos(angle);
+double TrigMath::sec(double angle) {
+    return 1 / cos(angle);
 }
 
-double TrigMath::Cot(double angle) {
-    auto idx = Floor(angle * SIN_CONVERSION_FACTOR);
-    return CosRaw(idx) / SinRaw(idx);
+double TrigMath::cot(double angle) {
+    auto idx = floor(angle * SIN_CONVERSION_FACTOR);
+    return cosRaw(idx) / sinRaw(idx);
 }
 
-double TrigMath::Asin(double value) {
+double TrigMath::asin(double value) {
     if (value > 1)
         return NAN;
     if (value < 0)
-        return -Asin(-value);
+        return -asin(-value);
     auto temp = sqrt(1 - value * value);
     if (value > 0.7)
-        return HALF_PI - Msatan(temp / value);
-    return Msatan(value / temp);
+        return HALF_PI - msatan(temp / value);
+    return msatan(value / temp);
 }
 
-double TrigMath::Acos(double value) {
+double TrigMath::acos(double value) {
     if (value > 1 || value < -1)
         return NAN;
-    return HALF_PI - Asin(value);
+    return HALF_PI - asin(value);
 }
 
-double TrigMath::Atan(double value) {
+double TrigMath::atan(double value) {
     if (value > 0)
-        return Msatan(value);
-    return -Msatan(-value);
+        return msatan(value);
+    return -msatan(-value);
 }
 
-double TrigMath::Atan2(double y, double x) {
+double TrigMath::atan2(double y, double x) {
     if (y + x == y)
         return y >= 0 ? HALF_PI : -HALF_PI;
-    y = Atan(y / x);
+    y = atan(y / x);
     if (x < 0) {
         if (y <= 0) {
             return y + PI;
@@ -95,23 +95,23 @@ double TrigMath::Atan2(double y, double x) {
     return y;
 }
 
-double TrigMath::Acsc(double value) {
+double TrigMath::acsc(double value) {
     if (value == 0)
         return NAN;
-    return Asin(1 / value);
+    return asin(1 / value);
 }
 
-double TrigMath::Asec(double value) {
+double TrigMath::asec(double value) {
     if (value == 0)
         return NAN;
-    return Acos(1 / value);
+    return acos(1 / value);
 }
 
-double TrigMath::Acot(double value) {
+double TrigMath::acot(double value) {
     if (value == 0)
         return NAN;
     if (value > 0)
-        return Atan(1 / value);
-    return Atan(1 / value) + PI;
+        return atan(1 / value);
+    return atan(1 / value) + PI;
 }
 

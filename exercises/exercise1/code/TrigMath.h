@@ -46,52 +46,52 @@ private  :
     const double q1 = 0.207933497444540981287275926E4;
     const double q0 = 0.89678597403663861962481162E3;
 
-    double SinRaw(int idx);
+    double sinRaw(int idx);
 
-    double CosRaw(int idx);
+    double cosRaw(int idx);
 
-    double Mxatan(double arg);
+    double mxatan(double arg);
 
-    double Msatan(double arg);
+    double msatan(double arg);
 
-    void CreateSinTable();
+    void createSinTable();
 
 public:
 
     TrigMath();
 
 
-    double Sin(double angle);
+    double sin(double angle);
 
-    int Floor(double a);
+    int floor(double a);
 
 
-    double Cos(double angle);
+    double cos(double angle);
 
-    double Tan(double angle);
+    double tan(double angle);
 
-    double Csc(double angle) {
-        return 1 / Sin(angle);
+    double csc(double angle) {
+        return 1 / sin(angle);
     }
 
-    double Sec(double angle);
+    double sec(double angle);
 
 
-    double Cot(double angle);
+    double cot(double angle);
 
-    double Asin(double value);
+    double asin(double value);
 
-    double Acos(double value);
+    double acos(double value);
 
-    double Atan(double value);
+    double atan(double value);
 
-    double Atan2(double y, double x);
+    double atan2(double y, double x);
 
-    double Acsc(double value);
+    double acsc(double value);
 
-    double Asec(double value);
+    double asec(double value);
 
-    double Acot(double value);
+    double acot(double value);
 
 
 };
