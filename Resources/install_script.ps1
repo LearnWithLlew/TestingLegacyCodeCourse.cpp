@@ -11,7 +11,7 @@ choco feature disable -n=showDownloadProgress
 
 # -------------------------------------------------------
 #install common tools
-choco install -y vscode win-no-annoy anydesk.install googlechrome notepadplusplus
+choco install -y vscode win-no-annoy anydesk.install googlechrome notepadplusplus adobereader
 start-process https://github.com/GreatWebGuy/MobTime/releases
 # TODO Download and installll https://github.com/GreatWebGuy/MobTime/releases/download/v1.7.1/MobTime-1.7.1.msi
 Set-Service Audiosrv -StartupType Automatic

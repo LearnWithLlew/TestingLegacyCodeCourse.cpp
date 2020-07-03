@@ -1,2 +1,2 @@
 * [ ] Convert slides to PDF
-* [ ] Install PDF reader on VM
+* [x] Install PDF reader on VM
