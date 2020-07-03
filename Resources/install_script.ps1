@@ -29,5 +29,5 @@ choco install -y cygwin notepadplusplus beyondcompare araxismerge clion-ide visu
  RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True
 
 # Done
-cls
+# cls
 echo "Done!"
