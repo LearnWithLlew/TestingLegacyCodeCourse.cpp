@@ -5,7 +5,8 @@
 #     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
 #install chocolatey
-iwr -useb cin.st | iex
+Invoke-WebRequest -useb cin.st | Invoke-Expression
+choco feature disable -n=showDownloadProgress
 
 #install common tools
 choco install -y vscode win-no-annoy git github-desktop anydesk.install googlechrome
