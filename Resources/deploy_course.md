@@ -13,9 +13,10 @@
 
 * ~~[ ] Convert slides to PDF~~
 * [ ] Install PowerPoint
+* [ ] Uninstall OpenCodeCoverage
 * [x] Install PDF reader on VM
 * [ ] Set up desktop image and shortcuts
-* [ ] Disable breakpoint generation
+* [ ] Disable breakpoint generation code
 * [ ] Run through the exercises
 * [ ] Delete LegacyTest
 * [ ] Create ApprovalTest.cpp - set up and ready to run
