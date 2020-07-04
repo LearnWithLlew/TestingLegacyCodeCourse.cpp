@@ -16,10 +16,12 @@
 * [ ] Uninstall OpenCodeCoverage
 * [x] Uninstall araxismerge
 * [x] Install PDF reader on VM
-* [ ] Set up desktop image and shortcuts
+* [x] Set up desktop image and shortcuts
 * [x] Disable breakpoint generation code
 * [ ] Run through the exercises
 * [x] Delete LegacyTest
-* [ ] Create ApprovalTest.cpp - set up and ready to run
+* [ ] Add ApprovalTest.cpp - set up and ready to run
+* [ ] Review CMakeLists.txt content
+* [ ] Maybe update desktop image for correct machine type
 
 
