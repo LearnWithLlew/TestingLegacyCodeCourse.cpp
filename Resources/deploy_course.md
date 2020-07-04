@@ -14,6 +14,7 @@
 * ~~[ ] Convert slides to PDF~~
 * [ ] Install PowerPoint
 * [ ] Uninstall OpenCodeCoverage
+* [x] Uninstall araxismerge
 * [x] Install PDF reader on VM
 * [ ] Set up desktop image and shortcuts
 * [x] Disable breakpoint generation code
