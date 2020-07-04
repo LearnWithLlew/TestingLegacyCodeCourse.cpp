@@ -70,9 +70,7 @@ public:
 
     double tan(double angle);
 
-    double csc(double angle) {
-        return 1 / sin(angle);
-    }
+    double csc(double angle);
 
     double sec(double angle);
 

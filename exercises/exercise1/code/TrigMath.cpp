@@ -49,6 +49,10 @@ double TrigMath::tan(double angle) {
     return sinRaw(idx) / cosRaw(idx);
 }
 
+double TrigMath::csc(double angle) {
+    return 1 / sin(angle);
+}
+
 double TrigMath::sec(double angle) {
     return 1 / cos(angle);
 }
