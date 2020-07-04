@@ -12,6 +12,7 @@
 ## Clare
 
 * ~~[ ] Convert slides to PDF~~
+* [x] Expand disk to 40 GB
 * [ ] Install PowerPoint
     * Or PowerPoint-mobile - https://www.microsoft.com/en-us/p/powerpoint-mobile/9wzdncrfjb5q?activetab=pivot:overviewtab
     * But the MS Store is not available on Windows Server 2019
