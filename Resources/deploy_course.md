@@ -13,9 +13,10 @@
 
 * ~~[ ] Convert slides to PDF~~
 * [x] Expand disk to 40 GB
-* [ ] Install PowerPoint
-    * Or PowerPoint-mobile - https://www.microsoft.com/en-us/p/powerpoint-mobile/9wzdncrfjb5q?activetab=pivot:overviewtab
-    * But the MS Store is not available on Windows Server 2019
+* [x] Install PowerPoint (and the rest of Office)
+    * Set the number of recent files to show to 0
+    * https://www.howtogeek.com/141490/how-to-clear-the-recent-documents-list-in-word-2013/
+    * Uninstall OneDrive
 * [ ] Uninstall OpenCodeCoverage
 * [x] Uninstall araxismerge
 * [x] Install PDF reader on VM
