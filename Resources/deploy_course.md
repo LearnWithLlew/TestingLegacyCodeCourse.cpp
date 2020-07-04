@@ -28,3 +28,4 @@
 * [x] Review CMakeLists.txt content
 * [ ] Maybe update desktop image for correct machine type
     * https://docs.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution
+    * I've added a slide to slides.pptx that says t2.large - but I haven't been able to export it to the same resolution as either of the two .pngs we already have
