@@ -1,7 +1,6 @@
 set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_FILES
         main.cpp
-        LegacyTest.cpp
         Test.cpp
         # including the header files here is a hack to get
         # OpenCppCoverage to show the coverage in the headers

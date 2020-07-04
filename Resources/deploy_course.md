@@ -18,7 +18,7 @@
 * [ ] Set up desktop image and shortcuts
 * [x] Disable breakpoint generation code
 * [ ] Run through the exercises
-* [ ] Delete LegacyTest
+* [x] Delete LegacyTest
 * [ ] Create ApprovalTest.cpp - set up and ready to run
 
 
