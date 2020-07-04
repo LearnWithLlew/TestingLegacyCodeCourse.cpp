@@ -27,5 +27,4 @@
 * [x] Add ApprovalTest.cpp - set up and ready to run
 * [x] Review CMakeLists.txt content
 * [ ] Maybe update desktop image for correct machine type
-
-
+    * https://docs.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution
