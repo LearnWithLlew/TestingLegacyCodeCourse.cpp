@@ -17,7 +17,7 @@
     * Set the number of recent files to show to 0
     * https://www.howtogeek.com/141490/how-to-clear-the-recent-documents-list-in-word-2013/
     * Uninstall OneDrive
-* [ ] Uninstall OpenCodeCoverage
+* [x] Uninstall OpenCodeCoverage
 * [x] Uninstall araxismerge
 * [x] Install PDF reader on VM
 * [x] Set up desktop image and shortcuts
