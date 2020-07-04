@@ -13,6 +13,8 @@
 
 * ~~[ ] Convert slides to PDF~~
 * [ ] Install PowerPoint
+    * Or PowerPoint-mobile - https://www.microsoft.com/en-us/p/powerpoint-mobile/9wzdncrfjb5q?activetab=pivot:overviewtab
+    * But the MS Store is not available on Windows Server 2019
 * [ ] Uninstall OpenCodeCoverage
 * [x] Uninstall araxismerge
 * [x] Install PDF reader on VM
