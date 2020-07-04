@@ -24,8 +24,8 @@
 * [x] Disable breakpoint generation code
 * [ ] Run through the exercises
 * [x] Delete LegacyTest
-* [ ] Add ApprovalTest.cpp - set up and ready to run
-* [ ] Review CMakeLists.txt content
+* [x] Add ApprovalTest.cpp - set up and ready to run
+* [x] Review CMakeLists.txt content
 * [ ] Maybe update desktop image for correct machine type
 
 
