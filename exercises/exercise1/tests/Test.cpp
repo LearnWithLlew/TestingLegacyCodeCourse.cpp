@@ -79,3 +79,10 @@ TEST_CASE("Approve everything - for 1.0 and 3.14")
     );
 }
 
+TEST_CASE("Combination approvals - for one input")
+{
+    std::vector<double> values{ 1.0 };
+    CombinationApprovals::verifyAllCombinations(
+        [](double value) { return runEverything(value); }, values);
+}
+

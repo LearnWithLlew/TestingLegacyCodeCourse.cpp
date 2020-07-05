@@ -32,7 +32,7 @@
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
 * [x] Better to-strings, to shown function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
-* [ ] Combination approvals - for one input
+* [x] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
 * [ ] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
