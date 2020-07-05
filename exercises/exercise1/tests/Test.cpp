@@ -61,3 +61,8 @@ TEST_CASE("Approve everything - for 1.0")
     Approvals::verify(runEverything(1.0));
 }
 
+TEST_CASE("Approve everything - for 3.14")
+{
+    Approvals::verify(runEverything(3.14));
+}
+
