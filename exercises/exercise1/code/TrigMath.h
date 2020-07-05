@@ -72,7 +72,6 @@ public:
 
     double Sec(double angle);
 
-
     double Cot(double angle);
 
     double Asin(double value);

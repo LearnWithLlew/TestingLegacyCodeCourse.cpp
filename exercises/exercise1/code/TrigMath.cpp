@@ -118,3 +118,4 @@ double TrigMath::Acot(double value) {
         return Atan(1 / value);
     return Atan(1 / value) + PI;
 }
+
