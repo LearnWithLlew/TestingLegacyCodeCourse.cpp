@@ -78,3 +78,43 @@ double TrigMath::Acos(double value) {
         return NAN;
     return HALF_PI - Asin(value);
 }
+
+double TrigMath::Atan(double value) {
+    if (value > 0)
+        return Msatan(value);
+    return -Msatan(-value);
+}
+
+double TrigMath::Atan2(double y, double x) {
+    if (y + x == y)
+        return y >= 0 ? HALF_PI : -HALF_PI;
+    y = Atan(y / x);
+    if (x < 0) {
+        if (y <= 0) {
+            return y + PI;
+        } else {
+            return y - PI;
+        }
+    }
+    return y;
+}
+
+double TrigMath::Acsc(double value) {
+    if (value == 0)
+        return NAN;
+    return Asin(1 / value);
+}
+
+double TrigMath::Asec(double value) {
+    if (value == 0)
+        return NAN;
+    return Acos(1 / value);
+}
+
+double TrigMath::Acot(double value) {
+    if (value == 0)
+        return NAN;
+    if (value > 0)
+        return Atan(1 / value);
+    return Atan(1 / value) + PI;
+}

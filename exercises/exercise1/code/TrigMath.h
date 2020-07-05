@@ -81,45 +81,15 @@ public:
 
     double Acos(double value);
 
-    double Atan(double value) {
-        if (value > 0)
-            return Msatan(value);
-        return -Msatan(-value);
-    }
+    double Atan(double value);
 
-    double Atan2(double y, double x) {
-        if (y + x == y)
-            return y >= 0 ? HALF_PI : -HALF_PI;
-        y = Atan(y / x);
-        if (x < 0) {
-            if (y <= 0) {
-                return y + PI;
-            } else {
-                return y - PI;
-            }
-        }
-        return y;
-    }
+    double Atan2(double y, double x);
 
-    double Acsc(double value) {
-        if (value == 0)
-            return NAN;
-        return Asin(1 / value);
-    }
+    double Acsc(double value);
 
-    double Asec(double value) {
-        if (value == 0)
-            return NAN;
-        return Acos(1 / value);
-    }
+    double Asec(double value);
 
-    double Acot(double value) {
-        if (value == 0)
-            return NAN;
-        if (value > 0)
-            return Atan(1 / value);
-        return Atan(1 / value) + PI;
-    }
+    double Acot(double value);
 
 
 };
