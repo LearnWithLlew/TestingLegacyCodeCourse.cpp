@@ -17,7 +17,7 @@ namespace
         TrigMath math;
         std::stringstream s;
         s << "input value: " << value << '\n';
-        runOne(s, "Sin(): ", value, math.Sin(value));
+        runOne(s, "Sin()  : ", value, math.Sin(value));
         runOne(s, "Floor(): ", value, math.Floor(value) );
         runOne(s, "Cos()  : ", value, math.Cos(value) );
         runOne(s, "Tan()  : ", value, math.Tan(value) );
