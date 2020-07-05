@@ -61,23 +61,14 @@ public:
     TrigMath();
 
 
-    double Sin(double angle) {
-        return SinRaw(Floor(angle * SIN_CONVERSION_FACTOR));
-    }
+    double Sin(double angle);
 
-    int Floor(double a) {
-        return (int) a;
-    }
+    int Floor(double a);
 
 
-    double Cos(double angle) {
-        return CosRaw(Floor(angle * SIN_CONVERSION_FACTOR));
-    }
+    double Cos(double angle);
 
-    double Tan(double angle) {
-        auto idx = Floor(angle * SIN_CONVERSION_FACTOR);
-        return SinRaw(idx) / CosRaw(idx);
-    }
+    double Tan(double angle);
 
     double Csc(double angle) {
         return 1 / Sin(angle);

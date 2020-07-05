@@ -31,3 +31,20 @@ void TrigMath::CreateSinTable() {
 TrigMath::TrigMath() {
     CreateSinTable();
 }
+
+double TrigMath::Sin(double angle) {
+    return SinRaw(Floor(angle * SIN_CONVERSION_FACTOR));
+}
+
+int TrigMath::Floor(double a) {
+    return (int) a;
+}
+
+double TrigMath::Cos(double angle) {
+    return CosRaw(Floor(angle * SIN_CONVERSION_FACTOR));
+}
+
+double TrigMath::Tan(double angle) {
+    auto idx = Floor(angle * SIN_CONVERSION_FACTOR);
+    return SinRaw(idx) / CosRaw(idx);
+}
