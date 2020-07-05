@@ -70,36 +70,16 @@ public:
 
     double Tan(double angle);
 
-    double Csc(double angle) {
-        return 1 / Sin(angle);
-    }
+    double Csc(double angle);
 
-    double Sec(double angle) {
-        return 1 / Cos(angle);
-    }
+    double Sec(double angle);
 
 
-    double Cot(double angle) {
-        auto idx = Floor(angle * SIN_CONVERSION_FACTOR);
-        return CosRaw(idx) / SinRaw(idx);
-    }
+    double Cot(double angle);
 
-    double Asin(double value) {
-        if (value > 1)
-            return NAN;
-        if (value < 0)
-            return -Asin(-value);
-        auto temp = sqrt(1 - value * value);
-        if (value > 0.7)
-            return HALF_PI - Msatan(temp / value);
-        return Msatan(value / temp);
-    }
+    double Asin(double value);
 
-    double Acos(double value) {
-        if (value > 1 || value < -1)
-            return NAN;
-        return HALF_PI - Asin(value);
-    }
+    double Acos(double value);
 
     double Atan(double value) {
         if (value > 0)

@@ -48,3 +48,33 @@ double TrigMath::Tan(double angle) {
     auto idx = Floor(angle * SIN_CONVERSION_FACTOR);
     return SinRaw(idx) / CosRaw(idx);
 }
+
+double TrigMath::Csc(double angle) {
+    return 1 / Sin(angle);
+}
+
+double TrigMath::Sec(double angle) {
+    return 1 / Cos(angle);
+}
+
+double TrigMath::Cot(double angle) {
+    auto idx = Floor(angle * SIN_CONVERSION_FACTOR);
+    return CosRaw(idx) / SinRaw(idx);
+}
+
+double TrigMath::Asin(double value) {
+    if (value > 1)
+        return NAN;
+    if (value < 0)
+        return -Asin(-value);
+    auto temp = sqrt(1 - value * value);
+    if (value > 0.7)
+        return HALF_PI - Msatan(temp / value);
+    return Msatan(value / temp);
+}
+
+double TrigMath::Acos(double value) {
+    if (value > 1 || value < -1)
+        return NAN;
+    return HALF_PI - Asin(value);
+}
