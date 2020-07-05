@@ -86,3 +86,12 @@ TEST_CASE("Combination approvals - for one input")
         [](double value) { return runEverything(value); }, values);
 }
 
+TEST_CASE("Approve Atan2 - all values")
+{
+    std::vector<double> values{ -0.5, 0, 0.5, 1.0 };
+    TrigMath math;
+    CombinationApprovals::verifyAllCombinations(
+        [&math](double value1, double value2) { return math.Atan2(value1, value2); },
+        values, values);
+}
+

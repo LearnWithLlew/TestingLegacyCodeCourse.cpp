@@ -34,7 +34,7 @@
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
 * [x] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
-* [ ] Combination approvals - for multiple inputs
+* [x] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
 * [ ] Combination approvals - for function pointer inputs
     * Confirmation: You are testing without using without using `runEverything()`
