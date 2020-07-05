@@ -1,0 +1,36 @@
+runEverything
+
+
+input value: 1
+Sin(): 0.0970479
+Floor(): 1
+Cos()  : 0.828807
+Tan()  : 0.117093
+Csc()  : 10.3042
+Sec()  : 1.20655
+Cot()  : 8.54019
+Asin() : 1.5708
+Acos() : 0
+Atan() : 0.785398
+Atan2(): 0.785398
+Acsc() : 1.5708
+Asec() : 0
+Acot() : 0.785398
+
+input value: 3.14
+Sin(): 0.867008
+Floor(): 3
+Cos()  : -0.867634
+Tan()  : -0.999279
+Csc()  : 1.15339
+Sec()  : -1.15256
+Cot()  : -1.00072
+Asin() : -nan(ind)
+Acos() : -nan(ind)
+Atan() : 1.26248
+Atan2(): 0.785398
+Acsc() : 0.324116
+Asec() : 1.24668
+Acot() : 0.308316
+
+
