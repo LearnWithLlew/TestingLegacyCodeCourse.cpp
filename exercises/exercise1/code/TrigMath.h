@@ -68,9 +68,7 @@ public:
 
     double Tan(double angle);
 
-    double Csc(double angle) {
-        return 1 / Sin(angle);
-    }
+    double Csc(double angle);
 
     double Sec(double angle);
 
