@@ -50,20 +50,9 @@ private  :
 
     double CosRaw(int idx);
 
-    double Mxatan(double arg) {
-        auto argsq = arg * arg;
-        auto value = (((p4 * argsq + p3) * argsq + p2) * argsq + p1) * argsq + p0;
-        value /= ((((argsq + q4) * argsq + q3) * argsq + q2) * argsq + q1) * argsq + q0;
-        return value * arg;
-    }
+    double Mxatan(double arg);
 
-    double Msatan(double arg) {
-        if (arg < sq2m1)
-            return Mxatan(arg);
-        if (arg > sq2p1)
-            return HALF_PI - Mxatan(1 / arg);
-        return HALF_PI / 2 + Mxatan((arg - 1) / (arg + 1));
-    }
+    double Msatan(double arg);
 
     void CreateSinTable() {
         for (auto i = 0; i < SIN_SIZE; i++)
