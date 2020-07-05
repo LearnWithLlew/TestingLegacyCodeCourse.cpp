@@ -46,9 +46,7 @@ private  :
     const double q1 = 0.207933497444540981287275926E4;
     const double q0 = 0.89678597403663861962481162E3;
 
-    double SinRaw(int idx) {
-        return SIN_TABLE[idx & SIN_MASK];
-    }
+    double SinRaw(int idx);
 
     double CosRaw(int idx) {
         return SIN_TABLE[(idx + COS_OFFSET) & SIN_MASK];
