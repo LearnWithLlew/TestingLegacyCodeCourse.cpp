@@ -48,9 +48,7 @@ private  :
 
     double SinRaw(int idx);
 
-    double CosRaw(int idx) {
-        return SIN_TABLE[(idx + COS_OFFSET) & SIN_MASK];
-    }
+    double CosRaw(int idx);
 
     double Mxatan(double arg) {
         auto argsq = arg * arg;
