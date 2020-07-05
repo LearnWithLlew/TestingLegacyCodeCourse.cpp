@@ -17,7 +17,7 @@
 
 ## Testing with Approvals
 
-* [ ] Basic approval of Sin() and Cos()
+* [x] Basic approval of Sin() and Cos()
     * Confirmation:
         * a diff tool opened
         * 2 `.approved.txt` files in source control

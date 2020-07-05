@@ -17,3 +17,16 @@ TEST_CASE("Test Asin") {
     REQUIRE(Approx(1.119769515) == math.Asin(0.9));
     REQUIRE(isnan(math.Asin(1.2)));
 }
+
+TEST_CASE("Approve Sin")
+{
+    TrigMath math;
+    Approvals::verify(math.Sin(3.2));
+}
+
+TEST_CASE("Approve Cos")
+{
+    TrigMath math;
+    Approvals::verify(math.Cos(3.2));
+}
+
