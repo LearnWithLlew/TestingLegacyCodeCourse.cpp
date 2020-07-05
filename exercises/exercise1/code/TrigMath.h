@@ -46,47 +46,49 @@ private  :
     const double q1 = 0.207933497444540981287275926E4;
     const double q0 = 0.89678597403663861962481162E3;
 
-    double sinRaw(int idx);
+    double SinRaw(int idx);
 
-    double cosRaw(int idx);
+    double CosRaw(int idx);
 
-    double mxatan(double arg);
+    double Mxatan(double arg);
 
-    double msatan(double arg);
+    double Msatan(double arg);
 
-    void createSinTable();
+    void CreateSinTable();
 
 public:
 
     TrigMath();
 
-    double sin(double angle);
+    double Sin(double angle);
 
-    int floor(double a);
+    int Floor(double a);
 
-    double cos(double angle);
+    double Cos(double angle);
 
-    double tan(double angle);
+    double Tan(double angle);
 
-    double csc(double angle);
+    double Csc(double angle) {
+        return 1 / Sin(angle);
+    }
 
-    double sec(double angle);
+    double Sec(double angle);
 
-    double cot(double angle);
+    double Cot(double angle);
 
-    double asin(double value);
+    double Asin(double value);
 
-    double acos(double value);
+    double Acos(double value);
 
-    double atan(double value);
+    double Atan(double value);
 
-    double atan2(double y, double x);
+    double Atan2(double y, double x);
 
-    double acsc(double value);
+    double Acsc(double value);
 
-    double asec(double value);
+    double Asec(double value);
 
-    double acot(double value);
+    double Acot(double value);
 };
 
 #endif //CATCHPLAYGROUND_TRIGMATH_H

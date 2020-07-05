@@ -6,11 +6,11 @@
     * Confirmation: See failure message
 * [ ] Get the test to pass
     * Confirmation: See green result
-* [ ] Test asin() completely
-    * [ ] Check coverage of asin() with break points
-        * [ ] Add a breakpoint on every line of asin()
+* [ ] Test Asin() completely
+    * [ ] Check coverage of Asin() with break points
+        * [ ] Add a breakpoint on every line of Asin()
         * [ ] Remove breakpoint when hit
-        * Confirmation: No more breakpoints in asin()
+        * Confirmation: No more breakpoints in Asin()
     * [ ] Install OpenCppCoverage in Visual Studio
         * Confirmation: Visual Studio's Tools menu has "Run OpenCppCoverage"
     * [ ] Run test coverage
@@ -23,7 +23,7 @@
 
 ## Testing with Approvals
 
-* [ ] Basic approval of sin() and cos()
+* [ ] Basic approval of Sin() and Cos()
     * Confirmation:
         * a diff tool opened
         * 2 `.approved.txt` files in source control
@@ -41,7 +41,7 @@
 * [ ] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
 * [ ] Combination approvals - for multiple inputs
-    * Confirmation: You have tested `atan2` with a range of values for both arguments
+    * Confirmation: You have tested `Atan2` with a range of values for both arguments
 * [ ] Combination approvals - for function pointer inputs
     * Confirmation: You are testing without using without using `runEverything()`
         * One of your arguments is vector of function pointers

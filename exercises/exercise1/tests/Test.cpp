@@ -7,7 +7,7 @@ using namespace ApprovalTests;
 
 
 
-TEST_CASE("Test sin") {
+TEST_CASE("Test Sin") {
     TrigMath math;
-    REQUIRE(Approx(0.0) == math.sin(3.4));
+    REQUIRE(Approx(0.0) == math.Sin(3.4));
 }
