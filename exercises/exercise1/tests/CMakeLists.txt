@@ -9,4 +9,4 @@ set(SOURCE_FILES
         ../code/TrigMath.h
         )
 add_executable(exercise1 ${SOURCE_FILES} )
-target_link_libraries(exercise1 Catch2::Catch2)
+target_link_libraries(exercise1 Catch2::Catch2 ApprovalTests::ApprovalTests)
