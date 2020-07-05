@@ -60,11 +60,9 @@ public:
 
     TrigMath();
 
-
     double Sin(double angle);
 
     int Floor(double a);
-
 
     double Cos(double angle);
 
@@ -90,8 +88,6 @@ public:
     double Asec(double value);
 
     double Acot(double value);
-
-
 };
 
 #endif //CATCHPLAYGROUND_TRIGMATH_H
