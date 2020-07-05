@@ -22,7 +22,7 @@
         * a diff tool opened
         * 2 `.approved.txt` files in source control
         * tests are passing
-* [ ] Create a function that tests all methods for one value, 1.0 - `Approvals::verify(runEverything(1.0))`
+* [x] Create a function that tests all methods for one value, 1.0 - `Approvals::verify(runEverything(1.0))`
     * Confirmation: A large `.approved.txt` file
 * [ ] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`

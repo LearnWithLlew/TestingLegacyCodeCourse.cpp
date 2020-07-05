@@ -2,8 +2,34 @@
 #include "ApprovalTests.hpp"
 #include "../code/TrigMath.h"
 
+#include <sstream>
+
 using namespace ApprovalTests;
 
+namespace
+{
+    std::string runEverything(double value)
+    {
+        TrigMath math;
+        std::stringstream s;
+        s << "input value: " << value << '\n';
+        s << math.Sin(value) << '\n';
+        s << math.Floor(value) << '\n';
+        s << math.Cos(value) << '\n';
+        s << math.Tan(value) << '\n';
+        s << math.Csc(value) << '\n';
+        s << math.Sec(value) << '\n';
+        s << math.Cot(value) << '\n';
+        s << math.Asin(value) << '\n';
+        s << math.Acos(value) << '\n';
+        s << math.Atan(value) << '\n';
+        s << math.Atan2(value, value) << '\n';
+        s << math.Acsc(value) << '\n';
+        s << math.Asec(value) << '\n';
+        s << math.Acot(value) << '\n';
+        return s.str();
+    }
+}
 
 TEST_CASE("Test Sin") {
     TrigMath math;
@@ -28,5 +54,10 @@ TEST_CASE("Approve Cos")
 {
     TrigMath math;
     Approvals::verify(math.Cos(3.2));
+}
+
+TEST_CASE("Approve everything - for 1.0")
+{
+    Approvals::verify(runEverything(1.0));
 }
 
