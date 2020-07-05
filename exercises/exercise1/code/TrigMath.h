@@ -58,9 +58,7 @@ private  :
 
 public:
 
-    TrigMath() {
-        CreateSinTable();
-    }
+    TrigMath();
 
 
     double Sin(double angle) {

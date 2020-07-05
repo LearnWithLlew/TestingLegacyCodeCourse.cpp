@@ -27,3 +27,7 @@ void TrigMath::CreateSinTable() {
     for (auto i = 0; i < SIN_SIZE; i++)
         SIN_TABLE[i] = sin(i * TWO_PI / SIN_SIZE);
 }
+
+TrigMath::TrigMath() {
+    CreateSinTable();
+}
