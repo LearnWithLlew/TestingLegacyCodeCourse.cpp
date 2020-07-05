@@ -10,7 +10,7 @@ namespace
 {
     void runOne(std::ostream& s, std::string function, double input, double result)
     {
-        s << function << result << '\n';
+        s << function << input << ": " << result << '\n';
     }
     std::string runEverything(double value)
     {
