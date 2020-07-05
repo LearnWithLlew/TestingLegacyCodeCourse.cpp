@@ -8,25 +8,29 @@ using namespace ApprovalTests;
 
 namespace
 {
+    void runOne(std::ostream& s, std::string function, double input, double result)
+    {
+        s << function << result << '\n';
+    }
     std::string runEverything(double value)
     {
         TrigMath math;
         std::stringstream s;
         s << "input value: " << value << '\n';
-        s << "Sin(): " << math.Sin(value) << '\n';
-        s << "Floor(): " << math.Floor(value) << '\n';
-        s << "Cos()  : " << math.Cos(value) << '\n';
-        s << "Tan()  : " << math.Tan(value) << '\n';
-        s << "Csc()  : " << math.Csc(value) << '\n';
-        s << "Sec()  : " << math.Sec(value) << '\n';
-        s << "Cot()  : " << math.Cot(value) << '\n';
-        s << "Asin() : " << math.Asin(value) << '\n';
-        s << "Acos() : " << math.Acos(value) << '\n';
-        s << "Atan() : " << math.Atan(value) << '\n';
-        s << "Atan2(): " << math.Atan2(value, value) << '\n';
-        s << "Acsc() : " << math.Acsc(value) << '\n';
-        s << "Asec() : " << math.Asec(value) << '\n';
-        s << "Acot() : " << math.Acot(value) << '\n';
+        runOne(s, "Sin(): ", value, math.Sin(value));
+        runOne(s, "Floor(): ", value, math.Floor(value) );
+        runOne(s, "Cos()  : ", value, math.Cos(value) );
+        runOne(s, "Tan()  : ", value, math.Tan(value) );
+        runOne(s, "Csc()  : ", value, math.Csc(value) );
+        runOne(s, "Sec()  : ", value, math.Sec(value) );
+        runOne(s, "Cot()  : ", value, math.Cot(value) );
+        runOne(s, "Asin() : ", value, math.Asin(value) );
+        runOne(s, "Acos() : ", value, math.Acos(value) );
+        runOne(s, "Atan() : ", value, math.Atan(value) );
+        runOne(s, "Atan2(): ", value, math.Atan2(value, value) );
+        runOne(s, "Acsc() : ", value, math.Acsc(value) );
+        runOne(s, "Asec() : ", value, math.Asec(value) );
+        runOne(s, "Acot() : ", value, math.Acot(value) );
         return s.str();
     }
 }
