@@ -36,6 +36,6 @@
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
 * [x] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
-* [ ] Combination approvals - for function pointer inputs
+* [x] Combination approvals - for function pointer inputs
     * Confirmation: You are testing without using without using `runEverything()`
         * One of your arguments is vector of function pointers

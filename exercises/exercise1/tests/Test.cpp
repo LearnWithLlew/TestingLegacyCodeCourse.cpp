@@ -95,3 +95,46 @@ TEST_CASE("Approve Atan2 - all values")
         values, values);
 }
 
+typedef  double (TrigMath::* TrigMathMemFn)(double);
+typedef std::map <std::string, TrigMathMemFn> FunctionNameAndMemFn;
+#define CALL_MEMBER_FN(object,ptrToMember)  ((object).*(ptrToMember))
+
+template <>
+std::string ApprovalTests::StringMaker::toString(const FunctionNameAndMemFn::value_type& name_and_fn)
+{
+    return name_and_fn.first;
+}
+
+
+TEST_CASE("Combination approvals - function pointer inputs")
+{
+    TrigMath math;
+
+    std::map <std::string, TrigMathMemFn> functions;
+    functions["Sin"] = &TrigMath::Sin;
+
+    // excluded: Floor (returns int)
+    // excluded: Atan2 (takes two values)
+
+    functions[ "Sin()  : "] = &TrigMath::Sin;
+    functions[ "Cos()  : "] = &TrigMath::Cos;
+    functions[ "Tan()  : "] = &TrigMath::Tan;
+    functions[ "Csc()  : "] = &TrigMath::Csc;
+    functions[ "Sec()  : "] = &TrigMath::Sec;
+    functions[ "Cot()  : "] = &TrigMath::Cot;
+    functions[ "Asin() : "] = &TrigMath::Asin;
+    functions[ "Acos() : "] = &TrigMath::Acos;
+    functions[ "Atan() : "] = &TrigMath::Atan;
+    functions[ "Acsc() : "] = &TrigMath::Acsc;
+    functions[ "Asec() : "] = &TrigMath::Asec;
+    functions[ "Acot() : "] = &TrigMath::Acot;
+
+    std::vector<double> values{ -0.5, 0, 0.5, 1.0 };
+    CombinationApprovals::verifyAllCombinations(
+        [&math](auto& name_and_function, double value) {
+            double result = CALL_MEMBER_FN(math, name_and_function.second)(value);
+            return result;
+        },
+        functions, values);
+}
+
