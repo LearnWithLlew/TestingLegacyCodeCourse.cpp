@@ -72,7 +72,7 @@ TEST_CASE("Approve everything - for 3.14")
 
 TEST_CASE("Approve everything - for 1.0 and 3.14")
 {
-    std::vector<double> values{ 1.0, 3.14 };
+    std::vector<double> values{ -0.5, 0.0, 1.0, 3.14 };
     Approvals::verifyAll("runEverything", values, [](double value, std::ostream& o) {
         o << runEverything(value);
         }

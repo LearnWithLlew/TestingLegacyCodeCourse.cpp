@@ -1,6 +1,38 @@
 runEverything
 
 
+input value: -0.5
+Sin()  : -0.5: -0.0976732
+Floor(): -0.5: 0
+Cos()  : -0.5: 0.0413944
+Tan()  : -0.5: -2.35958
+Csc()  : -0.5: -10.2382
+Sec()  : -0.5: 24.1579
+Cot()  : -0.5: -0.423805
+Asin() : -0.5: -0.523599
+Acos() : -0.5: 2.0944
+Atan() : -0.5: -0.463648
+Atan2(): -0.5: -2.35619
+Acsc() : -0.5: nan
+Asec() : -0.5: -nan(ind)
+Acot() : -0.5: 2.03444
+
+input value: 0
+Sin()  : 0: 0
+Floor(): 0: 0
+Cos()  : 0: 0.00854503
+Tan()  : 0: 0
+Csc()  : 0: inf
+Sec()  : 0: 117.027
+Cot()  : 0: inf
+Asin() : 0: 0
+Acos() : 0: 1.5708
+Atan() : 0: 0
+Atan2(): 0: 1.5708
+Acsc() : 0: -nan(ind)
+Asec() : 0: -nan(ind)
+Acot() : 0: -nan(ind)
+
 input value: 1
 Sin()  : 1: 0.0970479
 Floor(): 1: 1
