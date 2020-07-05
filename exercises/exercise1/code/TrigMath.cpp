@@ -22,3 +22,8 @@ double TrigMath::Msatan(double arg) {
         return HALF_PI - Mxatan(1 / arg);
     return HALF_PI / 2 + Mxatan((arg - 1) / (arg + 1));
 }
+
+void TrigMath::CreateSinTable() {
+    for (auto i = 0; i < SIN_SIZE; i++)
+        SIN_TABLE[i] = sin(i * TWO_PI / SIN_SIZE);
+}
