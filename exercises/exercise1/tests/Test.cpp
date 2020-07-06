@@ -14,7 +14,7 @@ TEST_CASE("Test Sin") {
 
 TEST_CASE("Test Asin") {
     TrigMath math;
-    REQUIRE(isnan(math.Asin(3.4)));
-    REQUIRE(Approx(-0.5235987756) == math.Asin(-0.5));
-    REQUIRE(Approx(1.119769515) == math.Asin(0.9));
+    CHECK(isnan(math.Asin(3.4)));
+    CHECK(Approx(-0.5235987756) == math.Asin(-0.5));
+    CHECK(Approx(1.119769515) == math.Asin(0.9));
 }
