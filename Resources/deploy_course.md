@@ -38,3 +38,16 @@
         * [x] Startup is set to "open last solution"
         * [x] Only the course.md file is open in Visual Studio
     * [x] Branch created for class
+
+## Suggestions
+
+* [ ] Make TrigMath h and cpp stay open - the peek at the right side really tripped things up
+* [ ] Make Chrome the default browser
+* [ ] Slides
+  * [ ] PC formatting
+    * [ ] Fist of 5 icons need filling
+    * [ ] Poke-test icon and word overlapped
+  * [ ] Complete the Awareness/Proficiency/Fluency slide
+* [ ] Review whether to keep or drop Breakpoints section
+* [ ] Interpretation of "Easy"
+* [ ] Maybe less code to test - to reach 100%

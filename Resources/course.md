@@ -7,6 +7,7 @@
 * [ ] Get the test to pass
     * Confirmation: See green result
 * [ ] Test Asin() completely
+    * [ ] Write a new test for Asin()
     * [ ] Check coverage of Asin() with break points
         * [ ] Add a breakpoint on every line of Asin()
         * [ ] Remove breakpoint when hit
@@ -15,7 +16,7 @@
         * Confirmation: Visual Studio's Tools menu has "Run OpenCppCoverage"
     * [ ] Run test coverage
         * Confirmation: See what areas of TrigMath.cpp are green (covered)
-    * Confirmation: See 100% coverage of the method
+    * Confirmation: See 100% coverage of the Asin() method
 * [ ] Test TrigMath completely
     * Confirmation: See 100% coverage of the code
     * Code Coverage reached: ______%
