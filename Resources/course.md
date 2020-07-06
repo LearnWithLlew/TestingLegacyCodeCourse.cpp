@@ -2,13 +2,13 @@
 
 ## Testing Functional Code
 
-* [ ] Run first test
+* [x ] Run first test
     * Confirmation: See failure message
-* [ ] Get the test to pass
+* [x ] Get the test to pass
     * Confirmation: See green result
 * [ ] Test Asin() completely
     * [ ] Check coverage of Asin() with break points
-        * [ ] Add a breakpoint on every line of Asin()
+        * [x] Add a breakpoint on every line of Asin()
         * [ ] Remove breakpoint when hit
         * Confirmation: No more breakpoints in Asin()
     * [ ] Install OpenCppCoverage in Visual Studio
