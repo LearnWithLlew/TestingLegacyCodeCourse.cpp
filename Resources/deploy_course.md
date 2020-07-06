@@ -29,3 +29,12 @@
 * [ ] Maybe update desktop image for correct machine type
     * https://docs.microsoft.com/en-us/office/troubleshoot/powerpoint/change-export-slide-resolution
     * I've added a slide to slides.pptx that says t2.large - but I haven't been able to export it to the same resolution as either of the two .pngs we already have
+* [x] Leave code in state ready for session
+    * [x] Repo is clean
+    * [x] Repo is uptodate - pulled and pushed
+    * [x] CLion
+        * [x] Only the course.md file is open in CLion
+    * [x] Visual Studio
+        * [x] Startup is set to "open last solution"
+        * [x] Only the course.md file is open in Visual Studio
+    * [x] Branch created for class
