@@ -22,7 +22,7 @@
 * [x] Install PDF reader on VM
 * [x] Set up desktop image and shortcuts
 * [x] Disable breakpoint generation code
-* [ ] Run through the exercises
+* [x] Run through the exercises
 * [x] Delete LegacyTest
 * [x] Add ApprovalTest.cpp - set up and ready to run
 * [x] Review CMakeLists.txt content
