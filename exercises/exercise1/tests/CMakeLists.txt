@@ -13,3 +13,5 @@ target_link_libraries(exercise1 exercise1_library Catch2::Catch2 ApprovalTests::
 # Work around Ninja in-source build error
 # See https://github.com/approvals/ApprovalTests.cpp/blob/master/doc/TroubleshootingMisconfiguredBuild.md#situation-visual-studio-with-visual-c-compiler-clexe
 target_compile_options(exercise1 PUBLIC $<$<CXX_COMPILER_ID:MSVC>:/FC>)
+
+add_test(NAME exercise1 COMMAND exercise1)
