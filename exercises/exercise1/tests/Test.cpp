@@ -17,20 +17,20 @@ TEST_CASE("Test Cos") {
 std::string callEverything(double value) {
     std::stringstream s;
     TrigMath math;
-    s << math.Acos(value) << "\n";
-    s << math.Cos(value) << "\n";
-    s << math.Acot(value) << "\n";
-    s << math.Acsc(value) << "\n";
-    s << math.Asec(value) << "\n";
-    s << math.Asin(value) << "\n";
-    s << math.Atan(value) << "\n";
-    s << math.Cos(value) << "\n";
-    s << math.Cot(value) << "\n";
-    s << math.Csc(value) << "\n";
-    s << math.Floor(value) << "\n";
-    s << math.Sec(value) << "\n";
-    s << math.Sin(value) << "\n";
-    s << math.Tan(value) << "\n";
+    s << "TrigMath (" << value << ") \n";
+    s << "Acos " << math.Acos(value) << "\n";
+    s << "Acot " << math.Acot(value) << "\n";
+    s << "Acsc " << math.Acsc(value) << "\n";
+    s << "Asec " << math.Asec(value) << "\n";
+    s << "Asin " << math.Asin(value) << "\n";
+    s << "Atan " << math.Atan(value) << "\n";
+    s << "Cos " << math.Cos(value) << "\n";
+    s << "Cot " << math.Cot(value) << "\n";
+    s << "Csc " << math.Csc(value) << "\n";
+    s << "Floor " << math.Floor(value) << "\n";
+    s << "Sec " << math.Sec(value) << "\n";
+    s << "Sin " << math.Sin(value) << "\n";
+    s << "Tan " << math.Tan(value) << "\n";
 
 
     return s.str();
@@ -38,5 +38,5 @@ std::string callEverything(double value) {
 }
 TEST_CASE("Test Everything") {
 
-    Approvals::verify(callEverything(3.4));
+    Approvals::verify(callEverything(1.0));
 }
