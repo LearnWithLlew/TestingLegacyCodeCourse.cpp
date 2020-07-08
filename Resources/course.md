@@ -43,8 +43,15 @@
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
 * [X] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
-* [ ] Combination approvals - for multiple inputs
+* [X] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
 * [ ] Combination approvals - for function pointer inputs
+    * Hints:
+    ```
+    typedef  int (Fred::*FredMemFn)(char x, float y);
+    #define CALL_MEMBER_FN(object,ptrToMember)  ((object).*(ptrToMember))
+    int ans = CALL_MEMBER_FN(fred,p)('x', 3.14);
+    ```
+      * from: https://isocpp.org/wiki/faq/pointers-to-members#typedef-for-ptr-to-memfn
     * Confirmation: You are testing without using `runEverything()`
         * One of your arguments is vector of function pointers
