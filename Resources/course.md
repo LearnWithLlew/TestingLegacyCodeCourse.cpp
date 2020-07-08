@@ -35,7 +35,7 @@
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
 * [X] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
-* [ ] Make a single test that tests everything for 1.0 and 3.14
+* [X] Make a single test that tests everything for 1.0 and 3.14
     * Hint: read the docs
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
 * [ ] Better to-strings, to show function names and input values

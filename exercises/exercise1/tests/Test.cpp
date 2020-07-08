@@ -17,20 +17,19 @@ TEST_CASE("Test Cos") {
 std::string callEverything(double value) {
     std::stringstream s;
     TrigMath math;
-    s << "TrigMath (" << value << ") \n";
-    s << "Acos " << math.Acos(value) << "\n";
-    s << "Acot " << math.Acot(value) << "\n";
-    s << "Acsc " << math.Acsc(value) << "\n";
-    s << "Asec " << math.Asec(value) << "\n";
-    s << "Asin " << math.Asin(value) << "\n";
-    s << "Atan " << math.Atan(value) << "\n";
-    s << "Cos " << math.Cos(value) << "\n";
-    s << "Cot " << math.Cot(value) << "\n";
-    s << "Csc " << math.Csc(value) << "\n";
-    s << "Floor " << math.Floor(value) << "\n";
-    s << "Sec " << math.Sec(value) << "\n";
-    s << "Sin " << math.Sin(value) << "\n";
-    s << "Tan " << math.Tan(value) << "\n";
+    s << "Acos (" << value << ") = " << math.Acos(value) << "\n";
+    s << "Acot  (" << value << ") = " <<  math.Acot(value) << "\n";
+    s << "Acsc (" << value << ") = " <<  math.Acsc(value) << "\n";
+    s << "Asec (" << value << ") = " <<  math.Asec(value) << "\n";
+    s << "Asin (" << value << ") = " <<  math.Asin(value) << "\n";
+    s << "Atan (" << value << ") = " <<  math.Atan(value) << "\n";
+    s << "Cos (" << value << ") = "<< math.Cos(value) << "\n";
+    s << "Cot (" << value << ") = " <<  math.Cot(value) << "\n";
+    s << "Csc (" << value << ") = " <<  math.Csc(value) << "\n";
+    s << "Floor (" << value << ") = " <<  math.Floor(value) << "\n";
+    s << "Sec (" << value << ") = " <<  math.Sec(value) << "\n";
+    s << "Sin  (" << value << ") = " <<  math.Sin(value) << "\n";
+    s << "Tan  (" << value << ") = " <<  math.Tan(value) << "\n";
 
 
     return s.str();
