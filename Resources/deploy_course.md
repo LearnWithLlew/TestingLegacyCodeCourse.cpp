@@ -44,9 +44,9 @@
 * [ ] Make TrigMath h and cpp stay open - the peek at the right side really tripped things up
 * [ ] Make Chrome the default browser
 * [ ] Slides
-  * [ ] PC formatting
-    * [ ] Fist of 5 icons need filling
-    * [ ] Poke-test icon and word overlapped
+  * [x] PC formatting
+    * [x] Fist of 5 icons need filling
+    * [x] Poke-test icon and word overlapped
   * [ ] Complete the Awareness/Proficiency/Fluency slide
 * [ ] Review whether to keep or drop Breakpoints section
 * [ ] Interpretation of "Easy"
