@@ -30,7 +30,8 @@
         * 2 `.approved.txt` files in source control
         * tests are passing
 * [x] Create a function that tests all methods for one value, 1.0 - `Approvals::verify(runEverything(1.0))`
-    * Confirmation: A large `.approved.txt` file
+  * Hint: for atan2 , use 0.4 as the second parameter
+  * Confirmation: A large `.approved.txt` file
 * [X] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
 * [X] Test all methods with input value 3.14
@@ -40,7 +41,7 @@
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
 * [X] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
-* [ ] Combination approvals - for one input
+* [X] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
 * [ ] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments

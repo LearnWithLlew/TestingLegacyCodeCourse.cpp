@@ -23,6 +23,7 @@ std::string callEverything(double value) {
     s << "Asec (" << value << ") = " <<  math.Asec(value) << "\n";
     s << "Asin (" << value << ") = " <<  math.Asin(value) << "\n";
     s << "Atan (" << value << ") = " <<  math.Atan(value) << "\n";
+    s << "Atan2 (" << value << ",0.4) = " <<  math.Atan2(value,0.4) << "\n";
     s << "Cos (" << value << ") = "<< math.Cos(value) << "\n";
     s << "Cot (" << value << ") = " <<  math.Cot(value) << "\n";
     s << "Csc (" << value << ") = " <<  math.Csc(value) << "\n";
@@ -50,9 +51,17 @@ TEST_CASE("Test Everything For both values") {
         });
 }
 TEST_CASE("Test Everything With Combinations") {
-    std::vector < double> inputs1 = { 1.0, 3.14 };
+    std::vector < double> inputs1 = { -0.1,0.0, 1.0, 3.14 };
     CombinationApprovals::verifyAllCombinations(
         [](auto input1) { return callEverything(input1); }, inputs1);
+
+   
+}
+TEST_CASE("Test Everything With Combinations for Atan2") {
+    std::vector < double> inputs1 = {-0.1,0.0, 1.0, 3.14 };
+
+    CombinationApprovals::verifyAllCombinations(
+        [](auto input1, auto input2) { return TrigMath ().Atan2(input1, input2); }, inputs1, inputs1);
 
    
 }
