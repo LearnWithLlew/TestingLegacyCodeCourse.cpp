@@ -49,3 +49,10 @@ TEST_CASE("Test Everything For both values") {
         stream << callEverything(input);
         });
 }
+TEST_CASE("Test Everything With Combinations") {
+    std::vector < double> inputs1 = { 1.0, 3.14 };
+    CombinationApprovals::verifyAllCombinations(
+        [](auto input1) { return callEverything(input1); }, inputs1);
+
+   
+}

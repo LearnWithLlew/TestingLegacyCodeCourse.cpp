@@ -38,7 +38,7 @@
 * [X] Make a single test that tests everything for 1.0 and 3.14
     * Hint: read the docs
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
-* [ ] Better to-strings, to show function names and input values
+* [X] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
 * [ ] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
