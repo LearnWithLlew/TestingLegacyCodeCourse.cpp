@@ -1,0 +1,34 @@
+TITLE
+
+
+TrigMath (1) 
+Acos 0
+Acot 0.785398
+Acsc 1.5708
+Asec 0
+Asin 1.5708
+Atan 0.785398
+Cos 0.828807
+Cot 8.54019
+Csc 10.3042
+Floor 1
+Sec 1.20655
+Sin 0.0970479
+Tan 0.117093
+
+TrigMath (3.14) 
+Acos -nan(ind)
+Acot 0.308316
+Acsc 0.324116
+Asec 1.24668
+Asin -nan(ind)
+Atan 1.26248
+Cos -0.867634
+Cot -1.00072
+Csc 1.15339
+Floor 3
+Sec -1.15256
+Sin 0.867008
+Tan -0.999279
+
+

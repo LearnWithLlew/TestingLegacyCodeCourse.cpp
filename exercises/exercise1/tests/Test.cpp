@@ -40,3 +40,13 @@ TEST_CASE("Test Everything") {
 
     Approvals::verify(callEverything(1.0));
 }
+TEST_CASE("Test Everything 3.14") {
+
+    Approvals::verify(callEverything(3.14));
+}
+TEST_CASE("Test Everything For both values") {
+    std::vector < double> values = { 1.0, 3.14 };
+    Approvals::verifyAll("TITLE", values, [](auto input, auto& stream) {
+        stream << callEverything(input);
+        });
+}

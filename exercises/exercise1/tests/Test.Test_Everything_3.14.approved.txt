@@ -1,0 +1,15 @@
+TrigMath (3.14) 
+Acos -nan(ind)
+Acot 0.308316
+Acsc 0.324116
+Asec 1.24668
+Asin -nan(ind)
+Atan 1.26248
+Cos -0.867634
+Cot -1.00072
+Csc 1.15339
+Floor 3
+Sec -1.15256
+Sin 0.867008
+Tan -0.999279
+
