@@ -41,9 +41,8 @@
 
 ## Suggestions
 
-* [ ] Make TrigMath.h and .cpp stay open - the peek at the right side really tripped things up
-    * https://stackoverflow.com/questions/34437340/how-to-disable-peek-on-go-to-definition
-* [ ] Make Chrome the default browser
+### Content
+
 * [ ] Slides
   * [x] PC formatting
     * [x] Fist of 5 icons need filling
@@ -52,5 +51,11 @@
 * [ ] Review whether to keep or drop Breakpoints section
 * [ ] Interpretation of "Easy"
 * [ ] Maybe less code to test - to reach 100%
+
+### Machine Config
+
+* [ ] Make TrigMath.h and .cpp stay open - the peek at the right side really tripped things up
+    * https://stackoverflow.com/questions/34437340/how-to-disable-peek-on-go-to-definition
+* [ ] Make Chrome the default browser
 * [ ] Try to get Visual Studio to preview checkboxes in course.md
     * https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox
