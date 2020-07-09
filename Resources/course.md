@@ -45,7 +45,14 @@
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
 * [ ] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
-Extra Credit:
+* [ ] Improve the precision of PI
+    * Hint: Use `M_PI`
+    * Confirmation: Later digits in the results are different; tests are passing 
+* [ ] Turn on IMPROVEMENT_2
+    * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
+
+### Extra Credit:
+
 * [ ] Test Sin() using a method pointer and standard Catch2 `REQUIRE`
     * Hints:
     ```

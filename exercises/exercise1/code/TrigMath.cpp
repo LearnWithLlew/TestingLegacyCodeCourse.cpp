@@ -94,7 +94,7 @@ double TrigMath::Acot(double value) {
 // Private
 
 double TrigMath::SinRaw(int idx) {
-  return SIN_TABLE[idx & SIN_MASK];
+  return SIN_TABLE[idx & SIN_MASK + IMPROVEMENT_2];
 }
 
 double TrigMath::CosRaw(int idx) {

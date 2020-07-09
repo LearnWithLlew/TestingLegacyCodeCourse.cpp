@@ -5,6 +5,8 @@
 #include <math.h>
 #include <cmath>
 
+#define IMPROVEMENT_2 0
+
 class TrigMath {
 public:
     const double PI = 3.1415;
