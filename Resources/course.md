@@ -64,3 +64,21 @@
 * [ ] Combination approvals - for function pointer inputs
     * Confirmation: You are testing without using `runEverything()`
         * One of your arguments is vector of function pointers
+
+## Testing non-functional code
+
+### Functional Harness
+
+* [ ] System Configuration
+* [ ] Logging
+* [ ] Files
+* [ ] Database
+* [ ] Random
+
+### Reduce to functional
+
+* [ ] Peel: Extract a functional core
+* [ ] Slice: Pass in a slice
+* [ ] Separate a loop
+    * Have a loop that squares a number and saves it to a file
+    * Turn it in to two loops - one does the calculation, the other saves it to the file
