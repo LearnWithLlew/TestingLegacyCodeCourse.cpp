@@ -1,13 +1,11 @@
-//
-// Created by LLEWELLYN FALCO on 12/10/17.
-//
-
 #ifndef CATCHPLAYGROUND_TRIGMATH_H
 #define CATCHPLAYGROUND_TRIGMATH_H
 
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <cmath>
+
+#define IMPROVEMENT_2 0
 
 class TrigMath {
 public:
@@ -56,13 +54,13 @@ private  :
 
     void CreateSinTable();
 
+    int Floor(double a);
+
 public:
 
     TrigMath();
 
     double Sin(double angle);
-
-    int Floor(double a);
 
     double Cos(double angle);
 
