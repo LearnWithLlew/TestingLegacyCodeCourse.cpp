@@ -12,6 +12,8 @@
 # TODO Install these VS extensions manually
 # https://stackoverflow.com/questions/30574829/how-to-install-visual-studio-gallery-extensions-from-command-line
 # Extensions to install:
+#  Markdown Editor:
+#    https://github.com/madskristensen/MarkdownEditor
 #  Catch2 test adapter:
 #    https://marketplace.visualstudio.com/items?itemName=JohnnyHendriks.ext01
 #    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/JohnnyHendriks/vsextensions/ext01/1.5.1/vspackage
