@@ -54,13 +54,13 @@ private  :
 
     void CreateSinTable();
 
+    int Floor(double a);
+
 public:
 
     TrigMath();
 
     double Sin(double angle);
-
-    int Floor(double a);
 
     double Cos(double angle);
 
