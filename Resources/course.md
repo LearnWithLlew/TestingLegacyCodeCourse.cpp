@@ -29,12 +29,14 @@
         * 2 `.approved.txt` files in source control
         * tests are passing
 * [ ] Create a function that tests all methods for one value, 1.0 - `Approvals::verify(runEverything(1.0))`
+  * Hint: for atan2 , use 0.4 as the second parameter
     * Confirmation: A large `.approved.txt` file
 * [ ] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
 * [ ] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
 * [ ] Make a single test that tests everything for 1.0 and 3.14
+    * Hint: read the docs
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
 * [ ] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
@@ -42,6 +44,22 @@
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
 * [ ] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
+* [ ] Improve the precision of PI
+    * Hint: Use `M_PI`
+    * Confirmation: Later digits in the results are different; tests are passing 
+* [ ] Turn on IMPROVEMENT_2
+    * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
+
+### Extra Credit:
+
+* [ ] Test Sin() using a method pointer and standard Catch2 `REQUIRE`
+    * Hints:
+    ```
+    typedef  int (Fred::*FredMemFn)(char x, float y);
+    #define CALL_MEMBER_FN(object,ptrToMember)  ((object).*(ptrToMember))
+    int ans = CALL_MEMBER_FN(fred,p)('x', 3.14);
+    ```
+      * from: https://isocpp.org/wiki/faq/pointers-to-members#typedef-for-ptr-to-memfn
 * [ ] Combination approvals - for function pointer inputs
     * Confirmation: You are testing without using `runEverything()`
         * One of your arguments is vector of function pointers
