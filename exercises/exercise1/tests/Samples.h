@@ -13,5 +13,16 @@ TEST_CASE("Test Function") {
     REQUIRE(result == Approx(8)); // Assert
 }
 
+TEST_CASE("Graphing")
+{
+    std::stringstream s;
+    TrigMath math;
+    for ( double i = 0; i <= 6.28; i += 0.01)
+    {
+        s << i << ',' << math.Sin(i) << '\n';
+    }
+    Approvals::verify(s.str(), Options().fileOptions().withFileExtension(".csv"));
+}
+
 
 #endif //LEGACY_CODE_COURSE_SAMPLES_H
