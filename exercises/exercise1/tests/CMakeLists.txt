@@ -3,6 +3,7 @@ set(SOURCE_FILES
         main.cpp
         TrigMathTests.cpp
         TrigMathApprovalTests.cpp
+        Samples.h
         # including the header files here is a hack to get
         # OpenCppCoverage to show the coverage in the headers
         ../code/Legacy.h
