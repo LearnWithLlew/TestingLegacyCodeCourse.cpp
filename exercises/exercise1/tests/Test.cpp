@@ -27,7 +27,6 @@ std::string callEverything(double value) {
 	s << "Cos (" << value << ") = " << math.Cos(value) << "\n";
 	s << "Cot (" << value << ") = " << math.Cot(value) << "\n";
 	s << "Csc (" << value << ") = " << math.Csc(value) << "\n";
-	s << "Floor (" << value << ") = " << math.Floor(value) << "\n";
 	s << "Sec (" << value << ") = " << math.Sec(value) << "\n";
 	s << "Sin  (" << value << ") = " << math.Sin(value) << "\n";
 	s << "Tan  (" << value << ") = " << math.Tan(value) << "\n";

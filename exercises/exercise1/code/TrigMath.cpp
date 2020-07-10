@@ -19,10 +19,6 @@ double TrigMath::Asin(double value) {
   return Msatan(value / temp);
 }
 
-int TrigMath::Floor(double a) {
-    return (int) a;
-}
-
 double TrigMath::Cos(double angle) {
     return CosRaw(Floor(angle * SIN_CONVERSION_FACTOR));
 }
@@ -119,4 +115,8 @@ double TrigMath::Msatan(double arg) {
 void TrigMath::CreateSinTable() {
   for (auto i = 0; i < SIN_SIZE; i++)
     SIN_TABLE[i] = sin(i * TWO_PI / SIN_SIZE);
+}
+
+int TrigMath::Floor(double a) {
+    return (int) a;
 }
