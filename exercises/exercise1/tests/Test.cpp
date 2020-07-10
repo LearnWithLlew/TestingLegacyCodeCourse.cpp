@@ -17,19 +17,19 @@ TEST_CASE("Test Cos") {
 std::string callEverything(double value) {
 	std::stringstream s;
 	TrigMath math;
-	s << "Acos (" << value << ") = " << math.Acos(value) << "\n";
-	s << "Acot  (" << value << ") = " << math.Acot(value) << "\n";
-	s << "Acsc (" << value << ") = " << math.Acsc(value) << "\n";
-	s << "Asec (" << value << ") = " << math.Asec(value) << "\n";
-	s << "Asin (" << value << ") = " << math.Asin(value) << "\n";
-	s << "Atan (" << value << ") = " << math.Atan(value) << "\n";
-	s << "Atan2 (" << value << ",0.4) = " << math.Atan2(value, 0.4) << "\n";
-	s << "Cos (" << value << ") = " << math.Cos(value) << "\n";
-	s << "Cot (" << value << ") = " << math.Cot(value) << "\n";
-	s << "Csc (" << value << ") = " << math.Csc(value) << "\n";
-	s << "Sec (" << value << ") = " << math.Sec(value) << "\n";
-	s << "Sin  (" << value << ") = " << math.Sin(value) << "\n";
-	s << "Tan  (" << value << ") = " << math.Tan(value) << "\n";
+	s << "Acos(" << value << ") = " << math.Acos(value) << "\n";
+	s << "Acot(" << value << ") = " << math.Acot(value) << "\n";
+	s << "Acsc(" << value << ") = " << math.Acsc(value) << "\n";
+	s << "Asec(" << value << ") = " << math.Asec(value) << "\n";
+	s << "Asin(" << value << ") = " << math.Asin(value) << "\n";
+	s << "Atan(" << value << ") = " << math.Atan(value) << "\n";
+	s << "Atan2(" << value << ",0.4) = " << math.Atan2(value, 0.4) << "\n";
+	s << "Cos(" << value << ") = " << math.Cos(value) << "\n";
+	s << "Cot(" << value << ") = " << math.Cot(value) << "\n";
+	s << "Csc(" << value << ") = " << math.Csc(value) << "\n";
+	s << "Sec(" << value << ") = " << math.Sec(value) << "\n";
+	s << "Sin(" << value << ") = " << math.Sin(value) << "\n";
+	s << "Tan(" << value << ") = " << math.Tan(value) << "\n";
 
 
 	return s.str();
@@ -49,6 +49,14 @@ TEST_CASE("Test Everything For both values") {
 		stream << callEverything(input);
 		});
 }
+
+TEST_CASE("Test Everything For important values") {
+	std::vector < double> values = { -0.1, 0.0, 0.2, 0.8, 1.0, 3.14 };
+	Approvals::verifyAll("Checking Trig Functions in main areas", values, [](auto input, auto& stream) {
+		stream << callEverything(input);
+		});
+}
+
 TEST_CASE("Test Everything With Combinations") {
 	std::vector < double> inputs1 = { -0.1,0.0, 1.0, 3.14 };
 	CombinationApprovals::verifyAllCombinations(
