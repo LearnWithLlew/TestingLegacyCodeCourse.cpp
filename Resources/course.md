@@ -28,7 +28,7 @@
         * a diff tool opened
         * 2 `.approved.txt` files in source control
         * tests are passing
-* [ ] Create a function that tests all methods for one value, 1.0 - `Approvals::verify(runEverything(1.0))`
+* [x] Create a function that tests all methods for one value, 1.0 - `Approvals::verify(runEverything(1.0))`
   * Hint: for atan2 , use 0.4 as the second parameter
     * Confirmation: A large `.approved.txt` file
 * [ ] Better to-strings, to show function names
