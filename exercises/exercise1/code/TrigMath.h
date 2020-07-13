@@ -61,29 +61,17 @@ public:
     TrigMath();
 
     double Sin(double angle);
-
     double Cos(double angle);
-
     double Tan(double angle);
-
     double Csc(double angle);
-
     double Sec(double angle);
-
     double Cot(double angle);
-
     double Asin(double value);
-
     double Acos(double value);
-
     double Atan(double value);
-
     double Atan2(double y, double x);
-
     double Acsc(double value);
-
     double Asec(double value);
-
     double Acot(double value);
 };
 
