@@ -31,9 +31,9 @@
 * [x] Create a function that tests all methods for one value, 1.0 - `Approvals::verify(runEverything(1.0))`
   * Hint: for atan2 , use 0.4 as the second parameter
     * Confirmation: A large `.approved.txt` file
-* [ ] Better to-strings, to show function names
+* [x] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
-* [ ] Test all methods with input value 3.14
+* [x] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
 * [ ] Make a single test that tests everything for 1.0 and 3.14
     * Hint: read the docs

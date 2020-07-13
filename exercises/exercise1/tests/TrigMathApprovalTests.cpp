@@ -52,3 +52,7 @@ TEST_CASE("ApprovalTest RunEverything") {
 }
 
 
+TEST_CASE("ApprovalTest RunEverything3.14") {
+    Approvals::verify(runEverything(3.14));
+}
+
