@@ -58,7 +58,7 @@ TEST_CASE("ApprovalTest RunEverything3.14") {
 
 TEST_CASE("ApprovalTest all maths")
 {
-    const std::vector<double> inputs{ 1.0, 3.14 };
+    const std::vector<double> inputs{ 1.0, 3.14, 0.1, 0.9, -0.5, 0 };
     Approvals::verifyAll("TrigMath", inputs, [](auto input, auto& stream) {
         stream << input << " =>\n"
             << runEverything(input);
