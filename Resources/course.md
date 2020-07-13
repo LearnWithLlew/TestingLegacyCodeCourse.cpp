@@ -49,6 +49,7 @@
     * Confirmation: Later digits in the results are different; tests are passing 
 * [ ] Turn on IMPROVEMENT_2
     * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
+* [ ] Explanations and Retrospective
 
 ### Extra Credit:
 
