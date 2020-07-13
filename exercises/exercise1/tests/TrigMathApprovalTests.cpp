@@ -56,3 +56,11 @@ TEST_CASE("ApprovalTest RunEverything3.14") {
     Approvals::verify(runEverything(3.14));
 }
 
+TEST_CASE("ApprovalTest all maths")
+{
+    const std::vector<double> inputs{ 1.0, 3.14 };
+    Approvals::verifyAll("TrigMath", inputs, [](auto input, auto& stream) {
+        stream << input << " =>\n"
+            << runEverything(input);
+        });
+}
