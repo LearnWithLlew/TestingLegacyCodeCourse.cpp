@@ -58,6 +58,9 @@
 * [ ] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
 
+### Finishing Off
+* [ ] Explanations and Retrospective
+
 ### Extra Credit:
 
 * [ ] Test Sin() using a method pointer and standard Catch2 `REQUIRE`
