@@ -2,7 +2,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_FILES
         main.cpp
         SystemConfigurationTests.cpp
-        )
+        LoggingTests.cpp)
 add_executable(exercise2 ${SOURCE_FILES} )
 target_link_libraries(exercise2 exercise2_library Catch2::Catch2 ApprovalTests::ApprovalTests)
 
