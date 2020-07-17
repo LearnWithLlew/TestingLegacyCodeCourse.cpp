@@ -8,11 +8,12 @@
 
 using namespace ApprovalTests;
 
+#define PRINT(x) output << #x" = " << x << std::endl
 
 // Delete before using
 std::string printConfig() {
     std::stringstream output;
-    output << "rpm = " << rpm << '\n';
+    PRINT(rpm);
     output << "dt = " << dt << '\n';
     output << "x = " << x << '\n';
     output << "y = " << y << '\n';

@@ -79,11 +79,25 @@
 
 ### Functional Harness
 
-* [ ] System Configuration
-* [ ] Logging
-* [ ] Files
-* [ ] Database
-* [ ] Random
+#### System Configuration
+
+* [ ] Capture all global variables
+    * Hint: `#define PRINT(x) #x" = " << x`
+* [ ] Make a function to set the global variables
+* [ ] Make a function to write the code to set the global variables
+* [ ] Write a second test
+* [ ] Move helper functions
+    * [ ] preprocessor
+    * [ ] separate header
+    * [ ] tests
+
+#### Logging
+
+#### Files
+
+#### Database
+
+#### Random
 
 ### Reduce to functional
 
