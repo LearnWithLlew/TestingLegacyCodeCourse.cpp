@@ -81,6 +81,7 @@
 
 #### System Configuration
 
+* [ ] Write a Poke test
 * [ ] Capture all global variables
     * Hint: `#define PRINT(x) #x" = " << x`
 * [ ] Make a function to set the global variables
@@ -90,12 +91,26 @@
     * [ ] preprocessor
     * [ ] separate header
     * [ ] tests
+* [ ] Retro
 
 #### Logging
 
+* [ ] Write a Poke test
+* [ ] Log all REST calls
+* [ ] Turn on SECURE
+    * Confirmation: Your tests no longer work
+* [ ] Make a preprocessor seam to log if testing
+    * Confirmation: Tests work, without result codes
+* [ ] Allow multiple tests
+* [ ] Retro
+
 #### Files
 
+* [ ] Retro
+
 #### Database
+
+* [ ] Retro
 
 #### Random
 

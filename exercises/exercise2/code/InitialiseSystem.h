@@ -1,12 +1,21 @@
 #pragma once
 
 #include <iostream>
+#include <sstream>
 
+#define SECURE
 #include "third_party_code.h"
 
-int RestCall(std::string url, std::string action, int key) {
+// Remove
+std::stringstream log_stream;
 
+int RestCall(std::string url, std::string action, int key) {
+#ifdef RUNNING_TESTS
+    log_stream << "RestCall url: " << url << "action: " << action << "key: " << key << '\n';
+    return 200;
+#else
     return _third_party_code_::rest_call(url, action, key);
+#endif
 }
 
 void initialiseServices()
@@ -28,6 +37,11 @@ void initialiseServices()
             if ( result != 200 )
             {
                 std::cout << "Error indexing search\n";
+            }
+            result = RestCall("https://creditcardprocessor.acme.com", "charge", key);
+            if ( result != 200 )
+            {
+                std::cout << "Error charging credit card\n";
             }
         }
     }

@@ -1,0 +1,5 @@
+RestCall url: https://postgresdatabase.acme.comaction: startkey: 42
+RestCall url: https://kafka.acme.comaction: subscribekey: 142
+RestCall url: https://cache.acme.comaction: loadkey: 142
+RestCall url: https://search.acme.comaction: indexkey: 142
+
