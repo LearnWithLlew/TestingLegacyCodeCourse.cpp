@@ -114,9 +114,22 @@
 
 #### Random
 
+* [ ] Make consistent
+* [ ] Scrub
+* [ ] Retro
+
+#### Date and Time
+
+* [ ] Make consistent
+* [ ] Scrub
+* [ ] Retro
+
 ### Reduce to functional
 
 * [ ] Peel: Extract a functional core
+    * [ ] Test Legacy::getCategory()
+    * [ ] Test Legacy::printName() - passing in a stream
+    * [ ] Test Legacy::printName() - returning a string
 * [ ] Slice: Pass in a slice
 * [ ] Separate a loop
     * Have a loop that squares a number and saves it to a file
