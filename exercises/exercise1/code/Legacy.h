@@ -11,12 +11,14 @@ class Legacy
     int count;
 
 public:
+    // Non-deterministic
     int getID()
     {
         srand(time(0));
         return (rand() % 10 + 1);
     }
 
+    // Not all inputs passed in
     int getCategory()
     {
         if (count == 5)
@@ -29,6 +31,7 @@ public:
         }
     }
 
+    // Not all outputs passed out
     void printName(const std::string& name)
     {
         std::cout << name << '\n';
