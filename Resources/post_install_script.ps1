@@ -12,6 +12,8 @@
 # TODO Install these VS extensions manually
 # https://stackoverflow.com/questions/30574829/how-to-install-visual-studio-gallery-extensions-from-command-line
 # Extensions to install:
+#  Auto Save:
+#    https://marketplace.visualstudio.com/items?itemName=HangjitRai.AutoSaveFile
 #  Markdown Editor:
 #    https://github.com/madskristensen/MarkdownEditor
 #  Catch2 test adapter:
