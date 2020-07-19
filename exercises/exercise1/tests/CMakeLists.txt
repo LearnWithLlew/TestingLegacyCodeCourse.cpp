@@ -6,7 +6,6 @@ set(SOURCE_FILES
         Samples.h
         # including the header files here is a hack to get
         # OpenCppCoverage to show the coverage in the headers
-        ../code/Legacy.h
         ../code/TrigMath.h
         )
 add_executable(exercise1 ${SOURCE_FILES} )
