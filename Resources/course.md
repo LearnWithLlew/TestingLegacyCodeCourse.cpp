@@ -114,8 +114,14 @@
 
 #### Random
 
-* [ ] Make consistent
-* [ ] Scrub
+* [ ] Poke-test getId in Legacy.h
+* [ ] Make getId testable
+* [ ] Make consistent seed via #ifdef
+    * Confirmation: test work when run 2 times 
+* [ ] Extract testable function that takes a seed
+    * Confirmation:working test without #ifdef
+* [ ] Extract Testable function that takes a number
+    * Confirmation: you can reason out what the result will be before running it.
 * [ ] Retro
 
 #### Date and Time
@@ -134,3 +140,7 @@
 * [ ] Separate a loop
     * Have a loop that squares a number and saves it to a file
     * Turn it in to two loops - one does the calculation, the other saves it to the file
+
+### Wrapping Up
+
+* [ ] Retro

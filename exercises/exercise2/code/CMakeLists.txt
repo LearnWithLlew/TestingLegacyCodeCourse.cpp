@@ -1,4 +1,5 @@
 add_library(exercise2_library
+        Inconsistent.h
         Legacy.h
         SystemConfiguration.h
         SystemConfiguration.cpp
