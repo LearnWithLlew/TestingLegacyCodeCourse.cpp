@@ -47,15 +47,20 @@
   * [x] PC formatting
     * [x] Fist of 5 icons need filling
     * [x] Poke-test icon and word overlapped
-  * [ ] Complete the Awareness/Proficiency/Fluency slide
+  * [x] Complete the Awareness/Proficiency/Fluency slide
 * [ ] Review whether to keep or drop Breakpoints section
 * [ ] Interpretation of "Easy"
 * [ ] Maybe less code to test - to reach 100%
 
 ### Machine Config
 
-* [ ] Make TrigMath.h and .cpp stay open - the peek at the right side really tripped things up
-    * https://stackoverflow.com/questions/34437340/how-to-disable-peek-on-go-to-definition
-* [ ] Make Chrome the default browser
-* [ ] Try to get Visual Studio to preview checkboxes in course.md
+* [x] Make TrigMath.h and .cpp stay open - the peek at the right side really tripped things up
+    * Search in Quick View (Ctrl + Q) -> for "Preview Tab" -> Enter -> Allow new files to be opened in preview tab -> Off
+* [x] Make Chrome the default browser
+* [x] Try to get Visual Studio to preview checkboxes in course.md
     * https://marketplace.visualstudio.com/items?itemName=bierner.markdown-checkbox
+* [x] Latest MobTimer
+* [=] Make AnyDesk auto-login
+* [=] Try not to require AnyDesk user name
+* [ ] Add CLion licence
+* [ ] Add BeyondCompare licence
