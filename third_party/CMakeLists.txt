@@ -6,12 +6,14 @@ if(NOT TARGET ApprovalTests)
 
     # Show files in Visual Studio:
     add_custom_target(
-            ApprovalTests_sources
+            third_party_sources
             SOURCES
             ApprovalTests.hpp
             ApprovalTests.v.10.1.1.hpp
+            catch2/include/catch2/catch.hpp
+            catch2/include/catch2/catch.v2.11.0.hpp
     )
-    set_target_properties(ApprovalTests_sources PROPERTIES PROJECT_LABEL "ApprovalTests")
+    set_target_properties(third_party_sources PROPERTIES PROJECT_LABEL "third_party")
 endif()
 
 add_subdirectory(catch2)
