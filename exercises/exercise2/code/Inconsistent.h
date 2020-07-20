@@ -27,9 +27,8 @@ void setRandomSeed()
 
 class Inconsistent
 {
-    std::string name_;
 public:
-    Inconsistent(std::string name) : name_(name)
+    Inconsistent()
     {
         setRandomSeed();
     }
