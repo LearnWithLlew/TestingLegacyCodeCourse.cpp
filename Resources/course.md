@@ -64,6 +64,7 @@
 * [ ] Combination approvals - for function pointer inputs
     * Confirmation: You are testing without using `runEverything()`
         * One of your arguments is vector of function pointers
+
 ## Testing non-functional code
 
 ### Functional Harness
