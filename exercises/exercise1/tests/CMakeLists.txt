@@ -9,11 +9,11 @@ set(SOURCE_FILES
         ../code/Legacy.h
         ../code/TrigMath.h
         )
-add_executable(exercise1 ${SOURCE_FILES} )
-target_link_libraries(exercise1 exercise1_library Catch2::Catch2 ApprovalTests::ApprovalTests)
+add_executable(exercise1_tests ${SOURCE_FILES} )
+target_link_libraries(exercise1_tests exercise1_library Catch2::Catch2 ApprovalTests::ApprovalTests)
 
 # Work around Ninja in-source build error
 # See https://github.com/approvals/ApprovalTests.cpp/blob/master/doc/TroubleshootingMisconfiguredBuild.md#situation-visual-studio-with-visual-c-compiler-clexe
-target_compile_options(exercise1 PUBLIC $<$<CXX_COMPILER_ID:MSVC>:/FC>)
+target_compile_options(exercise1_tests PUBLIC $<$<CXX_COMPILER_ID:MSVC>:/FC>)
 
-add_test(NAME exercise1 COMMAND exercise1)
+add_test(NAME exercise1_tests COMMAND exercise1_tests)
