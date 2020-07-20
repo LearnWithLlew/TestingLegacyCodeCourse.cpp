@@ -3,7 +3,7 @@ add_library(exercise2_library
         MissingInputs.h
         SystemConfiguration.h
         SystemConfiguration.cpp
-        InitialiseSystem.h
+        Services.h
         third_party_code.h
         )
 target_include_directories(exercise2_library

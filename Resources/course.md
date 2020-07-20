@@ -95,7 +95,7 @@
 
 #### Logging
 
-* [ ] Write a Poke test
+* [ ] Write a Poke test for Services::initialiseServices()
 * [ ] Log all REST calls
 * [ ] Turn on SECURE
     * Confirmation: Your tests no longer work
