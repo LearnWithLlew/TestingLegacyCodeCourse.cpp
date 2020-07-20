@@ -7,57 +7,14 @@
 #include <ctime>
 #include <chrono>
 
-static time_t randomSeed = time(0);
-
-time_t& randSeedStatic()
-{
-    static time_t randomSeed2 = time(0);
-    return randomSeed2;
-}
-
-void setRandomSeed()
-{
-#ifdef TESTING
-    srand(500);
-#else
-//    srand(time(0));
-    srand(randSeedStatic());
-#endif
-}
-
 class Inconsistent
 {
 public:
-    Inconsistent()
-    {
-        setRandomSeed();
-    }
-
-    int getID0()
-    {
-        return (rand() % 10 + 1);
-    }
-    // Non-deterministic
     int getID()
     {
-        time_t seed = time(0);
-        return getID(seed);
-    }
-
-    int getID(time_t seed) const {
-        srand(seed);
+        srand(time(0));
         return (rand() % 10 + 1);
     }
-
-    int getID2()
-    {
-//        time_t seed = time(0);
-//        srand(seed);
-        int randomNumber = rand();
-        return getIdForRandom(randomNumber);
-    }
-
-    int getIdForRandom(int randomNumber) const { return (randomNumber % 10 + 1); }
 
     std::string print()
     {

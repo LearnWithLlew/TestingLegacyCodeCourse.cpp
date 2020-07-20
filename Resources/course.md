@@ -114,8 +114,8 @@
 
 #### Random
 
-* [ ] Poke-test getId in Legacy.h
-* [ ] Make getId testable
+* [ ] Poke-test getId() in Inconsistent.h
+* [ ] Make getId() testable
 * [ ] Make consistent seed via #ifdef
     * Confirmation: test work when run 2 times 
 * [ ] Extract testable function that takes a seed
