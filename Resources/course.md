@@ -74,9 +74,9 @@
 * [x] Write a Poke test for initialiseSystem
 * [x] Capture all global variables
     * Hint: `#define PRINT(x) #x" = " << x`
-* [ ] Make a function to set the global variables
-* [ ] Make a function to write the code to set the global variables
-* [ ] Write a second test
+* [x] Make a function to set the global variables
+* [x] Make a function to write the code to set the global variables
+* [x] Write a second test
 * [ ] Move helper functions
     * [ ] preprocessor
     * [ ] separate header
@@ -85,22 +85,22 @@
 
 #### Logging
 
-* [ ] Write a Poke test for Services::initialiseServices()
-* [ ] Log all REST calls
-* [ ] Turn on SECURE
+* [x] Write a Poke test for Services::initialiseServices()
+* [x] Log all REST calls
+* [x] Turn on SECURE
     * Confirmation: Your tests no longer work
-* [ ] Make a preprocessor seam to log if testing
+* [x] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
 * [ ] Allow multiple tests
 * [ ] Retro
 
 #### Files
 
-* [ ] Retro
+* [X] Retro
 
 #### Database
 
-* [ ] Retro
+* [X] Retro
 
 #### Random
 

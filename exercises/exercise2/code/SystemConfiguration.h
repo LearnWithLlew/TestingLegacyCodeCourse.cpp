@@ -14,24 +14,6 @@ double z_mph = 3;
 bool gravity = true;
 double y_torque = 3.2;
 
-#define PRINT(x) ss <<  #x" = " << x << "\n"
-
-std::string printAllGlobals()
-{
-    std::stringstream ss;
-    PRINT(rpm);
-    PRINT(dt);
-    PRINT(x);
-    PRINT(y);
-    PRINT(z);
-    PRINT(x_mph);
-    PRINT(y_mph);
-    PRINT(z_mph);
-    PRINT(gravity);
-    PRINT(y_torque);
-
-    return ss.str();
-}
 
 void initialiseSystem()
 {

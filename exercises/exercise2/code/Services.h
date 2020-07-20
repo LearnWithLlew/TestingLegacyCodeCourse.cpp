@@ -4,10 +4,19 @@
 #include <sstream>
 
 #include "third_party_code.h"
+#if ENABLE_FAKE_REST_CALL
+std::stringstream logstream;
+#endif
 
 int RestCall(std::string url, std::string action, int key)
 {
+#if ENABLE_FAKE_REST_CALL
+    logstream << "RestCall(" << url << "," << action << "," << key << ")\n";
+    logstream << "RESULT: " << 200 << "\n";
+    return 200;
+#else
     return _third_party_code_::rest_call(url, action, key);
+#endif
 }
 
 void initialiseServices()

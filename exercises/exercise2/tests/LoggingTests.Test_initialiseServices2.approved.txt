@@ -1,0 +1,11 @@
+RestCall(https://postgresdatabase.acme.com,start,42)
+RESULT: 200
+RestCall(https://kafka.acme.com,subscribe,142)
+RESULT: 200
+RestCall(https://cache.acme.com,load,142)
+RESULT: 200
+RestCall(https://search.acme.com,index,142)
+RESULT: 200
+RestCall(https://creditcardprocessor.acme.com,charge,142)
+RESULT: 200
+
