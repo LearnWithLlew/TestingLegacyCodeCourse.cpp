@@ -9,7 +9,7 @@ if(NOT TARGET ApprovalTests)
             third_party_sources
             SOURCES
             ApprovalTests.hpp
-            ApprovalTests.v.10.1.1.hpp
+            ApprovalTests.v.10.2.0.hpp
             catch2/include/catch2/catch.hpp
             catch2/include/catch2/catch.v2.11.0.hpp
     )
