@@ -7,6 +7,9 @@ using namespace ApprovalTests;
 
 TEST_CASE("Poke GetID")
 {
+	Inconsistent subject;
+	
+	Approvals::verify(subject.getID(0));
 }
 
 TEST_CASE("Poke print")

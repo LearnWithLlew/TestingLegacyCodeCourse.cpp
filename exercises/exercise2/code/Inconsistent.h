@@ -12,7 +12,12 @@ class Inconsistent
 public:
     int getID()
     {
-        srand(time(0));
+        return getID(time(0));
+    }
+
+    int getID(int seed)
+    {
+        srand(seed);
         return (rand() % 10 + 1);
     }
 

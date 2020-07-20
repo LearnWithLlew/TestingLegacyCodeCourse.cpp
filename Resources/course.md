@@ -104,7 +104,7 @@
 
 #### Random
 
-* [ ] Poke-test getId() in Inconsistent.h
+* [x] Poke-test getId() in Inconsistent.h
 * [ ] Make getId() testable
 * [ ] Make consistent seed via #ifdef
     * Confirmation: test work when run 2 times 
