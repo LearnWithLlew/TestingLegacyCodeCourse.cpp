@@ -71,8 +71,8 @@
 
 #### System Configuration
 
-* [ ] Write a Poke test
-* [ ] Capture all global variables
+* [x] Write a Poke test for initialiseSystem
+* [x] Capture all global variables
     * Hint: `#define PRINT(x) #x" = " << x`
 * [ ] Make a function to set the global variables
 * [ ] Make a function to write the code to set the global variables

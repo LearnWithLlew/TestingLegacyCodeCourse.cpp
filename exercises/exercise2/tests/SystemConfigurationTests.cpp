@@ -9,6 +9,8 @@ using namespace ApprovalTests;
 
 TEST_CASE("Test System Configuration 1")
 {
+	initialiseSystem();
+	Approvals::verify(printAllGlobals());
 }
 
 TEST_CASE("generate code")

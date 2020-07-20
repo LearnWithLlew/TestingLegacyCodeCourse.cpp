@@ -1,0 +1,11 @@
+rpm = 4000
+dt = 0.01
+x = 4.58333e-08
+y = 9.16667e-08
+z = 1.375e-07
+x_mph = 1
+y_mph = 2
+z_mph = 3
+gravity = 1
+y_torque = 3.2
+
