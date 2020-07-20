@@ -131,6 +131,12 @@
 * [ ] Scrub Inconsistent::print() for time
 * [ ] Retro
 
+#### Side Effects
+
+* [ ] Poke-test SideEffects::print()
+* [ ] Peel SideEffects::print() to return a string
+* [ ] Peel/slide SideEffects::print() to take a stream
+
 ### Reduce to functional
 
 * [ ] Peel: Extract a functional core

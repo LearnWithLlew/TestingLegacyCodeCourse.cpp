@@ -13,5 +13,11 @@ TEST_CASE("Poke GetID")
 TEST_CASE("Poke print")
 {
     Inconsistent inconsistent;
-    CHECK(inconsistent.print("fred") == "started at Sun Jul 19 22:51:46 2020 by fred");
+    Approvals::verify(inconsistent.print2("fred", DateUtils::createDateTime(2000, 01, 02, 3, 4, 5)));
+}
+
+TEST_CASE("Scrub print")
+{
+    Inconsistent inconsistent;
+    Approvals::verify(inconsistent.print1("fred"), Options().withScrubber(Scrubbers::createRegexScrubber("fixme", "[date]")));
 }
