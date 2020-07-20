@@ -13,5 +13,5 @@ TEST_CASE("Poke GetID")
 TEST_CASE("Poke print")
 {
     Inconsistent inconsistent;
-    CHECK(inconsistent.print() == "started at Sun Jul 19 22:51:46 2020\n");
+    CHECK(inconsistent.print("fred") == "started at Sun Jul 19 22:51:46 2020 by fred");
 }

@@ -16,14 +16,15 @@ public:
         return (rand() % 10 + 1);
     }
 
-    std::string print()
+    std::string print(const std::string& name)
     {
         std::stringstream stream;
         auto end = std::chrono::system_clock::now();
         std::time_t end_time =
                 std::chrono::system_clock::to_time_t(end);
-
-        stream << "started at " << std::ctime(&end_time);
+        auto time = std::ctime(&end_time);
+        time[strcspn(time, "\n")] = '\0';
+        stream << "started at " << time << " by " << name;
         return stream.str();
     }
 };

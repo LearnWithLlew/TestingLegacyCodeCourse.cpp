@@ -126,6 +126,7 @@
 
 #### Date and Time
 
+* [ ] Poke-test print() in Inconsistent.h
 * [ ] Make consistent
 * [ ] Scrub
 * [ ] Retro
