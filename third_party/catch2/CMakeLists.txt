@@ -11,4 +11,13 @@ if(NOT TARGET Catch2)
     # This one is historical, left over from when ApprovalTests.cpp was first created.
     # We could encourage users to move away from it.
     add_library(catch2 ALIAS Catch2)
+
+    # Show files in Visual Studio:
+    add_custom_target(
+            Catch2_sources
+            SOURCES
+            include/catch2/catch.hpp
+            include/catch2/catch.v2.11.0.hpp
+    )
+    set_target_properties(Catch2_sources PROPERTIES PROJECT_LABEL "Catch2")
 endif()
