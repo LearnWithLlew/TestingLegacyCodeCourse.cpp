@@ -127,8 +127,8 @@
 #### Date and Time
 
 * [ ] Poke-test print() in Inconsistent.h
-* [ ] Make consistent
-* [ ] Scrub
+* [ ] Peel Inconsistent::print() to pass in time
+* [ ] Scrub Inconsistent::print() for time
 * [ ] Retro
 
 ### Reduce to functional
