@@ -137,6 +137,12 @@
 * [ ] Peel SideEffects::print() to return a string
 * [ ] Peel/slide SideEffects::print() to take a stream
 
+### Missing Inputs
+
+* [ ] Poke-test MissingInputs::getCategory()
+* [ ] Get it to 100% coverage
+* [ ] Peel to pass in missing inputs 
+
 ### Reduce to functional
 
 * [ ] Peel: Extract a functional core

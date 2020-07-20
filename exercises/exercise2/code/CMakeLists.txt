@@ -1,6 +1,6 @@
 add_library(exercise2_library
         Inconsistent.h
-        Legacy.h
+        MissingInputs.h
         SystemConfiguration.h
         SystemConfiguration.cpp
         InitialiseSystem.h

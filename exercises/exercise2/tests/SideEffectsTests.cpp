@@ -1,7 +1,7 @@
 #include <catch2/catch.hpp>
 #include "ApprovalTests.hpp"
 
-//#include "SideEffects.h"
+#include "SideEffects.h"
 
 TEST_CASE("Test SideEffects")
 {

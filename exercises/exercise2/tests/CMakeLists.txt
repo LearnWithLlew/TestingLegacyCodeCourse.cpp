@@ -6,6 +6,7 @@ set(SOURCE_FILES
         LoggingTests.cpp
         Samples.h
         SideEffectsTests.cpp
+        MissingInputsTests.cpp
         )
 add_executable(exercise2_tests ${SOURCE_FILES} )
 target_link_libraries(exercise2_tests exercise2_library Catch2::Catch2 ApprovalTests::ApprovalTests)
