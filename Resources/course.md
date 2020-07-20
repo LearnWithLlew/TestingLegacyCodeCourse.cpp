@@ -64,3 +64,85 @@
 * [ ] Combination approvals - for function pointer inputs
     * Confirmation: You are testing without using `runEverything()`
         * One of your arguments is vector of function pointers
+## Testing non-functional code
+
+### Functional Harness
+
+#### System Configuration
+
+* [ ] Write a Poke test
+* [ ] Capture all global variables
+    * Hint: `#define PRINT(x) #x" = " << x`
+* [ ] Make a function to set the global variables
+* [ ] Make a function to write the code to set the global variables
+* [ ] Write a second test
+* [ ] Move helper functions
+    * [ ] preprocessor
+    * [ ] separate header
+    * [ ] tests
+* [ ] Retro
+
+#### Logging
+
+* [ ] Write a Poke test for Services::initialiseServices()
+* [ ] Log all REST calls
+* [ ] Turn on SECURE
+    * Confirmation: Your tests no longer work
+* [ ] Make a preprocessor seam to log if testing
+    * Confirmation: Tests work, without result codes
+* [ ] Allow multiple tests
+* [ ] Retro
+
+#### Files
+
+* [ ] Retro
+
+#### Database
+
+* [ ] Retro
+
+#### Random
+
+* [ ] Poke-test getId() in Inconsistent.h
+* [ ] Make getId() testable
+* [ ] Make consistent seed via #ifdef
+    * Confirmation: test work when run 2 times 
+* [ ] Extract testable function that takes a seed
+    * Confirmation:working test without #ifdef
+* [ ] Extract Testable function that takes a number
+    * Confirmation: you can reason out what the result will be before running it.
+* [ ] Retro
+
+#### Date and Time
+
+* [ ] Poke-test print() in Inconsistent.h
+* [ ] Peel Inconsistent::print() to pass in time
+* [ ] Scrub Inconsistent::print() for time
+* [ ] Retro
+
+#### Side Effects
+
+* [ ] Poke-test SideEffects::print()
+* [ ] Peel SideEffects::print() to return a string
+* [ ] Peel/slide SideEffects::print() to take a stream
+
+### Missing Inputs
+
+* [ ] Poke-test MissingInputs::getCategory()
+* [ ] Get it to 100% coverage
+* [ ] Peel to pass in missing inputs 
+
+### Reduce to functional
+
+* [ ] Peel: Extract a functional core
+    * [ ] Test Legacy::getCategory()
+    * [ ] Test Legacy::printName() - passing in a stream
+    * [ ] Test Legacy::printName() - returning a string
+* [ ] Slice: Pass in a slice
+* [ ] Separate a loop
+    * Have a loop that squares a number and saves it to a file
+    * Turn it in to two loops - one does the calculation, the other saves it to the file
+
+### Wrapping Up
+
+* [ ] Retro
