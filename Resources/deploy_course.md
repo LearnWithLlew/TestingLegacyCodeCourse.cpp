@@ -55,6 +55,11 @@
 * [ ] Interpretation of "Easy"
 * [ ] Maybe less code to test - to reach 100%
 
+### Date and Time
+
+* [ ] ApprovalTests DateUtils
+* [ ] Understand how Catch2 handles dates and times
+
 ### Machine Config
 
 * [x] Make TrigMath.h and .cpp stay open - the peek at the right side really tripped things up

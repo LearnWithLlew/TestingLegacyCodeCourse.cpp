@@ -5,6 +5,8 @@
 
 #include "third_party_code.h"
 
+// std::stringstream logger;
+
 int RestCall(std::string url, std::string action, int key)
 {
     return _third_party_code_::rest_call(url, action, key);

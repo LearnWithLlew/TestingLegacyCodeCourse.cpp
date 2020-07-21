@@ -93,7 +93,7 @@
     * [ ] tests
 * [ ] Retro
 
-#### Logging
+#### Adding Logging
 
 * [ ] Write a Poke test for Services::initialiseServices()
 * [ ] Log all REST calls
