@@ -82,26 +82,32 @@
 #### System Configuration
 
 * [ ] Write a Poke test
+    * Confirmation: Passing test with no verification
 * [ ] Capture all global variables
     * Hint: `#define PRINT(x) #x" = " << x`
+    * Confirmation: Your approval shows the ending values of all 10 global variables
+* [ ] Capture all starting state of global variables as well
+    * Confirmation: Your approval shows the starting and ending values
 * [ ] Write a second test
-* [ ] Make a function to set the global variables
+    * Confirmation: Both tests pass
+* [ ] Make and use a function to set the global variables
+    * Confirmation: Tests pass when run together AND individually
 * [ ] Make a function to write the code to set the global variables
-* [ ] Move helper functions
-    * [ ] preprocessor
-    * [ ] separate header
-    * [ ] tests
+    * Confirmation: You can copy the C++ code from standard output in to Visual Studio
 * [ ] Retro
 
 #### Adding Logging
 
 * [ ] Write a Poke test for Services::initialiseServices()
+    * Confirmation: Passing test with no verification
 * [ ] Log all REST calls
+    * Confirmation: You can see all 6 calls and results
 * [ ] Turn on SECURE
     * Confirmation: Your tests no longer work
 * [ ] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
 * [ ] Allow multiple tests
+    * Confirmation: Tests pass when run together AND individually
 * [ ] Retro
 
 #### Files
@@ -115,10 +121,12 @@
 #### Date and Time
 
 * [ ] Poke-test print() in Inconsistent.h
+    * Confirmation: Failing test because of date and time
 * [ ] Scrub Inconsistent::print() for time
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
+    * Confirmation: Passing test with scrubbed date
 * [ ] Peel Inconsistent::print() to pass in time
 * [ ] Retro
 
