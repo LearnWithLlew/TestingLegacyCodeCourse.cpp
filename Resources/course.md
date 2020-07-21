@@ -112,6 +112,13 @@
 
 * [ ] Retro
 
+#### Date and Time
+
+* [ ] Poke-test print() in Inconsistent.h
+* [ ] Scrub Inconsistent::print() for time
+* [ ] Peel Inconsistent::print() to pass in time
+* [ ] Retro
+
 #### Random
 
 * [ ] Poke-test getId() in Inconsistent.h
@@ -122,13 +129,6 @@
     * Confirmation:working test without #ifdef
 * [ ] Extract Testable function that takes a number
     * Confirmation: you can reason out what the result will be before running it.
-* [ ] Retro
-
-#### Date and Time
-
-* [ ] Poke-test print() in Inconsistent.h
-* [ ] Peel Inconsistent::print() to pass in time
-* [ ] Scrub Inconsistent::print() for time
 * [ ] Retro
 
 #### Side Effects
