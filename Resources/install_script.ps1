@@ -33,6 +33,8 @@ choco install -y clion-ide
 choco install -y visualstudio2019community
 choco install -y visualstudio2019-workload-nativedesktop
 
+choco install -y resharpercpp
+
 # -------------------------------------------------------
 # Build tools
 choco install -y cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
