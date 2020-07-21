@@ -48,6 +48,9 @@
     * [x] Fist of 5 icons need filling
     * [x] Poke-test icon and word overlapped
   * [x] Complete the Awareness/Proficiency/Fluency slide
+  * [ ] Add Further Resources markdown file
+  * [ ] More Introduction to Concepts slides
+  * [ ] Advertise future training
 * [ ] Review whether to keep or drop Breakpoints section
 * [ ] Interpretation of "Easy"
 * [ ] Maybe less code to test - to reach 100%
@@ -62,5 +65,5 @@
 * [x] Latest MobTimer
 * [=] Make AnyDesk auto-login
 * [=] Try not to require AnyDesk user name
-* [ ] Add CLion licence
-* [ ] Add BeyondCompare licence
+* [x] Add CLion licence
+* [x] Add BeyondCompare licence
