@@ -84,9 +84,9 @@
 * [ ] Write a Poke test
 * [ ] Capture all global variables
     * Hint: `#define PRINT(x) #x" = " << x`
+* [ ] Write a second test
 * [ ] Make a function to set the global variables
 * [ ] Make a function to write the code to set the global variables
-* [ ] Write a second test
 * [ ] Move helper functions
     * [ ] preprocessor
     * [ ] separate header
