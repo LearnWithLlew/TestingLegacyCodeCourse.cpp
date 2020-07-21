@@ -116,6 +116,9 @@
 
 * [ ] Poke-test print() in Inconsistent.h
 * [ ] Scrub Inconsistent::print() for time
+    * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
+    * Hint: `\d` matches a digit
+    * Hint: `[a-z]` matches lower-case letter
 * [ ] Peel Inconsistent::print() to pass in time
 * [ ] Retro
 
