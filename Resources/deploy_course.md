@@ -52,7 +52,7 @@
   * [ ] More Introduction to Concepts slides
   * [ ] Advertise future training
 * [ ] Review whether to keep or drop Breakpoints section
-* [ ] Interpretation of "Easy"
+* [x] Interpretation of "Easy"
 * [ ] Maybe less code to test - to reach 100%
 
 ### Date and Time
@@ -72,3 +72,8 @@
 * [=] Try not to require AnyDesk user name
 * [x] Add CLion licence
 * [x] Add BeyondCompare licence
+
+### Just before course start
+
+* [ ] Create a branch for the course mob
+* [ ] Delete unused slide decks?
