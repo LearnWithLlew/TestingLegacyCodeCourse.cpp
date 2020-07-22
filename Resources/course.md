@@ -88,7 +88,7 @@
     * Confirmation: Your approval shows the ending values of all 10 global variables
 * [x] Capture all starting state of global variables as well
     * Confirmation: Your approval shows the starting and ending values
-* [ ] Write a second test
+* [x] Write a second test
     * Confirmation: Both tests pass
 * [ ] Make and use a function to set the global variables
     * Confirmation: Tests pass when run together AND individually
