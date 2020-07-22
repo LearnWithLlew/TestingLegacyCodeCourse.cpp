@@ -94,13 +94,13 @@
     * Confirmation: Tests pass when run together AND individually
 * [x] Make a function to write the code to set the global variables
     * Confirmation: You can copy the C++ code from standard output in to Visual Studio
-* [ ] Retro
+* [x] Retro
 
 #### Adding Logging
 
-* [ ] Write a Poke test for Services::initialiseServices()
+* [x] Write a Poke test for Services::initialiseServices()
     * Confirmation: Passing test with no verification
-* [ ] Log all REST calls
+* [x] Log all REST calls
     * Confirmation: You can see all 6 calls and results
 * [ ] Turn on SECURE
     * Confirmation: Your tests no longer work

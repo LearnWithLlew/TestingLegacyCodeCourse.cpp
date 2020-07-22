@@ -9,4 +9,7 @@ using namespace ApprovalTests;
 
 TEST_CASE("Test initialiseServices")
 {
+	logger.clear();
+	initialiseServices();
+	Approvals::verify(logger.str());
 }

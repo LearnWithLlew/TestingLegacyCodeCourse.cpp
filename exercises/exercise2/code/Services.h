@@ -5,11 +5,14 @@
 
 #include "third_party_code.h"
 
-// std::stringstream logger;
+std::stringstream logger;
 
 int RestCall(std::string url, std::string action, int key)
 {
-    return _third_party_code_::rest_call(url, action, key);
+    logger << "RestCall: url:" << url << "," << "action:" << action << "," << "key:" << key << std::endl;
+    int result =_third_party_code_::rest_call(url, action, key);
+    logger << "result: " << result << std::endl;
+    return result;
 }
 
 void initialiseServices()

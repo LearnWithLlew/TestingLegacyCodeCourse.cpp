@@ -1,0 +1,11 @@
+RestCall: url:https://postgresdatabase.acme.com,action:start,key:42
+result: 200
+RestCall: url:https://kafka.acme.com,action:subscribe,key:142
+result: 200
+RestCall: url:https://cache.acme.com,action:load,key:142
+result: 200
+RestCall: url:https://search.acme.com,action:index,key:142
+result: 200
+RestCall: url:https://creditcardprocessor.acme.com,action:charge,key:142
+result: 200
+
