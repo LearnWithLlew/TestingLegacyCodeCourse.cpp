@@ -24,12 +24,12 @@
 
 ## Testing with Approvals
 ### Basic ApprovalTests
-* [ ] Basic approval of Sin() and Cos()
+* [x] Basic approval of Sin() and Cos()
     * Confirmation:
         * a diff tool opened
         * 2 `.approved.txt` files in source control
         * tests are passing
-* [ ] Create a function that tests all 13 methods in TrigMath for one value, 1.0 -    
+* [x] Create a function that tests all 13 methods in TrigMath for one value, 1.0 -    
   `Approvals::verify(runEverything(1.0))`
   * Use std::stringstream
   * Hint: for atan2 , use 0.4 as the second parameter
