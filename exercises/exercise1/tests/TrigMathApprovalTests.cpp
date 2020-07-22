@@ -31,6 +31,15 @@ TEST_CASE("ApprovalTest everything PI") {
 	Approvals::verify(runEverything(3.14));
 }
 
+TEST_CASE("ApprovalTest verifyAll")
+{
+	std::vector<double> inputs{ 1.0, 3.14, -0.1, 0, 0.2, 0.8 };
+	Approvals::verifyAll("1 and PI", inputs, [](auto input, auto& stream) {
+		stream << input << " => "
+			<< runEverything(input);
+		});
+}
+
 TEST_CASE("ApprovalTest Sin") {
     TrigMath math;
 	Approvals::verify(math.Sin(0.4));
