@@ -45,15 +45,15 @@
 * [x] Test -0.1, 0, 0.2, 0.8 for everything
     * Confirmation: Everything except Atan2 should be covered
 ### Seeing Failures
-* [ ] Improve the precision of PI
+* [x] Improve the precision of PI
     * Hint: Use `M_PI`
     * Confirmation: Later digits in the results are different; tests are passing 
-* [ ] Turn on IMPROVEMENT_2
+* [x] Turn on IMPROVEMENT_2
     * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
-* [ ] Better to-strings, to show function names and input values
+* [x] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
 ### Combinations of Inputs
-* [ ] Combination approvals - for one input
+* [x] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
 * [ ] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments

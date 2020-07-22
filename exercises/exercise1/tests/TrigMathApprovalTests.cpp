@@ -49,3 +49,11 @@ TEST_CASE("ApprovalTest Cos") {
     TrigMath math;
 	Approvals::verify(math.Cos(0.4));
 }
+
+TEST_CASE("CombinationVerifyAll Sin")
+{
+	TrigMath math;
+	std::vector<double> inputs{ 1.0, 3.14, -0.1, 0, 0.2, 0.8 };
+	CombinationApprovals::verifyAllCombinations(
+		[&](auto input1) { return math.Sin(input1); }, inputs );
+}
