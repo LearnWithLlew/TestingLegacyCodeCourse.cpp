@@ -8,19 +8,19 @@ std::string runEverything(double val)
 {
 	TrigMath math;
 	std::stringstream result;
-	result << math.Sin(val) << std::endl;
-	result << math.Asin(val) << std::endl;
-	result << math.Cos(val) << std::endl;
-	result << math.Tan(val) << std::endl;
-	result << math.Csc(val) << std::endl;
-	result << math.Sec(val) << std::endl;
-	result << math.Cot(val) << std::endl;
-	result << math.Acos(val) << std::endl;
-	result << math.Atan(val) << std::endl;
-	result << math.Atan2(val,0.4) << std::endl;
-	result << math.Acsc(val) << std::endl;
-	result << math.Asec(val) << std::endl;
-	result << math.Acot(val) << std::endl;
+	result << "Sin( " << val << " ) = " << math.Sin(val) << std::endl;
+	result << "Asin( " << val << " ) = " << math.Asin(val) << std::endl;
+	result << "Cos( " << val << " ) = " << math.Cos(val) << std::endl;
+	result << "Tan( " << val << " ) = " << math.Tan(val) << std::endl;
+	result << "Csc( " << val << " ) = " << math.Csc(val) << std::endl;
+	result << "Sec( " << val << " ) = " << math.Sec(val) << std::endl;
+	result << "Cot( " << val << " ) = " << math.Cot(val) << std::endl;
+	result << "Acos( " << val << " ) = " << math.Acos(val) << std::endl;
+	result << "Atan( " << val << " ) = " << math.Atan(val) << std::endl;
+	result << "Atan2( "<< val << ", 0.4 ) = " << math.Atan2(val,0.4) << std::endl;
+	result << "Acsc( " << val << " ) = " << math.Acsc(val) << std::endl;
+	result << "Asec( " << val << " ) = " << math.Asec(val) << std::endl;
+	result << "Acot( " << val << " ) = " << math.Acot(val) << std::endl;
 	return result.str();
 }
 

@@ -34,7 +34,7 @@
   * Use std::stringstream
   * Hint: for atan2 , use 0.4 as the second parameter
   * Confirmation: A large `.approved.txt` file with 13 values
-* [ ] Better to-strings, to show function names
+* [x] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
 * [ ] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
