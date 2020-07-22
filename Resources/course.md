@@ -1,7 +1,7 @@
 # Course
 
 ## Testing Functional Code
-
+**In File:** `exercises/exercise1/tests/TrigMathTests.cpp`
 * [ ] Run first test
     * Confirmation: See failure message
 * [ ] Get the test to pass
@@ -22,6 +22,8 @@
     * Code Coverage reached: ______%
 * [ ] Explanations and Retrospective
 
+
+**In File:** `exercises/exercise1/tests/TrigMathApprovalTests.cpp`
 ## Testing with Approvals
 ### Basic ApprovalTests
 * [ ] Basic approval of Sin() and Cos()
@@ -81,6 +83,8 @@
 
 #### System Configuration
 
+**In File:** `exercises/exercise2/tests/SystemConfigurationTests.cpp`
+
 * [ ] Write a Poke test for `initialiseSystem()`
     * Confirmation: Passing test with no verification
 * [ ] Capture the global variable `rpm`
@@ -100,7 +104,7 @@
 * [ ] Retro
 
 #### Adding Logging
-
+**In File:** `exercises/exercise2/tests/LoggingTests.cpp`  
 * [ ] Write a Poke test for Services::initialiseServices()
     * Confirmation: Passing test with no verification
 * [ ] Log all REST calls
@@ -134,7 +138,7 @@
 * [ ] Retro
 
 #### Random
-
+**In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 * [ ] Poke-test getId() in Inconsistent.h
 * [ ] Make getId() testable
 * [ ] Make consistent seed via #ifdef
@@ -146,23 +150,22 @@
 * [ ] Retro
 
 #### Side Effects
-
+**In File:** `exercises/exercise2/tests/SideEffectsTests.cpp`
 * [ ] Poke-test SideEffects::print()
 * [ ] Peel SideEffects::print() to return a string
 * [ ] Peel/slice SideEffects::print() to take a stream
 
 ### Missing Inputs
-
+**In File:** `exercises/exercise2/tests/MissingInputsTests.cpp`
 * [ ] Poke-test MissingInputs::getCategory()
 * [ ] Get it to 100% coverage
 * [ ] Peel to pass in missing inputs 
 
 ### Reduce to functional
-
-* [ ] Slice: Pass in a slice
+**In File:** `exercises/exercise2/tests/LoopTests.cpp`
 * [ ] Separate a loop
     * Have a loop that squares a number and saves it to a file
-    * Turn it in to two loops - one does the calculation, the other saves it to the file
+    * Turn it into two loops - one does the calculation, the other saves it to the file
 
 ### Wrapping Up
 
