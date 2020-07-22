@@ -122,7 +122,7 @@
 
 * [x] Poke-test print() in Inconsistent.h
     * Confirmation: Failing test because of date and time
-* [ ] Scrub Inconsistent::print() for time
+* [x] Scrub Inconsistent::print() for time
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
