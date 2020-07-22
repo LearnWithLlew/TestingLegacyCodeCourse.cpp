@@ -27,6 +27,9 @@ std::string runEverything(double val)
 TEST_CASE("ApprovalTest everything") {
 	Approvals::verify(runEverything(1.0));
 }
+TEST_CASE("ApprovalTest everything PI") {
+	Approvals::verify(runEverything(3.14));
+}
 
 TEST_CASE("ApprovalTest Sin") {
     TrigMath math;

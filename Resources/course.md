@@ -36,7 +36,7 @@
   * Confirmation: A large `.approved.txt` file with 13 values
 * [x] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
-* [ ] Test all methods with input value 3.14
+* [x] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
 ### Verify List of Inputs
 * [ ] Make a single test that tests everything for 1.0 and 3.14
