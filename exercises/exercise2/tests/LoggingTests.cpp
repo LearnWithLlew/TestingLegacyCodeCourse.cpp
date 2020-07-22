@@ -11,6 +11,7 @@ using namespace ApprovalTests;
 
 TEST_CASE("Test initialiseServices")
 {
+	logger.str("");
 	logger.clear();
 	initialiseServices();
 	Approvals::verify(logger.str());
@@ -18,6 +19,7 @@ TEST_CASE("Test initialiseServices")
 
 TEST_CASE("Test initialiseServices 2")
 {
+	logger.str("");
 	logger.clear();
 	initialiseServices();
 	Approvals::verify(logger.str());

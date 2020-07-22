@@ -120,7 +120,7 @@
 
 #### Date and Time
 
-* [ ] Poke-test print() in Inconsistent.h
+* [x] Poke-test print() in Inconsistent.h
     * Confirmation: Failing test because of date and time
 * [ ] Scrub Inconsistent::print() for time
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
