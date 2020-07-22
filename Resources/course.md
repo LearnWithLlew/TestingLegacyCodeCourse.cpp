@@ -42,7 +42,7 @@
 * [ ] Make a single test that tests everything for 1.0 and 3.14
     * Hint: read the docs
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
-* [ ] Test -0.1, 0, 0.2, 0.8 for everything
+* [ ] Add values `-0.1, 0, 0.2, 0.8` to your tests for everything
     * Confirmation: Everything except Atan2 should be covered
 ### Seeing Failures
 * [ ] Improve the precision of PI
@@ -53,9 +53,9 @@
 * [ ] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
 ### Combinations of Inputs
-* [ ] Combination approvals - for one input
+* [ ] Combination approvals - Test `sin()` for the inputs `{1.0, 3.14, -0.1, 0, 0.2, 0.8}`
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
-* [ ] Combination approvals - for multiple inputs
+* [ ] Combination approvals - Test `Atan2` for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
 
 ### Finishing Off
@@ -81,9 +81,11 @@
 
 #### System Configuration
 
-* [ ] Write a Poke test
+* [ ] Write a Poke test for `initialiseSystem()`
     * Confirmation: Passing test with no verification
-* [ ] Capture all global variables
+* [ ] Capture the global variable `rpm`
+    * Confirmation: Your approval shows the ending values rpm
+* [ ] Capture all global variables 
     * Hint: `#define PRINT(x) #x" = " << x`
     * Confirmation: Your approval shows the ending values of all 10 global variables
 * [ ] Capture all starting state of global variables as well
