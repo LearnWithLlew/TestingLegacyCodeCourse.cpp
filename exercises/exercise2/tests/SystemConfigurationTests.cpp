@@ -26,6 +26,16 @@ std::string getGlobalVariablesState()
 	
 }
 
+std::string captureGlobalVariables()
+{
+	std::stringstream result;
+	result << "setGlobalVars(" << rpm <<
+		", " << dt << ", " << x << ", " << y << ", "
+		<< z << ", " << x_mph << ", " << y_mph << ", " <<
+		z_mph << ", " << gravity << ", " << y_torque << ");";
+	return result.str();
+}
+
 void setGlobalVars(int newRpm, 
 					double newDt, 
 					double newX, 
@@ -68,4 +78,5 @@ TEST_CASE("Test System Configuration No Gravity")
 
 TEST_CASE("generate code")
 {
+	std::cout << captureGlobalVariables() << std::endl;
 }
