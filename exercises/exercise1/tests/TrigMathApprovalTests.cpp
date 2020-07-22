@@ -57,3 +57,10 @@ TEST_CASE("CombinationVerifyAll Sin")
 	CombinationApprovals::verifyAllCombinations(
 		[&](auto input1) { return math.Sin(input1); }, inputs );
 }
+TEST_CASE("CombinationVerifyAll Atan2")
+{
+	TrigMath math;
+	std::vector<double> inputs1{ 1.0, 3.14, -0.1, 0, 0.2, 0.8 };
+	CombinationApprovals::verifyAllCombinations(
+		[&](auto input1, auto input2) { return math.Atan2(input1, input2); }, inputs1, inputs1 );
+}

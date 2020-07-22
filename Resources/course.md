@@ -55,11 +55,11 @@
 ### Combinations of Inputs
 * [x] Combination approvals - for one input
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
-* [ ] Combination approvals - for multiple inputs
+* [x] Combination approvals - for multiple inputs
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
 
 ### Finishing Off
-* [ ] Explanations and Retrospective
+* [x] Explanations and Retrospective
 
 ### Extra Credit:
 
@@ -81,12 +81,12 @@
 
 #### System Configuration
 
-* [ ] Write a Poke test
+* [x] Write a Poke test
     * Confirmation: Passing test with no verification
-* [ ] Capture all global variables
+* [x] Capture all global variables
     * Hint: `#define PRINT(x) #x" = " << x`
     * Confirmation: Your approval shows the ending values of all 10 global variables
-* [ ] Capture all starting state of global variables as well
+* [x] Capture all starting state of global variables as well
     * Confirmation: Your approval shows the starting and ending values
 * [ ] Write a second test
     * Confirmation: Both tests pass
