@@ -2,9 +2,9 @@
 
 ## Testing Functional Code
 
-* [ ] Run first test
+* [X] Run first test
     * Confirmation: See failure message
-* [ ] Get the test to pass
+* [X] Get the test to pass
     * Confirmation: See green result
 * [ ] Test Asin() completely
     * [ ] Write a new test for Asin()
