@@ -7,10 +7,10 @@
 * [X] Get the test to pass
     * Confirmation: See green result
 * [ ] Test Asin() completely
-    * [ ] Write a new test for Asin()
-    * [ ] Check coverage of Asin() with break points
-        * [ ] Add a breakpoint on every line of Asin()
-        * [ ] Remove breakpoint when hit
+    * [x] Write a new test for Asin()
+    * [x] Check coverage of Asin() with break points
+        * [x] Add a breakpoint on every line of Asin()
+        * [x ] Remove breakpoint when hit
         * Confirmation: No more breakpoints in Asin()
     * [ ] Install OpenCppCoverage in Visual Studio
         * Confirmation: Visual Studio's Tools menu has "Run OpenCppCoverage"
