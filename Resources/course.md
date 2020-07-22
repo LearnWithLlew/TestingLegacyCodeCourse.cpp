@@ -23,9 +23,11 @@
 * [ ] Explanations and Retrospective
 
 
-**In File:** `exercises/exercise1/tests/TrigMathApprovalTests.cpp`
 ## Testing with Approvals
 ### Basic ApprovalTests
+
+**In File:** `exercises/exercise1/tests/TrigMathApprovalTests.cpp`
+
 * [ ] Basic approval of Sin() and Cos()
     * Confirmation:
         * a diff tool opened
@@ -47,10 +49,10 @@
 * [ ] Add values `-0.1, 0, 0.2, 0.8` to your tests for everything
     * Confirmation: Everything except Atan2 should be covered
 ### Seeing Failures
-* [ ] Improve the precision of PI
+* [ ] Improve the precision of `PI`
     * Hint: Use `M_PI`
     * Confirmation: Later digits in the results are different; tests are passing 
-* [ ] Turn on IMPROVEMENT_2
+* [ ] Turn on `IMPROVEMENT_2`
     * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
 * [ ] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
@@ -114,6 +116,7 @@
 * [ ] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
 * [ ] Allow multiple tests
+    * Hint: logger.str("")
     * Confirmation: Tests pass when run together AND individually
 * [ ] Retro
 
