@@ -20,7 +20,7 @@
 * [x] Test TrigMath completely
     * Confirmation: See 100% coverage of the code
     * Code Coverage reached: 76%
-* [ ] Explanations and Retrospective
+* [x] Explanations and Retrospective
 
 ## Testing with Approvals
 ### Basic ApprovalTests
