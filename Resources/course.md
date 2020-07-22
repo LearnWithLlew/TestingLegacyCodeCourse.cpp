@@ -102,21 +102,21 @@
     * Confirmation: Passing test with no verification
 * [x] Log all REST calls
     * Confirmation: You can see all 6 calls and results
-* [ ] Turn on SECURE
+* [x] Turn on SECURE
     * Confirmation: Your tests no longer work
-* [ ] Make a preprocessor seam to log if testing
+* [x] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
-* [ ] Allow multiple tests
+* [x] Allow multiple tests
     * Confirmation: Tests pass when run together AND individually
-* [ ] Retro
+* [x] Retro
 
 #### Files
 
-* [ ] Retro
+* [x] Retro
 
 #### Database
 
-* [ ] Retro
+* [x] Retro
 
 #### Date and Time
 

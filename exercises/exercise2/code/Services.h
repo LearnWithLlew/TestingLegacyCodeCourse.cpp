@@ -5,13 +5,17 @@
 
 #include "third_party_code.h"
 
+#ifdef LOGGING_TEST
 std::stringstream logger;
+#endif
 
 int RestCall(std::string url, std::string action, int key)
 {
+	#ifdef LOGGING_TEST
     logger << "RestCall: url:" << url << "," << "action:" << action << "," << "key:" << key << std::endl;
+    return 200;
+	#endif
     int result =_third_party_code_::rest_call(url, action, key);
-    logger << "result: " << result << std::endl;
     return result;
 }
 
