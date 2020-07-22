@@ -108,7 +108,7 @@
 * [ ] Write a Poke test for Services::initialiseServices()
     * Confirmation: Passing test with no verification
 * [ ] Log all REST calls
-    * Confirmation: You can see all 6 calls and results
+    * Confirmation: You can see all 5 calls and results
 * [ ] Turn on SECURE
     * Confirmation: Your tests no longer work
 * [ ] Make a preprocessor seam to log if testing
