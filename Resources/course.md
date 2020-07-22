@@ -92,10 +92,11 @@
     * Confirmation: Your approval shows the starting and ending values
 * [ ] Write a second test
     * Confirmation: Both tests pass
-* [ ] Make and use a function to set the global variables
+* [ ] Make and use a function to set the global variables and use it.
+    * Hint: `setAllGlobals(....)`
     * Confirmation: Tests pass when run together AND individually
 * [ ] Make a function to write the code to set the global variables
-    * Confirmation: You can copy the C++ code from standard output in to Visual Studio
+    * Confirmation: You can copy the C++ code from standard output into Visual Studio
 * [ ] Retro
 
 #### Adding Logging
