@@ -25,7 +25,7 @@ choco install -y git github-desktop
 
 # -------------------------------------------------------
 # Diff Tools
-choco install -y beyondcompare araxismerge
+choco install -y beyondcompare
 
 # -------------------------------------------------------
 # IDEs and editors
