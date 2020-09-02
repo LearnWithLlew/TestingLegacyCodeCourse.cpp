@@ -1,4 +1,4 @@
-// ApprovalTests.cpp version v.10.2.0
+// ApprovalTests.cpp version v.10.3.0
 // More information at: https://github.com/approvals/ApprovalTests.cpp
 
 //----------------------------------------------------------------------
@@ -21,9 +21,9 @@
 // ******************** From: ApprovalTestsVersion.h
 
 #define APPROVAL_TESTS_VERSION_MAJOR 10
-#define APPROVAL_TESTS_VERSION_MINOR 2
+#define APPROVAL_TESTS_VERSION_MINOR 3
 #define APPROVAL_TESTS_VERSION_PATCH 0
-#define APPROVAL_TESTS_VERSION_STR "10.2.0"
+#define APPROVAL_TESTS_VERSION_STR "10.3.0"
 
 #define APPROVAL_TESTS_VERSION                                                           \
     (APPROVAL_TESTS_VERSION_MAJOR * 10000 + APPROVAL_TESTS_VERSION_MINOR * 100 +         \
@@ -1522,18 +1522,18 @@ namespace ApprovalTests
         }
         ///@}
 
-        /**@name Verifying containers of objects
+        /**@name Verifying containers of objects - supplying an iterator range
 
          See \userguide{TestingContainers,Testing Containers}
          */
         ///@{
         template <typename Iterator>
-        static void verifyAll(
-            const std::string& header,
-            const Iterator& start,
-            const Iterator& finish,
-            std::function<void(typename Iterator::value_type, std::ostream&)> converter,
-            const Options& options = Options())
+        static void
+        verifyAll(const std::string& header,
+                  const Iterator& start,
+                  const Iterator& finish,
+                  std::function<void(decltype(*start), std::ostream&)> converter,
+                  const Options& options = Options())
         {
             std::stringstream s;
             if (!header.empty())
@@ -1547,7 +1547,13 @@ namespace ApprovalTests
             }
             verify(s.str(), options);
         }
+        ///@}
 
+        /**@name Verifying containers of objects - supplying a container
+
+         See \userguide{TestingContainers,Testing Containers}
+         */
+        ///@{
         template <typename Container>
         static void verifyAll(
             const std::string& header,
@@ -1559,27 +1565,58 @@ namespace ApprovalTests
                 header, list.begin(), list.end(), converter, options);
         }
 
-        template <typename T>
+        template <typename Container>
         static void verifyAll(const std::string& header,
-                              const std::vector<T>& list,
+                              const Container& list,
                               const Options& options = Options())
         {
             int i = 0;
-            verifyAll<std::vector<T>>(
+            verifyAll<Container>(
                 header,
                 list,
-                [&](T e, std::ostream& s) {
+                [&](typename Container::value_type e, std::ostream& s) {
                     s << "[" << i++
                       << "] = " << TCompileTimeOptions::ToStringConverter::toString(e);
                 },
                 options);
         }
 
+        template <typename Container>
+        static void verifyAll(const Container& list, const Options& options = Options())
+        {
+            verifyAll<Container>("", list, options);
+        }
+        ///@}
+
+        /**@name Verifying containers of objects - supplying an initializer list
+
+         See \userguide{TestingContainers,Testing Containers}
+         */
+        ///@{
         template <typename T>
-        static void verifyAll(const std::vector<T>& list,
+        static void
+        verifyAll(const std::string& header,
+                  const std::initializer_list<T>& list,
+                  std::function<void(typename std::initializer_list<T>::value_type,
+                                     std::ostream&)> converter,
+                  const Options& options = Options())
+        {
+            verifyAll<std::initializer_list<T>>(header, list, converter, options);
+        }
+
+        template <typename T>
+        static void verifyAll(const std::string& header,
+                              const std::initializer_list<T>& list,
                               const Options& options = Options())
         {
-            verifyAll<T>("", list, options);
+            verifyAll<std::initializer_list<T>>(header, list, options);
+        }
+
+        template <typename T>
+        static void verifyAll(const std::initializer_list<T>& list,
+                              const Options& options = Options())
+        {
+            verifyAll<std::initializer_list<T>>("", list, options);
         }
         ///@}
 
@@ -2748,15 +2785,17 @@ namespace ApprovalTests
         createTm(int year, int month, int day, int hour, int minute, int second);
 
         static std::chrono::system_clock::time_point
-        createDateTime(int year, int month, int day, int hour, int minute, int second);
-
-        static time_t toUTC(std::tm& timeinfo);
+        createUtcDateTime(int year, int month, int day, int hour, int minute, int second);
 
         static std::string toString(const std::chrono::system_clock::time_point& dateTime,
                                     const std::string& format);
 
         static std::string
         toString(const std::chrono::system_clock::time_point& dateTime);
+
+        static time_t toUtc(std::tm& timeinfo);
+
+        static tm toUtc(time_t& tt);
     };
 }
 
@@ -4742,10 +4781,10 @@ namespace ApprovalTests
         Scrubber createRegexScrubber(const std::string& regexString,
                                      const std::string& replacementText)
         {
-        	if (regexString.empty() )
-        	{
+            if (regexString.empty())
+            {
                 return doNothing;
-        	}
+            }
             return createRegexScrubber(std::regex(regexString), replacementText);
         }
 
@@ -4790,26 +4829,16 @@ namespace ApprovalTests
     }
 
     std::chrono::system_clock::time_point
-    DateUtils::createDateTime(int year,
-                              int month,
-                              int day,
-                              int hour,
-                              int minute,
-                              int second) // these are UTC values
+    DateUtils::createUtcDateTime(int year,
+                                 int month,
+                                 int day,
+                                 int hour,
+                                 int minute,
+                                 int second) // these are UTC values
     {
         tm timeinfo = createTm(year, month, day, hour, minute, second);
-        time_t tt = toUTC(timeinfo);
+        time_t tt = toUtc(timeinfo);
         return std::chrono::system_clock::from_time_t(tt);
-    }
-
-    time_t DateUtils::toUTC(std::tm& timeinfo)
-    {
-#ifdef _WIN32
-        std::time_t tt = _mkgmtime(&timeinfo);
-#else
-        time_t tt = timegm(&timeinfo);
-#endif
-        return tt;
     }
 
     std::string DateUtils::toString(const std::chrono::system_clock::time_point& dateTime)
@@ -4820,13 +4849,31 @@ namespace ApprovalTests
     std::string DateUtils::toString(const std::chrono::system_clock::time_point& dateTime,
                                     const std::string& format)
     {
-        std::string result;
         time_t tt = std::chrono::system_clock::to_time_t(dateTime);
-        tm tm = *gmtime(&tt); // GMT (UTC)
-        std::stringstream ss;
-        ss << std::put_time(&tm, format.c_str());
-        result = ss.str();
-        return result;
+        tm tm_value = toUtc(tt);
+
+        return StringUtils::toString(std::put_time(&tm_value, format.c_str()));
+    }
+
+    time_t DateUtils::toUtc(std::tm& timeinfo)
+    {
+#ifdef _WIN32
+        std::time_t tt = _mkgmtime(&timeinfo);
+#else
+        time_t tt = timegm(&timeinfo);
+#endif
+        return tt;
+    }
+
+    tm DateUtils::toUtc(time_t& tt)
+    {
+#ifdef _MSC_VER // Visual Studio compiler
+        std::tm tm_value = {};
+        gmtime_s(&tm_value, &tt);
+#else
+        tm tm_value = *gmtime(&tt);
+#endif
+        return tm_value;
     }
 }
 
