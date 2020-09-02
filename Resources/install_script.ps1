@@ -17,6 +17,8 @@ choco install -y --ignore-checksums anydesk
 start C:\ProgramData\chocolatey\lib\anydesk.portable\tools\
 Write-Host -Foreground yellow "Pin AnyDesk to Task Bar - and add short cut to desktop"
 
+$ProgressPreference = 'SilentlyContinue'
+
 $mobtimeVersion = '1.7.4'
 iwr https://github.com/GreatWebGuy/MobTime/releases/download/v$mobtimeVersion/MobTime-$mobtimeVersion.msi -O MobTime.msi
 ./MobTime.msi /qr
