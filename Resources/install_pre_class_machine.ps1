@@ -11,7 +11,12 @@ choco feature disable -n=showDownloadProgress
 
 # -------------------------------------------------------
 #install common tools
-choco install -y win-no-annoy anydesk notepadplusplus
+choco install -y win-no-annoy notepadplusplus
+
+choco install -y --ignore-checksums anydesk
+start C:\ProgramData\chocolatey\lib\anydesk.portable\tools\
+Write-Host -Foreground yellow "Pin AnyDesk to Task Bar - and add short cut to desktop"
 
 # Done
+Write-Host ""
 Write-Host -Foreground yellow "Reboot when done"
