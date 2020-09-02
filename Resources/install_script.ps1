@@ -34,7 +34,7 @@ choco install -y git github-desktop
 
 # -------------------------------------------------------
 # Diff Tools
-choco install -y beyondcompare
+choco install -y beyondcompare tortoisesvn
 
 # -------------------------------------------------------
 # IDEs and editors
