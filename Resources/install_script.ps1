@@ -67,8 +67,8 @@ choco install -y ninja conan
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/claremacrae/talks.git C:\Code\CourseResources
 
 #Set desktop background image
- set-itemproperty -path "HKCU:Control Panel\Desktop" -name WallPaper -value c:\Code\TestingLegacyCodeCourse.cpp\Resources\desktop_background_dark.png
- RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True
+set-itemproperty -path "HKCU:Control Panel\Desktop" -name WallPaper -value c:\Code\TestingLegacyCodeCourse.cpp\Resources\desktop_background_dark.png
+RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True
 
 # Done
 # cls
