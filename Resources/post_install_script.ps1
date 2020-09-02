@@ -7,27 +7,25 @@
 
 # -------------------------------------------------------
 # Install Visual Studio plugins
-# TODO https://stackoverflow.com/questions/30574829/how-to-install-visual-studio-gallery-extensions-from-command-line
 
-# TODO Install these VS extensions manually
-# https://stackoverflow.com/questions/30574829/how-to-install-visual-studio-gallery-extensions-from-command-line
-# Extensions to install:
-#  Auto Save:
-#    https://marketplace.visualstudio.com/items?itemName=HangjitRai.AutoSaveFile
-#  Markdown Editor:
-#    https://github.com/madskristensen/MarkdownEditor
-#  Catch2 test adapter:
-#    https://marketplace.visualstudio.com/items?itemName=JohnnyHendriks.ext01
-#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/JohnnyHendriks/vsextensions/ext01/1.5.1/vspackage
-#  OpenCppCoverage
-#    https://marketplace.visualstudio.com/items?itemName=OpenCppCoverage.OpenCppCoveragePlugin
-#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/OpenCppCoverage/vsextensions/OpenCppCoveragePlugin/0.9.7.1/vspackage
-#  VSColorOutput
-#    https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput
-#    https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MikeWard-AnnArbor/vsextensions/VSColorOutput/2.71/vspackage
+# Auto Save: https://marketplace.visualstudio.com/items?itemName=HangjitRai.AutoSaveFile
+iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/HRai/vsextensions/AutoSaveFile/2.4/vspackage -O AutoSaveFile.vsix
 
-# Cannot get OpenCppCoverage working - logged an issue:
-#  https://github.com/OpenCppCoverage/OpenCppCoveragePlugin/issues/38
+# Markdown Editor: https://github.com/madskristensen/MarkdownEditor
+iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MadsKristensen/vsextensions/MarkdownEditor/1.12.253/vspackage -O MarkdownEditor.vsix
+
+# Catch2 test adapter:  https://marketplace.visualstudio.com/items?itemName=JohnnyHendriks.ext01
+iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/JohnnyHendriks/vsextensions/ext01/1.5.1/vspackage -O Catch2TestAdapter.vsix
+
+# VSColorOutput: https://marketplace.visualstudio.com/items?itemName=MikeWard-AnnArbor.VSColorOutput
+iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MikeWard-AnnArbor/vsextensions/VSColorOutput/2.71/vspackage -O VSColorOutput.vsix
+
+# OpenCppCoverage: https://marketplace.visualstudio.com/items?itemName=OpenCppCoverage.OpenCppCoveragePlugin
+# This will be installed by students during the course
+# iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/OpenCppCoverage/vsextensions/OpenCppCoveragePlugin/0.9.7.1/vspackage -O OpenCppCoverage.vsix
+
+start .
+Write-Host -Foreground yellow "Run and install *.vsix"
 
 # -------------------------------------------------------
 # Set up build spaces
