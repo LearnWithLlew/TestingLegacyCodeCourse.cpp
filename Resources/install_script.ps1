@@ -11,7 +11,7 @@ choco feature disable -n=showDownloadProgress
 
 # -------------------------------------------------------
 #install common tools
-choco install -y vscode win-no-annoy googlechrome notepadplusplus adobereader
+choco install -y vscode win-no-annoy googlechrome notepadplusplus adobereader microsoft-teams
 
 choco install -y --ignore-checksums anydesk
 start C:\ProgramData\chocolatey\lib\anydesk.portable\tools\
