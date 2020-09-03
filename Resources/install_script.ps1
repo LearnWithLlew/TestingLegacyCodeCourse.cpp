@@ -72,4 +72,4 @@ RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True
 
 # Done
 # cls
-echo "Done!"
+Write-Host -Foreground yellow "Reboot when done"
