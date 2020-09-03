@@ -7,7 +7,7 @@ set(SOURCE_FILES
         # including the header files here is a hack to get
         # OpenCppCoverage to show the coverage in the headers
         ../code/TrigMath.h
-        )
+        ValidateDevelopmentEnvironment.cpp)
 add_executable(exercise1_tests ${SOURCE_FILES} )
 target_link_libraries(exercise1_tests exercise1_library Catch2::Catch2 ApprovalTests::ApprovalTests)
 
