@@ -29,7 +29,12 @@ Do these:
     * Answer initial setup questions
     * Open "C:\Code\TestingLegacyCodeCourse.cpp\cmake-build-vs2019-x64\legacy_code_course.sln"
     * Change VSColour output to "I have donated" (Clare has donated)
+    * Startup is set to "Most recent solution"
+    * Only the course.md file is open in Visual Studio
 * Install PowerPoint - via Clare's work Microsoft 365 subscription
+    * Set the number of recent files to show to 0
+    * https://www.howtogeek.com/141490/how-to-clear-the-recent-documents-list-in-word-2013/
+    * Uninstall OneDrive
 * Log in to accounts
     * MindMup - with a non-admin account?
 
