@@ -28,6 +28,10 @@ Do these:
 * Run Visual Studio
     * Answer initial setup questions
     * Open "C:\Code\TestingLegacyCodeCourse.cpp\cmake-build-vs2019-x64\legacy_code_course.sln"
+    * Change VSColour output to "I have donated" (Clare has donated)
+* Install PowerPoint - via Clare's work Microsoft 365 subscription
+* Log in to accounts
+    * MindMup - with a non-admin account?
 
 Do one of:
 * Run Any Desk
