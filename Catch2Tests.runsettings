@@ -2,5 +2,6 @@
 <RunSettings>
     <Catch2Adapter>
         <FilenameFilter>.*_tests.*</FilenameFilter>
+        <DiscoverCommandLine>--verbosity high --list-tests *</DiscoverCommandLine>
     </Catch2Adapter>
 </RunSettings>
