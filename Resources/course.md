@@ -1,8 +1,13 @@
 # Course
 
 ## Testing Functional Code
+**In File:** `exercises/exercise1/tests/ValidateDevelopmentEnvironment.cpp`
+* [ ] Validate environment
+    * [ ] Run the test
+    * [ ] Fix the test
 **In File:** `exercises/exercise1/tests/TrigMathTests.cpp`
 * [ ] Run first test
+    * [ ] Uncomment the REQUIRE line
     * Confirmation: See failure message
 * [ ] Get the test to pass
     * Confirmation: See green result
