@@ -5,6 +5,6 @@ TEST_CASE("Validate Development Environment")
   // When you run this test the first time, it should fail.
   // After that, please change the strings to match.
   // It should then pass.
-  std::string input = "it does not work";
+  std::string input = "it works";
   REQUIRE(input == "it works");
 }
