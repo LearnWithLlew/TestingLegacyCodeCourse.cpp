@@ -2,19 +2,19 @@
 
 ## Testing Functional Code
 **In File:** `exercises/exercise1/tests/TrigMathTests.cpp`
-* [ ] Run first test
+* [x] Run first test
     * Confirmation: See failure message
-* [ ] Get the test to pass
+* [x] Get the test to pass
     * Confirmation: See green result
 * [ ] Test Asin() completely
-    * [ ] Write a new test for Asin()
-    * [ ] Check coverage of Asin() with break points
-        * [ ] Add a breakpoint on every line of Asin()
-        * [ ] Remove breakpoint when hit
+    * [x] Write a new test for Asin()
+    * [x] Check coverage of Asin() with break points
+        * [x] Add a breakpoint on every line of Asin()
+        * [x] Remove breakpoint when hit
         * Confirmation: No more breakpoints in Asin()
-    * [ ] Install OpenCppCoverage in Visual Studio
+    * [x] Install OpenCppCoverage in Visual Studio
         * Confirmation: Visual Studio's Tools menu has "Run OpenCppCoverage"
-    * [ ] Run test coverage
+    * [x] Run test coverage
         * Confirmation: See what areas of TrigMath.cpp are green (covered)
     * Confirmation: See 100% coverage of the Asin() method
 * [ ] Test TrigMath completely
