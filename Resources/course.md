@@ -85,6 +85,11 @@
 
 #### System Configuration
 
+**In File:** `exercises/exercise2/tests/ValidateDevelopmentEnvironment.cpp`
+* [ ] Validate environment
+    * [ ] Run the test
+    * [ ] Fix the test
+
 **In File:** `exercises/exercise2/tests/SystemConfigurationTests.cpp`
 
 * [ ] Write a Poke test for `initialiseSystem()`
