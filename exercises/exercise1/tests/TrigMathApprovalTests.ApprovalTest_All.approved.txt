@@ -1,0 +1,88 @@
+TITLE
+
+
+1 => Cos: 0.828843
+Sin: 0.097045
+Asin: 1.57075
+Acos: 0
+Acot: 0.785375
+Acsc: 1.57075
+Asec: 0
+Atan: 0.785375
+Atan2: 1.19024
+Cot: 8.54081
+Csc: 10.3045
+Sec: 1.2065
+Tan: 0.117085
+
+3.14 => Cos: -0.866633
+Sin: 0.866976
+Asin: -nan(ind)
+Acos: -nan(ind)
+Acot: 0.308316
+Acsc: 0.324116
+Asec: 1.24663
+Atan: 1.26243
+Atan2: 1.44404
+Cot: -0.999604
+Csc: 1.15343
+Sec: -1.15389
+Tan: -1.0004
+
+-0.1 => Cos: 0.033231
+Sin: -0.0979798
+Asin: -0.100167
+Acos: 1.67092
+Acot: 1.67042
+Acsc: nan
+Asec: -nan(ind)
+Atan: -0.0996687
+Atan2: -0.244979
+Cot: -0.339161
+Csc: -10.2062
+Sec: 30.0924
+Tan: -2.94845
+
+0 => Cos: 0.00854478
+Sin: 0
+Asin: 0
+Acos: 1.57075
+Acot: -nan(ind)
+Acsc: -nan(ind)
+Asec: -nan(ind)
+Atan: 0
+Atan2: 0
+Cot: inf
+Csc: inf
+Sec: 117.031
+Tan: 0
+
+0.2 => Cos: 0.0977954
+Sin: 0.065234
+Asin: 0.201358
+Acos: 1.36939
+Acot: 1.37335
+Acsc: -nan(ind)
+Asec: -nan(ind)
+Atan: 0.197396
+Atan2: 0.463624
+Cot: 1.49915
+Csc: 15.3294
+Sec: 10.2254
+Tan: 0.667046
+
+0.8 => Cos: 0.867602
+Sin: 0.00980132
+Asin: 0.927272
+Acos: 0.643478
+Acot: 0.896032
+Acsc: -nan(ind)
+Asec: -nan(ind)
+Atan: 0.674718
+Atan2: 1.10713
+Cot: 88.5188
+Csc: 102.027
+Sec: 1.1526
+Tan: 0.011297
+
+

@@ -1,0 +1,14 @@
+Cos: -0.866633
+Sin: 0.866976
+Asin: -nan(ind)
+Acos: -nan(ind)
+Acot: 0.308316
+Acsc: 0.324116
+Asec: 1.24663
+Atan: 1.26243
+Atan2: 1.44404
+Cot: -0.999604
+Csc: 1.15343
+Sec: -1.15389
+Tan: -1.0004
+

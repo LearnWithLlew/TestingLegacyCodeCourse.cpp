@@ -38,14 +38,14 @@
         * a diff tool opened
         * 2 `.approved.txt` files in source control
         * tests are passing
-* [ ] Create a function that tests all 13 methods in TrigMath for one value, 1.0 -    
+* [X] Create a function that tests all 13 methods in TrigMath for one value, 1.0 -    
   `Approvals::verify(runEverything(1.0))`
   * Use std::stringstream
   * Hint: for atan2 , use 0.4 as the second parameter
   * Confirmation: A large `.approved.txt` file with 13 values
-* [ ] Better to-strings, to show function names
+* [X] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
-* [ ] Test all methods with input value 3.14
+* [X] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
 ### Verify List of Inputs
 * [ ] Make a single test that tests everything for 1.0 and 3.14
