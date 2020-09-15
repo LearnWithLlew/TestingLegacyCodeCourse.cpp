@@ -33,7 +33,7 @@
 
 **In File:** `exercises/exercise1/tests/TrigMathApprovalTests.cpp`
 
-* [ ] Basic approval of Sin() and Cos()
+* [X] Basic approval of Sin() and Cos()
     * Confirmation:
         * a diff tool opened
         * 2 `.approved.txt` files in source control
