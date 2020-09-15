@@ -21,23 +21,32 @@ TEST_CASE("ApprovalTest Cos") {
     Approvals::verify(result);
 }
 
+#define PRINT(Func) ss << #Func"(" <<num << ") " << math.Func(num) << '\n'
+#define PRINT1(Func) PRINT(num)
+#define PRINT2(Func) PRINT1(num,num2)
+
 std::string runEverything(double num)
 {
     TrigMath math;
     std::stringstream ss;
-    ss << "Cos: " << math.Cos(num) << '\n';
-    ss << "Sin: " << math.Sin(num) << '\n';
-    ss << "Asin: " << math.Asin(num) << '\n';
-    ss << "Acos: " << math.Acos(num) << '\n';
-    ss << "Acot: " << math.Acot(num) << '\n';
-    ss << "Acsc: " << math.Acsc(num) << '\n';
-    ss << "Asec: " << math.Asec(num) << '\n';
-    ss << "Atan: " << math.Atan(num) << '\n';
-    ss << "Atan2: " << math.Atan2(num,0.4) << '\n';
-    ss << "Cot: " << math.Cot(num) << '\n';
-    ss << "Csc: " << math.Csc(num) << '\n';
-    ss << "Sec: " << math.Sec(num) << '\n';
-    ss << "Tan: " << math.Tan(num) << '\n';
+
+    /*const auto runOne = [&](std::string name, double(TrigMath::*func)(double)) {
+        ss << name << "(" << num << ") " << answer << '\n';
+    };*/
+
+    PRINT(Cos);
+    ss << "Sin(" << num << ") " << math.Sin(num) << '\n';
+    ss << "Asin: (" << num << ") " << math.Asin(num) << '\n';
+    ss << "Acos: (" << num << ") " << math.Acos(num) << '\n';
+    ss << "Acot: (" << num << ") " << math.Acot(num) << '\n';
+    ss << "Acsc: (" << num << ") " << math.Acsc(num) << '\n';
+    ss << "Asec: (" << num << ") " << math.Asec(num) << '\n';
+    ss << "Atan: (" << num << ") " << math.Atan(num) << '\n';
+    ss << "Atan2: (" << num << ") " << math.Atan2(num,0.4) << '\n';
+    ss << "Cot: (" << num << ") " << math.Cot(num) << '\n';
+    ss << "Csc: (" << num << ") " << math.Csc(num) << '\n';
+    ss << "Sec: (" << num << ") " << math.Sec(num) << '\n';
+    ss << "Tan: (" << num << ") " << math.Tan(num) << '\n';
 
     return ss.str();
 }
@@ -54,7 +63,7 @@ TEST_CASE("ApprovalTest Everything 3.14")
 
 TEST_CASE("ApprovalTest All")
 {
-    std::vector<double> inputs{ 1.0, 3.14 , -0.1, 0, 0.2, 0.8 };
+    std::vector<double> inputs{ 1.0, 3.14, -0.1, 0, 0.2, 0.8 };
     Approvals::verifyAll("TITLE", inputs, [](auto input, auto& stream) {
         stream << input << " => "
             << runEverything(input);

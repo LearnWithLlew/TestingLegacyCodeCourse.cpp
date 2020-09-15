@@ -48,16 +48,16 @@
 * [X] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
 ### Verify List of Inputs
-* [ ] Make a single test that tests everything for 1.0 and 3.14
+* [X] Make a single test that tests everything for 1.0 and 3.14
     * Hint: read the docs
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
-* [ ] Add values `-0.1, 0, 0.2, 0.8` to your tests for everything
+* [X] Add values `-0.1, 0, 0.2, 0.8` to your tests for everything
     * Confirmation: Everything except Atan2 should be covered
 ### Seeing Failures
-* [ ] Improve the precision of `PI`
+* [X] Improve the precision of `PI`
     * Hint: Use `M_PI`
     * Confirmation: Later digits in the results are different; tests are passing 
-* [ ] Turn on `IMPROVEMENT_2`
+* [x] Turn on `IMPROVEMENT_2`
     * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
 * [ ] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
@@ -68,7 +68,7 @@
     * Confirmation: You have tested `Atan2` with a range of values for both arguments
 
 ### Finishing Off
-* [ ] Explanations and Retrospective
+* [x] Explanations and Retrospective
 
 ### Extra Credit:
 
