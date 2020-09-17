@@ -33,6 +33,7 @@
     * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
 * [ ] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`
+    * If using macros: `#define PRINT(x) #x" = " << x`
 ### Combinations of Inputs
 * [ ] Combination approvals - Test `Sin()` for the inputs `{1.0, 3.14, -0.1, 0, 0.2, 0.8}`
     * Confirmation: You should have a `CombinationApprovals::verifyAllCombinations()` call
