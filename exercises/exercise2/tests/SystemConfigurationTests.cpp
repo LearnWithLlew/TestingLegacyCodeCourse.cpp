@@ -59,12 +59,18 @@ void setGlobalVars(int newRpm,
 	y_torque = newYTorque;
 }
 
+std::string start(int rpm) {
+    setGlobalVars(rpm, 0.01, 0, 0, 0, 1, 2, 3, true, 3.2);
+    const auto before = getGlobalVariablesState();
+    initialiseSystem();
+    const std::string both = before + "\n" + getGlobalVariablesState();
+    return both;
+}
+
 TEST_CASE("Test System Configuration 1")
 {
-	setGlobalVars(4000, 0.01, 0, 0, 0, 1, 2, 3, true, 3.2);
-	const auto before = getGlobalVariablesState();
-	initialiseSystem();
-	Approvals::verify(before + "\n" + getGlobalVariablesState());
+    std::string both = start(4000);
+    Approvals::verify(both);
 }
 
 TEST_CASE("Test System Configuration No Gravity")
