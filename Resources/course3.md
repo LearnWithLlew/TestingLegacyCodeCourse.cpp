@@ -33,7 +33,7 @@
 
 #### Adding Logging
 **In File:** `exercises/exercise2/tests/LoggingTests.cpp`  
-* [ ] Write a Poke test for Services.h's initialiseServices()
+* [ ] Write a Poke test for Services.h's `initialiseServices()`
     * Confirmation: Passing test with no verification
 * [ ] Log all REST calls
     * Confirmation: You can see all 5 calls and results
@@ -42,7 +42,7 @@
 * [ ] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
 * [ ] Allow multiple tests
-    * Hint: logger.str("")
+    * Hint: `logger.str("")`
     * Confirmation: Tests pass when run together AND individually
 * [ ] Retro
 
