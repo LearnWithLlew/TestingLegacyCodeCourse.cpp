@@ -13,6 +13,24 @@ double y_mph = 2;
 double z_mph = 3;
 bool gravity = true;
 double y_torque = 3.2;
+std::string generateCode()
+{
+    std::stringstream out;
+
+    out << "setAllGlobals("
+        << rpm << ", "
+        << dt << ", "
+        << x << ", "
+        << y << ", "
+        << z << ", "
+        << x_mph << ", "
+        << y_mph << ", "
+        << z_mph << ", "
+        << gravity << ", "
+        << y_torque << ");" << std::endl;
+
+    return out.str();
+}
 
 void initialiseSystem()
 {
@@ -36,5 +54,6 @@ void initialiseSystem()
             x += dt * dx;
             y += dt * dy;
         }
+       
     }
 }

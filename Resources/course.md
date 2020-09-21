@@ -86,24 +86,24 @@
 #### System Configuration
 
 **In File:** `exercises/exercise2/tests/ValidateDevelopmentEnvironment.cpp`
-* [ ] Validate environment
-    * [ ] Run the test
-    * [ ] Fix the test
+* [x] Validate environment
+    * [x] Run the test
+    * [x] Fix the test
 
 **In File:** `exercises/exercise2/tests/SystemConfigurationTests.cpp`
 
-* [ ] Write a Poke test for `initialiseSystem()`
+* [x] Write a Poke test for `initialiseSystem()`
     * Confirmation: Passing test with no verification
-* [ ] Capture the global variable `rpm`
+* [x] Capture the global variable `rpm`
     * Confirmation: Your approval shows the ending values rpm
-* [ ] Capture all global variables 
+* [x] Capture all global variables 
     * Hint: `#define PRINT(x) #x" = " << x`
     * Confirmation: Your approval shows the ending values of all 10 global variables
-* [ ] Capture all starting state of global variables as well
+* [x] Capture all starting state of global variables as well
     * Confirmation: Your approval shows the starting and ending values
-* [ ] Write a second test
+* [x] Write a second test
     * Confirmation: Both tests pass
-* [ ] Make and use a function to set the global variables and use it.
+* [x] Make and use a function to set the global variables and use it.
     * Hint: `setAllGlobals(....)`
     * Confirmation: Tests pass when run together AND individually
 * [ ] Make a function to write the code to set the global variables
