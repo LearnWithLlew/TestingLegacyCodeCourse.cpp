@@ -1,0 +1,24 @@
+Initial state
+rpm = 4000
+dt = 0.01
+x = 4.58333e-08
+y = 9.16667e-08
+z = 0
+x_mph = 1
+y_mph = 2
+z_mph = 3
+gravity = 0
+y_torque = 3.2
+
+State after initialization
+rpm = 4000
+dt = 0.01
+x = 9.16666e-08
+y = 1.83333e-07
+z = 0
+x_mph = 1
+y_mph = 2
+z_mph = 3
+gravity = 0
+y_torque = 3.2
+

@@ -58,10 +58,9 @@ TEST_CASE("generate code")
 	//Approvals::verify(generateCode());
 }
 
-TEST_CASE("Initialise system")
+void verifyInitialSystem()
 {
 	std::string init = "Initial state\n";
-	setAllGlobals(4000, 0.01, 0, 0, 0, 1, 2, 3, false, 3.2);
 
 
 	init += printState();
@@ -71,24 +70,19 @@ TEST_CASE("Initialise system")
 	init += printState();
 
 	Approvals::verify(init);
-	std::cout << generateCode();
-	
+}
+TEST_CASE("Initialise system")
+{
+	setAllGlobals(4000, 0.01, 0, 0, 0, 1, 2, 3, false, 3.2);
+	verifyInitialSystem();	
 }
 
 TEST_CASE("Second test")
 {
-	std::string init = "Initial state\n";
-	initializeGlobals();
-
-	init += printState();
-	initialiseSystem();
-
-	init += "\nState after initialization\n";
-	init += printState();
-
-	Approvals::verify(init);
-	
+	setAllGlobals(4000, 0.01, 0, 0, 0, 1, 2, 3, true, 3.2);
+	verifyInitialSystem();
 }
 TEST_CASE("After Gravity") {
 	setAllGlobals(4000, 0.01, 4.58333e-08, 9.16667e-08, 0, 1, 2, 3, 0, 3.2);
+	verifyInitialSystem();
 }
