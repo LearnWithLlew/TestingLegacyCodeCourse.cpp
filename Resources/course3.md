@@ -22,7 +22,7 @@
     * Confirmation: Your approval shows the ending values of all 10 global variables
 * [ ] Capture all starting state of global variables as well
     * Confirmation: Your approval shows the starting and ending values
-* [ ] Write a second test, for a different gravity value
+* [ ] Write a second test, that does the same as the first test
     * Confirmation: Both tests pass when run separately
 * [ ] Make and use a function to set the global variables and use it.
     * Hint: `setAllGlobals(....)`
