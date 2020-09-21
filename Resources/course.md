@@ -100,14 +100,14 @@
 * [ ] Write a Poke test for `initialiseSystem()`
     * Confirmation: Passing test with no verification
 * [ ] Capture the global variable `rpm`
-    * Confirmation: Your approval shows the ending values rpm
+    * Confirmation: Your approval shows the ending value of rpm
 * [ ] Capture all global variables 
     * Hint: `#define PRINT(x) #x" = " << x`
     * Confirmation: Your approval shows the ending values of all 10 global variables
 * [ ] Capture all starting state of global variables as well
     * Confirmation: Your approval shows the starting and ending values
-* [ ] Write a second test
-    * Confirmation: Both tests pass
+* [ ] Write a second test, that does the same as the first test
+    * Confirmation: Both tests pass when run separately
 * [ ] Make and use a function to set the global variables and use it.
     * Hint: `setAllGlobals(....)`
     * Confirmation: Tests pass when run together AND individually
@@ -117,7 +117,7 @@
 
 #### Adding Logging
 **In File:** `exercises/exercise2/tests/LoggingTests.cpp`  
-* [ ] Write a Poke test for Services::initialiseServices()
+* [ ] Write a Poke test for Services.h's `initialiseServices()`
     * Confirmation: Passing test with no verification
 * [ ] Log all REST calls
     * Confirmation: You can see all 5 calls and results
@@ -126,7 +126,7 @@
 * [ ] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
 * [ ] Allow multiple tests
-    * Hint: logger.str("")
+    * Hint: `logger.str("")`
     * Confirmation: Tests pass when run together AND individually
 * [ ] Retro
 
