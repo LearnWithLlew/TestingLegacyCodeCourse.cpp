@@ -112,10 +112,14 @@
     * Hint: `setAllGlobals(....)`
     * Confirmation: Tests pass when run together AND individually
 * [x] Make a function to write the code to set the global variables
-    * Hint: generate console output like this:
-        * `setAllGlobals(4000, 0.01, 0, 0, 0, 1, 2, 3, true, 3.2);`
-        * Where the values written out are the values currently in the global variables
-    * Confirmation: You can copy the C++ code from standard output into Visual Studio
+    * Hint: Like this, but writing out the actual values of the globals:
+        ```cpp
+        std::string generateCodeToSetGlobals()
+        {
+            return "setAllGlobals(4000, 0.01, 0, 0, 0, 1, 2, 3, true, 3.2);";
+        }
+        ```
+    * Confirmation: You can copy the C++ code from standard output into Visual Studio, and it compiles
 * [x] Retro
 
 #### Adding Logging
