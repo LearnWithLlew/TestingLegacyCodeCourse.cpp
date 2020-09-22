@@ -14,7 +14,7 @@ double z_mph = 3;
 bool gravity = true;
 double y_torque = 3.2;
 
-void initialiseSystem()
+double initialiseSystem2(bool gravity)
 {
     if ( gravity )
     {
@@ -37,4 +37,9 @@ void initialiseSystem()
             y += dt * dy;
         }
     }
+    return x;
+}
+
+void initialiseSystem() {
+    initialiseSystem2(gravity);
 }

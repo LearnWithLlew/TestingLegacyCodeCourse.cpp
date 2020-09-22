@@ -5,11 +5,20 @@
 
 #include "third_party_code.h"
 
-// std::stringstream logger;
+#ifdef TESTING
+std::stringstream logger;
+#endif
 
 int RestCall(std::string url, std::string action, int key)
 {
-    return _third_party_code_::rest_call(url, action, key);
+#ifdef TESTING
+    logger << "REST call: " << url << ", action: " << action << ", key: " << key << std::endl;
+    int result = 200;
+    logger << "result: " << result << std::endl;
+#else
+    int result = _third_party_code_::rest_call(url, action, key);
+#endif
+    return result;
 }
 
 void initialiseServices()

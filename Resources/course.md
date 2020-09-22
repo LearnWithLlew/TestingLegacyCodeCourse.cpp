@@ -111,19 +111,19 @@
 * [X] Make and use a function to set the global variables and use it.
     * Hint: `setAllGlobals(....)`
     * Confirmation: Tests pass when run together AND individually
-* [ ] Make a function to write the code to set the global variables
+* [x] Make a function to write the code to set the global variables
     * Confirmation: You can copy the C++ code from standard output into Visual Studio
-* [ ] Retro
+* [x] Retro
 
 #### Adding Logging
 **In File:** `exercises/exercise2/tests/LoggingTests.cpp`  
-* [ ] Write a Poke test for Services.h's `initialiseServices()`
+* [x] Write a Poke test for Services.h's `initialiseServices()`
     * Confirmation: Passing test with no verification
-* [ ] Log all REST calls
+* [x] Log all REST calls
     * Confirmation: You can see all 5 calls and results
-* [ ] Turn on SECURE
+* [x] Turn on SECURE
     * Confirmation: Your tests no longer work
-* [ ] Make a preprocessor seam to log if testing
+* [x] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
 * [ ] Allow multiple tests
     * Hint: `logger.str("")`
