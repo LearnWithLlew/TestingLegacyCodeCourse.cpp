@@ -9,5 +9,5 @@ TEST_CASE("Validate Development Environment")
   // and open some sort of file-comparison tool.
   // After that, please change the message in the call below to
   // "it works" and re-run it to see it pass.
-  Approvals::verify("it does not work");
+  Approvals::verify("it works");
 }
