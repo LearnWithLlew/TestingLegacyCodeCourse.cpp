@@ -28,6 +28,9 @@
     * Hint: `setAllGlobals(....)`
     * Confirmation: Tests pass when run together AND individually
 * [ ] Make a function to write the code to set the global variables
+    * Hint: generate console output like this:
+        * `setAllGlobals(4000, 0.01, 0, 0, 0, 1, 2, 3, true, 3.2);`
+        * where the values written out are the values currently in the global variables
     * Confirmation: You can copy the C++ code from standard output into Visual Studio
 * [ ] Retro
 
