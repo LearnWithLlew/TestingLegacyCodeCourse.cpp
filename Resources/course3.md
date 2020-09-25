@@ -35,7 +35,7 @@
             return "setAllGlobals(4000, 0.01, 0, 0, 0, 1, 2, 3, true, 3.2);";
         }
         ```
-    * Confirmation: You can copy the C++ code from standard output into Visual Studio, and it compiles
+    * Confirmation: You can copy the C++ code from standard output into your IDE, and it compiles
 * [ ] Retro
 
 #### Adding Logging
@@ -62,13 +62,14 @@
 * [ ] Retro
 
 #### Date and Time
-
+**In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 * [ ] Poke-test print() in Inconsistent.h
     * Confirmation: Failing test because of date and time
 * [ ] Scrub Inconsistent::print() for time
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
+    * Hint: `\d{3}` matches 3 digits 
     * Confirmation: Passing test with scrubbed date
 * [ ] Peel Inconsistent::print() to pass in time
 * [ ] Retro
@@ -80,7 +81,7 @@
 * [ ] Make consistent seed via #ifdef
     * Confirmation: test work when run 2 times 
 * [ ] Extract testable function that takes a seed
-    * Confirmation:working test without #ifdef
+    * Confirmation: working test without the test seam
 * [ ] Extract Testable function that takes a number
     * Confirmation: you can reason out what the result will be before running it.
 * [ ] Retro
