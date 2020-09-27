@@ -73,6 +73,7 @@
     * Hint: `\d{3}` matches 3 digits 
     * Confirmation: Passing test with scrubbed date
 * [ ] Peel Inconsistent::print() to pass in time
+    * Hint: `ApprovalTests::DateUtils::createUtcDateTime`
 * [ ] Retro
 
 #### Random
