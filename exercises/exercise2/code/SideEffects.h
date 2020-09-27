@@ -11,6 +11,6 @@ public:
     // Not all outputs passed out
     void printName(const std::string& name)
     {
-        std::cout << name << '\n';
+        std::cout << "Hello " << name << '\n';
     }
 };
