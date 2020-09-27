@@ -2,13 +2,13 @@
 
 class MissingInputs
 {
-    int count = 0;
+    int selection = 0;
 
 public:
     // Not all inputs passed in
     int getCategory()
     {
-        if (count == 5)
+        if (selection == 5)
         {
             return 2;
         }
@@ -16,5 +16,11 @@ public:
         {
             return 1;
         }
+    }
+
+    void changeCount()
+    {
+      srand(0);
+      selection = rand();
     }
 };
