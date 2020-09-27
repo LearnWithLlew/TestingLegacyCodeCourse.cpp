@@ -112,7 +112,7 @@
 
 #### Adding Logging
 **In File:** `exercises/exercise2/tests/LoggingTests.cpp`  
-* [ ] Write a Poke test for Services::initialiseServices()
+* [ ] Write a Poke test for Services.h's `initialiseServices()`
     * Confirmation: Passing test with no verification
 * [ ] Log all REST calls
     * Confirmation: You can see all 5 calls and results
@@ -121,7 +121,7 @@
 * [ ] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
 * [ ] Allow multiple tests
-    * Hint: logger.str("")
+    * Hint: `logger.str("")`
     * Confirmation: Tests pass when run together AND individually
 * [ ] Retro
 
@@ -134,32 +134,35 @@
 * [ ] Retro
 
 #### Date and Time
-
-* [ ] Poke-test print() in Inconsistent.h
-    * Confirmation: Failing test because of date and time
+**In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 * [ ] Scrub Inconsistent::print() for time
+    * [ ] Poke-test print() in Inconsistent.h
+        * Confirmation: Failing test because of date and time
+    * [ ] Scrub inconsistent results
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
+    * Hint: `\d{3}` matches 3 digits 
     * Confirmation: Passing test with scrubbed date
 * [ ] Peel Inconsistent::print() to pass in time
+    * Hint: `ApprovalTests::DateUtils::createUtcDateTime`
 * [ ] Retro
 
 #### Random
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 * [ ] Poke-test getId() in Inconsistent.h
 * [ ] Make getId() testable
-* [ ] Make consistent seed via #ifdef
-    * Confirmation: test work when run 2 times 
-* [ ] Extract testable function that takes a seed
-    * Confirmation:working test without #ifdef
-* [ ] Extract Testable function that takes a number
-    * Confirmation: you can reason out what the result will be before running it.
+    * [ ] Make consistent seed via #ifdef
+        * Confirmation: test work when run 2 times 
+    * [ ] Extract testable function that takes a seed
+        * Confirmation: working test without the test seam
+    * [ ] Extract Testable function that takes a number
+        * Confirmation: you can reason out what the result will be before running it.
 * [ ] Retro
 
 #### Side Effects
 **In File:** `exercises/exercise2/tests/SideEffectsTests.cpp`
-* [ ] Poke-test SideEffects::print()
+* [ ] Poke-test SideEffects::printName()
 * [ ] Peel SideEffects::print() to return a string
 * [ ] Peel/slice SideEffects::print() to take a stream
 
