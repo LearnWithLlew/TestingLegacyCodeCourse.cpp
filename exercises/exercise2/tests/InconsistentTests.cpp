@@ -5,14 +5,14 @@
 
 using namespace ApprovalTests;
 
-TEST_CASE("Poke GetID")
-{
-}
-
-TEST_CASE("Poke print")
-{
-}
-
 TEST_CASE("Scrub print")
+{
+}
+
+TEST_CASE("Peel print")
+{
+}
+
+TEST_CASE("Poke GetID")
 {
 }
