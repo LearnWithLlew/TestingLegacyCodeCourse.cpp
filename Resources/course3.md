@@ -90,7 +90,7 @@
 
 #### Side Effects
 **In File:** `exercises/exercise2/tests/SideEffectsTests.cpp`
-* [ ] Poke-test SideEffects::print()
+* [ ] Poke-test SideEffects::printName()
 * [ ] Peel SideEffects::print() to return a string
 * [ ] Peel/slice SideEffects::print() to take a stream
 
