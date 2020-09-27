@@ -3,6 +3,8 @@
 
 #include "SideEffects.h"
 
+using namespace ApprovalTests;
+
 TEST_CASE("Test SideEffects")
 {
 }
