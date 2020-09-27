@@ -80,12 +80,12 @@
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 * [ ] Poke-test getId() in Inconsistent.h
 * [ ] Make getId() testable
-* [ ] Make consistent seed via #ifdef
-    * Confirmation: test work when run 2 times 
-* [ ] Extract testable function that takes a seed
-    * Confirmation: working test without the test seam
-* [ ] Extract Testable function that takes a number
-    * Confirmation: you can reason out what the result will be before running it.
+    * [ ] Make consistent seed via #ifdef
+        * Confirmation: test work when run 2 times 
+    * [ ] Extract testable function that takes a seed
+        * Confirmation: working test without the test seam
+    * [ ] Extract Testable function that takes a number
+        * Confirmation: you can reason out what the result will be before running it.
 * [ ] Retro
 
 #### Side Effects
