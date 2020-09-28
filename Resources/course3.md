@@ -90,9 +90,9 @@
 
 #### Side Effects
 **In File:** `exercises/exercise2/tests/SideEffectsTests.cpp`
-* [ ] Poke-test SideEffects::printName()
-* [ ] Peel SideEffects::print() to return a string
-* [ ] Peel/slice SideEffects::print() to take a stream
+* [ ] Poke-test SideEffects::printName1()
+* [ ] Peel SideEffects::printName1() to return a string
+* [ ] Peel/slice SideEffects::printName2() to take a stream
 
 ### Missing Inputs
 **In File:** `exercises/exercise2/tests/MissingInputsTests.cpp`

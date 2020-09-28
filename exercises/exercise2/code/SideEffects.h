@@ -9,7 +9,17 @@ class SideEffects
 {
 public:
     // Not all outputs passed out
-    void printName(const std::string& name)
+    void printName0(const std::string& name)
+    {
+        std::cout << "Hello " << name << '\n';
+    }
+
+    void printName1(const std::string& name)
+    {
+        std::cout << "Hello " << name << '\n';
+    }
+
+    void printName2(const std::string& name)
     {
         std::cout << "Hello " << name << '\n';
     }
