@@ -1,0 +1,11 @@
+Rest call: url: https://postgresdatabase.acme.com action: startkey: 42
+result: 200
+Rest call: url: https://kafka.acme.com action: subscribekey: 142
+result: 200
+Rest call: url: https://cache.acme.com action: loadkey: 142
+result: 200
+Rest call: url: https://search.acme.com action: indexkey: 142
+result: 200
+Rest call: url: https://creditcardprocessor.acme.com action: chargekey: 142
+result: 200
+

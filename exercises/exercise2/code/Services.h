@@ -3,13 +3,22 @@
 #include <iostream>
 #include <sstream>
 
+#define SECURE 1
 #include "third_party_code.h"
 
-// std::stringstream logger;
+#ifdef TESTING
+std::stringstream logger;
+#endif
 
 int RestCall(std::string url, std::string action, int key)
 {
+#ifndef TESTING
     return _third_party_code_::rest_call(url, action, key);
+#else
+    logger << "Rest call: url: " << url << " action: " << action << "key: " << key << '\n';
+    logger << "result: " << 200 << '\n';
+    return 200;
+#endif
 }
 
 void initialiseServices()

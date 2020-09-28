@@ -106,24 +106,24 @@
 * [x] Make and use a function to set the global variables and use it.
     * Hint: `setAllGlobals(....)`
     * Confirmation: Tests pass when run together AND individually
-* [ ] Make a function to write the code to set the global variables
+* [x] Make a function to write the code to set the global variables
     * Confirmation: You can copy the C++ code from standard output into Visual Studio
 * [ ] Retro
 
 #### Adding Logging
 **In File:** `exercises/exercise2/tests/LoggingTests.cpp`  
-* [ ] Write a Poke test for Services.h's `initialiseServices()`
+* [x] Write a Poke test for Services.h's `initialiseServices()`
     * Confirmation: Passing test with no verification
-* [ ] Log all REST calls
+* [x] Log all REST calls
     * Confirmation: You can see all 5 calls and results
-* [ ] Turn on SECURE
+* [x] Turn on SECURE
     * Confirmation: Your tests no longer work
-* [ ] Make a preprocessor seam to log if testing
+* [x] Make a preprocessor seam to log if testing
     * Confirmation: Tests work, without result codes
-* [ ] Allow multiple tests
+* [x] Allow multiple tests
     * Hint: `logger.str("")`
     * Confirmation: Tests pass when run together AND individually
-* [ ] Retro
+* [x] Retro
 
 #### Files
 
@@ -136,23 +136,23 @@
 #### Date and Time
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 * [ ] Scrub Inconsistent::print() for time
-    * [ ] Poke-test print() in Inconsistent.h
+    * [x] Poke-test print() in Inconsistent.h
         * Confirmation: Failing test because of date and time
-    * [ ] Scrub inconsistent results
+    * [X] Scrub inconsistent results
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
     * Hint: `\d{3}` matches 3 digits 
     * Confirmation: Passing test with scrubbed date
-* [ ] Peel Inconsistent::print() to pass in time
+* [X] Peel Inconsistent::print() to pass in time
     * Hint: `ApprovalTests::DateUtils::createUtcDateTime`
 * [ ] Retro
 
 #### Random
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
-* [ ] Poke-test getId() in Inconsistent.h
+* [x] Poke-test getId() in Inconsistent.h
 * [ ] Make getId() testable
-    * [ ] Make consistent seed via #ifdef
+    * [X] Make consistent seed via #ifdef
         * Confirmation: test work when run 2 times 
     * [ ] Extract testable function that takes a seed
         * Confirmation: working test without the test seam
