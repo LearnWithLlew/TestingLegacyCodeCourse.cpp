@@ -6,10 +6,10 @@
 
 #### Date and Time
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
-* [ ] Scrub Inconsistent::print() for time
-    * [ ] Poke-test print() in Inconsistent.h
+* [X] Scrub Inconsistent::print() for time
+    * [X] Poke-test print() in Inconsistent.h
         * Confirmation: Failing test because of date and time
-    * [ ] Scrub inconsistent results
+    * [X] Scrub inconsistent results
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
@@ -21,19 +21,19 @@
 
 #### Random
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
-* [ ] Poke-test getId() in Inconsistent.h
+* [X] Poke-test getId() in Inconsistent.h
 * [ ] Make getId() testable
-    * [ ] Make consistent seed via #ifdef
+    * [X] Make consistent seed via #ifdef
         * Confirmation: test work when run 2 times 
-    * [ ] Extract testable function that takes a seed
+    * [X] Extract testable function that takes a seed
         * Confirmation: working test without the test seam
-    * [ ] Extract Testable function that takes a number
+    * [X] Extract Testable function that takes a number
         * Confirmation: you can reason out what the result will be before running it.
-* [ ] Retro
+* [X] Retro
 
 #### Side Effects
 **In File:** `exercises/exercise2/tests/SideEffectsTests.cpp`
-* [ ] Poke-test SideEffects::printName1()
+* [X] Poke-test SideEffects::printName1()
 * [ ] Peel SideEffects::printName1() to return a string
 * [ ] Peel/slice SideEffects::printName2() to take a stream
 
