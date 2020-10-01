@@ -21,7 +21,7 @@
     * Confirmation: Another large `.approved.txt` file
 ### Verify List of Inputs
 * [ ] Make a single test that tests everything for 1.0 and 3.14
-    * Hint: read the docs
+    * Hint: read [the docs](https://approvaltestscpp.readthedocs.io/en/latest/)
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
 * [ ] Add values `-0.1, 0, 0.2, 0.8` to your tests for everything
     * Confirmation: Everything except Atan2 should be covered
