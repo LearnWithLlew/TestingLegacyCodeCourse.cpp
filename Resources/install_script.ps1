@@ -6,37 +6,37 @@
 
 iwr -useb https://raw.githubusercontent.com/JayBazuzi/machine-setup/main/windows.ps1 | iex
 
-# choco install -y --ignore-checksums anydesk
+# cinst -y --ignore-checksums anydesk
 start C:\ProgramData\chocolatey\lib\anydesk.portable\tools\
 Write-Host -Foreground yellow "Pin AnyDesk to Task Bar - and add short cut to desktop"
 
 # -------------------------------------------------------
 # Diff Tools
-choco install -y  tortoisesvn
+cinst -y  tortoisesvn
 
 # -------------------------------------------------------
 # IDEs and editors
-choco install -y clion-ide
-choco install -y visualstudio2019community
-choco install -y visualstudio2019-workload-nativedesktop
+cinst -y clion-ide
+cinst -y visualstudio2019community
+cinst -y visualstudio2019-workload-nativedesktop
 
-choco install -y resharpercpp
+cinst -y resharpercpp
 
 # -------------------------------------------------------
 # Build tools
-choco install -y cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
-choco install -y ninja conan
+cinst -y cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
+cinst -y ninja conan
 
 # -------------------------------------------------------
 # CygWin
-# choco install -y cygwin
+# cinst -y cygwin
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages gcc-core
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages make
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages gcc-g++
 
 # -------------------------------------------------------
 # mingw
-# choco install -y mingw
+# cinst -y mingw
 
 # -------------------------------------------------------
 # Clone repos
