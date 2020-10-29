@@ -4,37 +4,15 @@
 # You may need to run this to enable scripts to be run:
 #     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
-# -------------------------------------------------------
-#install chocolatey
-Invoke-WebRequest -useb cin.st | Invoke-Expression
-choco feature disable -n=showDownloadProgress
+iwr -useb https://raw.githubusercontent.com/JayBazuzi/machine-setup/main/windows.ps1 | iex
 
-# -------------------------------------------------------
-#install common tools
-choco install -y vscode win-no-annoy googlechrome notepadplusplus adobereader microsoft-teams
-
-choco install -y --ignore-checksums anydesk
+# choco install -y --ignore-checksums anydesk
 start C:\ProgramData\chocolatey\lib\anydesk.portable\tools\
 Write-Host -Foreground yellow "Pin AnyDesk to Task Bar - and add short cut to desktop"
 
-$ProgressPreference = 'SilentlyContinue'
-
-$mobtimeVersion = '1.7.4'
-iwr https://github.com/GreatWebGuy/MobTime/releases/download/v$mobtimeVersion/MobTime-$mobtimeVersion.msi -O MobTime.msi
-./MobTime.msi /qr
-
-Set-Service Audiosrv -StartupType Automatic
-
-# -------------------------------------------------------
-# Version Control
-choco install -y git github-desktop
-
-# -------------------------------------------------------
-#install project specific tools
-
 # -------------------------------------------------------
 # Diff Tools
-choco install -y beyondcompare tortoisesvn
+choco install -y  tortoisesvn
 
 # -------------------------------------------------------
 # IDEs and editors
