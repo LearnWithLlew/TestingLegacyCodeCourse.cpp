@@ -8,30 +8,30 @@ choco feature enable --name=allowGlobalConfirmation
 
 # -------------------------------------------------------
 # Diff Tools
-cinst -y  tortoisesvn
+cinst  tortoisesvn
 
 # -------------------------------------------------------
 # IDEs and editors
-cinst -y clion-ide
-cinst -y visualstudio2019community
-cinst -y visualstudio2019-workload-nativedesktop
+cinst clion-ide
+cinst visualstudio2019community
+cinst visualstudio2019-workload-nativedesktop
 
-cinst -y resharpercpp
+cinst resharpercpp
 
 # -------------------------------------------------------
 # Build tools
-cinst -y cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
-cinst -y ninja conan
+cinst cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
+cinst ninja conan
 
 # -------------------------------------------------------
 # CygWin
-# cinst -y cygwin
+# cinst cygwin
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages gcc-core
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages make
 # C:\tools\cygwin\cygwinsetup.exe  --quiet-mode --packages gcc-g++
 
 # -------------------------------------------------------
 # mingw
-# cinst -y mingw
+# cinst mingw
 
 Write-Host -Foreground yellow "Reboot when done"
