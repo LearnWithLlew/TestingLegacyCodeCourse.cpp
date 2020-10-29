@@ -29,8 +29,11 @@ Do these:
 * Run Visual Studio
     * Answer initial setup questions
     * Open "C:\Code\TestingLegacyCodeCourse.cpp\cmake-build-vs2019-x64\legacy_code_course.sln"
+        * If you get an error, close Visual Studio and re-open the .sln
     * Configure Extensions
         * Change VSColour output to "I have donated" (Clare has donated)
+        * Enable ReSharper C++
+            * Extensions -> ReSharper -> Why ReSharper is disabled -> Start Evaluation
         * Set up Catch2 test adapter - **Maybe**
             * Test -> Test Explorer
             * Options -> Configure Run Settings
@@ -43,12 +46,8 @@ Do these:
     * Tools -> Options
         * Startup is set to "Most recent solution"
     * Only the course.md file is open in Visual Studio
-* Install PowerPoint - via Clare's work Microsoft 365 subscription
-    * https://www.office.com/
-    * Set the number of recent files to show to 0
-    * https://www.howtogeek.com/141490/how-to-clear-the-recent-documents-list-in-word-2013/
-    * Uninstall OneDrive
-    * Pin PowerPoint to the TaskBar
+* Log in to Microsoft 365 account to view slides
+    * Add Slides to Chrome bookmarks bar
 * Make Chrome the default browser
 * Log in to accounts
     * MindMup - with a non-admin account?
