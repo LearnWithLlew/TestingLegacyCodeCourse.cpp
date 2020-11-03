@@ -45,6 +45,11 @@ Do these:
             * Scroll to the bottom to see the newest output
     * Tools -> Options
         * Startup is set to "Most recent solution"
+    * Tools -> Options -> Text Editor -> Markdown
+        * Turn on soft wrap
+        * Turn on line numbers
+        * Use bar mode for vertical preview
+        * Advanced: Turn off "Enable preview window"
     * Only the course.md file is open in Visual Studio
 * Log in to Microsoft 365 account to view slides
     * Add Slides to Chrome bookmarks bar
