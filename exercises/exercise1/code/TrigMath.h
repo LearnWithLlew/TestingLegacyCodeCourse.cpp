@@ -9,7 +9,7 @@
 
 class TrigMath {
 public:
-    const double PI = 3.1415;
+    const double PI = M_PI;
     const double SQUARED_PI = PI * PI;
     const double HALF_PI = PI / 2;
     const double QUARTER_PI = HALF_PI / 2;

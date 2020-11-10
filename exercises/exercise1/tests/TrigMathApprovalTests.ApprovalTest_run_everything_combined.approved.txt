@@ -1,0 +1,94 @@
+Combination test
+
+
+3.14 =>
+Sin: 0.867008
+Cos: -0.867634
+Acos: -nan(ind)
+Asin: -nan(ind)
+Acot: 0.308316
+Acsc: 0.324116
+Asec: 1.24668
+Atan: 1.26248
+Atan2: 0.785398
+Cot: -1.00072
+Csc: 1.15339
+Sec: -1.15256
+Tan: -0.999279
+
+1 =>
+Sin: 0.0970479
+Cos: 0.828807
+Acos: 0
+Asin: 1.5708
+Acot: 0.785398
+Acsc: 1.5708
+Asec: 0
+Atan: 0.785398
+Atan2: 0.785398
+Cot: 8.54019
+Csc: 10.3042
+Sec: 1.20655
+Tan: 0.117093
+
+-0.1 =>
+Sin: -0.0977983
+Cos: 0.0332319
+Acos: 1.67096
+Asin: -0.100167
+Acot: 1.67046
+Acsc: nan
+Asec: -nan(ind)
+Atan: -0.0996687
+Atan2: -2.35619
+Cot: -0.339801
+Csc: -10.2251
+Sec: 30.0915
+Tan: -2.9429
+
+0 =>
+Sin: 0
+Cos: 0.00854503
+Acos: 1.5708
+Asin: 0
+Acot: -nan(ind)
+Acsc: -nan(ind)
+Asec: -nan(ind)
+Atan: 0
+Atan2: 1.5708
+Cot: inf
+Csc: inf
+Sec: 117.027
+Tan: 0
+
+0.2 =>
+Sin: 0.0652359
+Cos: 0.0977983
+Acos: 1.36944
+Asin: 0.201358
+Acot: 1.3734
+Acsc: -nan(ind)
+Asec: -nan(ind)
+Atan: 0.197396
+Atan2: 0.785398
+Cot: 1.49915
+Csc: 15.329
+Sec: 10.2251
+Tan: 0.667046
+
+0.8 =>
+Sin: 0.00980161
+Cos: 0.867571
+Acos: 0.643501
+Asin: 0.927295
+Acot: 0.896055
+Acsc: -nan(ind)
+Asec: -nan(ind)
+Atan: 0.674741
+Atan2: 0.785398
+Cot: 88.5131
+Csc: 102.024
+Sec: 1.15264
+Tan: 0.0112978
+
+
