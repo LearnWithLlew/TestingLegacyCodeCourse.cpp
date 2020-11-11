@@ -6,7 +6,7 @@
 
 using namespace ApprovalTests;
 
-// See https://approvaltestscpp.readthedocs.io/en/latest/
+// See https://isocpp.org/wiki/faq/pointers-to-members#typedef-for-ptr-to-memfn
 typedef double (TrigMath::*TrigMathMemFn)(double value);
 #define CALL_MEMBER_FN(object,ptrToMember)  ((object).*(ptrToMember))
 
