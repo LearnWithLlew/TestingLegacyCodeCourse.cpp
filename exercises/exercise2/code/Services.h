@@ -3,19 +3,33 @@
 #include <iostream>
 #include <sstream>
 
+
+#define SECURE
+
+
 #include "third_party_code.h"
 
-// std::stringstream logger;
+std::stringstream logger;
 
 int RestCall(std::string url, std::string action, int key)
 {
-    return _third_party_code_::rest_call(url, action, key);
+    logger << url << " " << action << " " << key << " ";
+#ifndef TESTING
+    int result = _third_party_code_::rest_call(url, action, key);
+#else
+
+    int result = url._Starts_with("https://cache") ? 404 : 200;
+#endif
+	
+    logger << result << "\n";
+    return result;
 }
 
 void initialiseServices()
 {
     int key = 42;
     int result = RestCall("https://postgresdatabase.acme.com", "start", key);
+	
     if ( result == 200 )
     {
         key = key + 100;

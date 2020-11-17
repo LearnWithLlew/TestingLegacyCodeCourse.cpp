@@ -17,23 +17,43 @@ using namespace std;
 //}
 
 std::string runEverything(double input) {
-	TrigMath math;
-	std::stringstream outputStream;
-	outputStream << "Sin: " << math.Sin(input)<< "\n";
-	outputStream << "Cos: " << math.Cos(input) << "\n";
-	outputStream << "Acos: " << math.Acos(input) << "\n";
-	outputStream << "Asin: "<< math.Asin(input) << "\n";
-	outputStream << "Acot: " << math.Acot(input) << "\n";
-	outputStream << "Acsc: " << math.Acsc(input) << "\n";
-	outputStream << "Asec: " << math.Asec(input) << "\n";
-	outputStream << "Atan: " << math.Atan(input) << "\n";
-	outputStream << "Atan2: " << math.Atan2(input, input) << "\n";
-	outputStream << "Cot: " << math.Cot(input) << "\n";
-	outputStream << "Csc: " << math.Csc(input) << "\n";
-	outputStream << "Sec: " << math.Sec(input) << "\n";
-	outputStream << "Tan: " << math.Tan(input) << "\n";
+    TrigMath math;
+    std::stringstream outputStream;
+    outputStream << "Sin: " << math.Sin(input)<< "\n";
+    outputStream << "Cos: " << math.Cos(input) << "\n";
+    outputStream << "Acos: " << math.Acos(input) << "\n";
+    outputStream << "Asin: "<< math.Asin(input) << "\n";
+    outputStream << "Acot: " << math.Acot(input) << "\n";
+    outputStream << "Acsc: " << math.Acsc(input) << "\n";
+    outputStream << "Asec: " << math.Asec(input) << "\n";
+    outputStream << "Atan: " << math.Atan(input) << "\n";
+    outputStream << "Atan2: " << math.Atan2(input, input) << "\n";
+    outputStream << "Cot: " << math.Cot(input) << "\n";
+    outputStream << "Csc: " << math.Csc(input) << "\n";
+    outputStream << "Sec: " << math.Sec(input) << "\n";
+    outputStream << "Tan: " << math.Tan(input) << "\n";
 
-	return outputStream.str();
+    return outputStream.str();
+}
+std::string runEverything2(double input) {
+    TrigMath math;
+    std::stringstream outputStream;
+
+    outputStream << "Sin: " << math.Sin(input) << "\n";
+    outputStream << "Asin: " << math.Asin(input) << "\n";
+    outputStream << "Cos: " << math.Cos(input) << "\n";
+    outputStream << "Tan: " << math.Tan(input) << "\n";
+    outputStream << "Csc: " << math.Csc(input) << "\n";
+    outputStream << "Sec: " << math.Sec(input) << "\n";
+    outputStream << "Cot: " << math.Cot(input) << "\n";
+    outputStream << "Acos: " << math.Acos(input) << "\n";
+    outputStream << "Atan: " << math.Atan(input) << "\n";
+    outputStream << "Atan2: " << math.Atan2(input, input) << "\n";
+    outputStream << "Acsc: " << math.Acsc(input) << "\n";
+    outputStream << "Asec: " << math.Asec(input) << "\n";
+    outputStream << "Acot: " << math.Acot(input) << "\n";
+
+    return outputStream.str();
 }
 
 //TEST_CASE("ApprovalTest run everything") {
