@@ -12,8 +12,11 @@ class Inconsistent
 public:
     int getID()
     {
-        srand(time(0));
-        return (rand() % 10 + 1);
+        time_t current_time = time(0);
+        time_t seed_for_random_number_generation = current_time;
+        srand(seed_for_random_number_generation);
+        int random_number = rand();
+        return (random_number % 10 + 1);
     }
 
     std::string print(const std::string& name)
