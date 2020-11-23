@@ -5,6 +5,7 @@
 #     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
 iwr -useb https://raw.githubusercontent.com/JayBazuzi/machine-setup/main/windows.ps1 | iex
+choco install typora
 
 # cinst -y --ignore-checksums anydesk
 start C:\ProgramData\chocolatey\lib\anydesk.portable\tools\
