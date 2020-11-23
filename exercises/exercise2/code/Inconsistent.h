@@ -10,6 +10,12 @@
 class Inconsistent
 {
 public:
+    int getIDOriginal()
+    {
+        srand(time(0));
+        return (rand() % 10 + 1);
+    }
+
     int getID()
     {
         time_t current_time = time(0);
