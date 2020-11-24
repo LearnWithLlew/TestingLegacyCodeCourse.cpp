@@ -13,10 +13,10 @@
 
 > **Step:** First we are going to learn how to pretend that results are consistent.
 
-* [ ] Scrub Inconsistent::print() for time
-    * [ ] Poke-test print() in Inconsistent.h
+* [x] Scrub Inconsistent::print() for time
+    * [x] Poke-test print() in Inconsistent.h
         * Confirmation: Failing test because of date and time
-    * [ ] Scrub inconsistent results
+    * [x] Scrub inconsistent results
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
@@ -25,9 +25,9 @@
 
 > **Step:** Next we are going to learn how to change the code to produce consistent results.
 
-* [ ] Peel Inconsistent::print() to pass in time
+* [x] Peel Inconsistent::print() to pass in time
     * Hint: `ApprovalTests::DateUtils::createUtcDateTime`
-* [ ] Retro
+* [x] Retro
 
 #### Random
 
@@ -36,20 +36,20 @@
 
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 
-* [ ] Poke-test getId() in Inconsistent.h
+* [x] Poke-test getId() in Inconsistent.h
   
 > **Step:** Let's make quick hacks to get getId() under passing tests
 
-* [ ] Make consistent seed via #ifdef
+* [x] Make consistent seed via #ifdef
     * Confirmation: test work when run 2 times 
 
 > **Step:** Let's change getId() to make it possible to test without hacks
 
-* [ ] Extract testable function that takes a seed
+* [x] Extract testable function that takes a seed
     * Confirmation: working test without the test seam
-* [ ] Extract Testable function that takes a number
+* [x] Extract Testable function that takes a number
     * Confirmation: you can reason out what the result will be before running it.
-* [ ] Retro
+* [x] Retro
 
 #### Side Effects
 
@@ -59,9 +59,9 @@
 
 **In File:** `exercises/exercise2/tests/SideEffectsTests.cpp`
 
-* [ ] Poke-test SideEffects::printName1()
-* [ ] Peel SideEffects::printName1() to return a string
-* [ ] Peel/slice SideEffects::printName2() to take a stream
+* [x] Poke-test SideEffects::printName1()
+* [x] Peel SideEffects::printName1() to return a string
+* [x] Peel/slice SideEffects::printName2() to take a stream
 
 ### Missing Inputs
 
@@ -69,9 +69,9 @@
 
 **In File:** `exercises/exercise2/tests/MissingInputsTests.cpp`
 
-* [ ] Poke-test MissingInputs::getCategory()
-* [ ] Get it to 100% coverage
-* [ ] Peel to pass in missing inputs 
+* [x] Poke-test MissingInputs::getCategory()
+* [x] Get it to 100% coverage
+* [x] Peel to pass in missing inputs 
 
 ### Reduce to functional
 
@@ -85,4 +85,4 @@
 
 ### Wrapping Up
 
-* [ ] Retro
+* [x] Retro
