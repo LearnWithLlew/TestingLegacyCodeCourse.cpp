@@ -1,6 +1,6 @@
 # Post-course Checklist
 
-* Create PDfs
+* [ ] Create PDfs
     * [ ] File->Export all the main slide decks to PDF
     * [ ] Export all the MindMup observation files to PDF
         * Node links are not included in PDFs, so add new sub-nodes containing the URLs of any links in nodes
