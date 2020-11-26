@@ -2,11 +2,18 @@
 
 ## Testing non-functional code
 
+**Introduction:** In the following sections, we are going to explore scenarios that are commonly difficult to test, and look at strategies to make them easier to test.
+
 ### Functional Harness
 
 #### System Configuration
 
+**Scenario:** In this scenario, the code is hard to test because so much of the **state that it depends upon** is not obvious from the function call.  
+Because a common cause of this is **global variables**, that will be our example.  
+First we are going to look at how to **capture** that state, and then we are going to look at how to **control** the state.  
+
 **In File:** `exercises/exercise2/tests/ValidateDevelopmentEnvironment.cpp`
+
 * [ ] Validate environment
     * [ ] Run the test
     * [ ] Fix the test
@@ -43,6 +50,11 @@
 * [ ] Retro
 
 #### Adding Logging
+
+**Scenario:** In this scenario, the code is hard to test because none the results of the function are returned. Everything that occurs is a **side-effect**.   
+Because a common cause of this is **calls to web service**, that will be our example.  
+First we are going to look at how to **capture** this behaviour, and then we are going to look at what to do when you **can't call the service in tests**.
+
 **In File:** `exercises/exercise2/tests/LoggingTests.cpp`  
 * [ ] Write a Poke test for Services.h's `initialiseServices()`
     * Confirmation: Passing test with no verification
