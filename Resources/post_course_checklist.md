@@ -1,5 +1,7 @@
 # Post-course Checklist
 
+## Info to Attendees
+
 * [ ] Create PDfs
     * [ ] File->Export all the main slide decks to PDF
     * [ ] Export all the MindMup observation files to PDF
@@ -17,3 +19,11 @@
     * [ ] Attach the zip of slides and notes
     * [ ] Link to the source code download
     * [ ] Link to the survey/feedback form
+
+## Other admin
+
+* [x] Destroy VM(s)
+* [ ] Remove team and people from MindMup account
+* [x] Make any Google docs readonly
+* [ ] Review feedback
+* [ ] Write up what we learned - plan for next course

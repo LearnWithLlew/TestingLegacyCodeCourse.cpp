@@ -1,11 +1,17 @@
 # Course Section 1 
 
 ## Testing Functional Code
+
 **In File:** `exercises/exercise1/tests/ValidateDevelopmentEnvironment.cpp`
+
 * [ ] Validate environment
     * [ ] Run the test
     * [ ] Fix the test
 **In File:** `exercises/exercise1/tests/TrigMathTests.cpp`
+
+**Scenario:** In this scenario, we are going to look at getting high test coverage over existing, working code.  
+We are going to start with code that is simpler to test, so you can figure out what it does by running it, and then preserving its behavior with tests. 
+
 * [ ] Run first test
     * [ ] Uncomment the REQUIRE line
     * Confirmation: See failure message
@@ -29,9 +35,13 @@
 
 ## Homework
 
-* Redo today’s coding exercises on your own computer
-    * See above for the repo location
-    * Start from the code on the master branch
-    * If you want to see the code we wrote on Day 1, look at the 2020_09_opencourse branch
-* Count Number of times you encounter a functional method at work this week
-* (Optional) If you write any tests for those methods, please make a note so we can share at the start of next week.
+* [ ] Print out the [homework sheet](https://github.com/LearnWithLlew/TestingLegacyCodeCourse.slides/raw/master/Homework%20Printouts%20-%20Week%201.pdf) and keep it by your desk, to increase your awareness throughout the week.
+
+### Homework details
+
+* [ ] Redo today’s coding exercises on your own computer
+    * Start from the code on the [master branch](https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp)
+    * If you want to see the code we wrote together, check the [other branches](https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/branches)
+* [ ] **Count** Number of times you encounter a **functional** method at work this week
+* [ ] (Optional) If you **write** any **tests** for those methods, please **make a note** so we can share at the start of next week.
+

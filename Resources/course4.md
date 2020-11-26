@@ -6,12 +6,10 @@
 
 #### Date and Time
 
-> **Scenario:** In this scenario, we are learning how to use ApprovalTests to deal with methods that produce inconsistent results.   
+> **Scenario:** In this scenario, we are learning how to use ApprovalTests to deal with methods that produce **inconsistent results**.   
 > Because the most common variant of this deals with dates and times, that will be our example.
 
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
-
-> **Step:** First we are going to learn how to pretend that results are consistent.
 
 * [ ] Scrub Inconsistent::print() for time
     * [ ] Poke-test print() in Inconsistent.h
@@ -23,8 +21,6 @@
     * Hint: `\d{3}` matches 3 digits 
     * Confirmation: Passing test with scrubbed date
 
-> **Step:** Next we are going to learn how to change the code to produce consistent results.
-
 * [ ] Peel Inconsistent::print() to pass in time
     * Hint: `ApprovalTests::DateUtils::createUtcDateTime`
 * [ ] Retro
@@ -33,17 +29,15 @@
 
 > **Scenario:** In this scenario, we are going to look at inconsistency that is embedded deeper in the code. We are going to look at a range of options to make the code consistent.  
 > Because randomness is often a problem for testing, that will be our example.
+>
+> First we are going to make quick hacks to get getId() under passing tests. Then we will change getId() to make it possible to test without hacks
 
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 
 * [ ] Poke-test getId() in Inconsistent.h
   
-> **Step:** Let's make quick hacks to get getId() under passing tests
-
 * [ ] Make consistent seed via #ifdef
     * Confirmation: test work when run 2 times 
-
-> **Step:** Let's change getId() to make it possible to test without hacks
 
 * [ ] Extract testable function that takes a seed
     * Confirmation: working test without the test seam
