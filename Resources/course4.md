@@ -80,3 +80,19 @@
 ### Wrapping Up
 
 * [ ] Retro
+
+## Homework
+
+* [ ] Print out the [homework sheet](https://github.com/LearnWithLlew/TestingLegacyCodeCourse.slides/raw/master/Homework%20Printouts%20-%20Week%204.pdf) and keep it by your desk, to increase your awareness throughout the week.
+
+### Homework details
+
+* [ ] Redo today’s coding exercises on your own computer
+    * Start from the code on the [master branch](https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp)
+    * If you want to see the code we wrote together, check the [other branches](https://github.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/branches)
+* [ ] **Pay attention** to when you:
+    * [ ] **Peel**: When you split a method to create a second method that’s easy to test
+    * [ ] **Slice**: When you change a method to use a fake dependency
+    * [ ] **Scrub**: When you modify the output to get stable results for testing, pay attention to what you replaced and how
+* [ ] **Please complete** the survey - see email.
+
