@@ -10,4 +10,4 @@
 // a hard-coded path to a CLion installation on Windows.
 auto defaultReporterDisposer =
         ApprovalTests::Approvals::useAsDefaultReporter(
-    CLionHardCodedReporter::create_windows_clion_reporter());
+    CLionHardCodedReporter::create_reporter_preferring_clion());
