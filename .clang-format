@@ -19,6 +19,7 @@ ReflowComments: false
 SortIncludes: false
 SortUsingDeclarations: false
 SpaceAfterTemplateKeyword: true
+SpacesInParentheses: true
 TabWidth: 4
 UseTab: Never
 ...
