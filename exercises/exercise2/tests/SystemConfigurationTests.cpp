@@ -7,10 +7,10 @@
 
 using namespace ApprovalTests;
 
-TEST_CASE("Test System Configuration 1")
+TEST_CASE( "Test System Configuration 1" )
 {
 }
 
-TEST_CASE("generate code")
+TEST_CASE( "generate code" )
 {
 }

@@ -8,7 +8,7 @@ public:
     // Not all inputs passed in
     int getCategory()
     {
-        if (selection == 5)
+        if ( selection == 5 )
         {
             return 2;
         }
@@ -20,7 +20,7 @@ public:
 
     void changeCount()
     {
-      srand(0);
-      selection = rand();
+        srand( 0 );
+        selection = rand();
     }
 };

@@ -4,8 +4,7 @@
 
 using namespace ApprovalTests;
 
-
-
-TEST_CASE("ApprovalTest Sin") {
+TEST_CASE( "ApprovalTest Sin" )
+{
     TrigMath math;
 }

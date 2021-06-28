@@ -7,10 +7,11 @@
 
 namespace _third_party_code_
 {
-    int rest_call(std::string url, std::string action, int key)
+    int rest_call( std::string url, std::string action, int key )
     {
 #ifdef SECURE
-        throw std::runtime_error("I pitty the fool that tries to call this service without the proper authorization");
+        throw std::runtime_error( "I pitty the fool that tries to call this service "
+                                  "without the proper authorization" );
 #endif
         return 200;
     }

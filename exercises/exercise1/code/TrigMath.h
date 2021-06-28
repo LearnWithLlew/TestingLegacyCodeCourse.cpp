@@ -7,7 +7,8 @@
 
 #define IMPROVEMENT_2 0
 
-class TrigMath {
+class TrigMath
+{
 public:
     const double PI = 3.1415;
     const double SQUARED_PI = PI * PI;
@@ -18,10 +19,10 @@ public:
     const double DEG_TO_RAD = PI / 180;
     const double HALF_DEG_TO_RAD = PI / 360;
     const double RAD_TO_DEG = 180 / PI;
-    double SQRT_OF_TWO = std::sqrt(2);
+    double SQRT_OF_TWO = std::sqrt( 2 );
     double HALF_SQRT_OF_TWO = SQRT_OF_TWO / 2;
-private  :
 
+private:
     const int SIN_SIZE = 100000;
     double SIN_TABLE[100000];
     const int SIN_MASK = SIN_SIZE - 1;
@@ -29,7 +30,7 @@ private  :
 
     const int COS_OFFSET = SIN_SIZE / 4;
 
-//Arc trig
+    //Arc trig
     const double sq2p1 = 2.414213562373095048802;
 
     const double sq2m1 = 0.414213562373095048802;
@@ -44,35 +45,34 @@ private  :
     const double q1 = 0.207933497444540981287275926E4;
     const double q0 = 0.89678597403663861962481162E3;
 
-    double SinRaw(int idx);
+    double SinRaw( int idx );
 
-    double CosRaw(int idx);
+    double CosRaw( int idx );
 
-    double Mxatan(double arg);
+    double Mxatan( double arg );
 
-    double Msatan(double arg);
+    double Msatan( double arg );
 
     void CreateSinTable();
 
-    int Floor(double a);
+    int Floor( double a );
 
 public:
-
     TrigMath();
 
-    double Sin(double angle);
-    double Cos(double angle);
-    double Tan(double angle);
-    double Csc(double angle);
-    double Sec(double angle);
-    double Cot(double angle);
-    double Asin(double value);
-    double Acos(double value);
-    double Atan(double value);
-    double Atan2(double y, double x);
-    double Acsc(double value);
-    double Asec(double value);
-    double Acot(double value);
+    double Sin( double angle );
+    double Cos( double angle );
+    double Tan( double angle );
+    double Csc( double angle );
+    double Sec( double angle );
+    double Cot( double angle );
+    double Asin( double value );
+    double Acos( double value );
+    double Atan( double value );
+    double Atan2( double y, double x );
+    double Acsc( double value );
+    double Asec( double value );
+    double Acot( double value );
 };
 
 #endif //CATCHPLAYGROUND_TRIGMATH_H

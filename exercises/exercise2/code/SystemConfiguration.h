@@ -18,20 +18,20 @@ void initialiseSystem()
 {
     if ( gravity )
     {
-        double dx = x_mph / (60 * 60 * rpm);
-        double dy = y_mph / (60 * 60 * rpm);
-        for ( int i = 1; i <= rpm / 60; ++i)
+        double dx = x_mph / ( 60 * 60 * rpm );
+        double dy = y_mph / ( 60 * 60 * rpm );
+        for ( int i = 1; i <= rpm / 60; ++i )
         {
             x += dt * dx;
             y += dt * dy;
-            z += dt * z_mph / (60 * 60 * rpm);
+            z += dt * z_mph / ( 60 * 60 * rpm );
         }
     }
     else
     {
-        double dx = x_mph / (60 * 60 * rpm);
-        double dy = y_mph / (60 * 60 * rpm);
-        for ( int i = 1; i <= rpm / 60; ++i)
+        double dx = x_mph / ( 60 * 60 * rpm );
+        double dy = y_mph / ( 60 * 60 * rpm );
+        for ( int i = 1; i <= rpm / 60; ++i )
         {
             x += dt * dx;
             y += dt * dy;

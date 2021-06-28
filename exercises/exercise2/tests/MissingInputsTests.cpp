@@ -3,6 +3,6 @@
 
 #include "MissingInputs.h"
 
-TEST_CASE("Test MissingInputs")
+TEST_CASE( "Test MissingInputs" )
 {
 }

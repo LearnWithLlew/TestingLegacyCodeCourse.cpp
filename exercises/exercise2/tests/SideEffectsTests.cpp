@@ -5,11 +5,10 @@
 
 using namespace ApprovalTests;
 
-TEST_CASE("Test SideEffects")
+TEST_CASE( "Test SideEffects" )
 {
 }
 
-TEST_CASE("Test SideEffects with stream")
+TEST_CASE( "Test SideEffects with stream" )
 {
 }
-

@@ -7,6 +7,6 @@
 
 using namespace ApprovalTests;
 
-TEST_CASE("Test initialiseServices")
+TEST_CASE( "Test initialiseServices" )
 {
 }
