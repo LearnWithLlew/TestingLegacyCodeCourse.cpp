@@ -3,7 +3,7 @@
 ## Before the day
 
 * Create any mindmaps in advance - and link from Google doc
-* Make sure both of us can access the technologies
+* Make sure all trainers can access the technologies
     * Teams
 
 ## On the day
@@ -11,11 +11,13 @@
 * Setup VM
     * Resolution of screen for Remote Desktop is correct - 1900 x 1080
     * Launch VM
-    * Launch AnyDesk
+    * Remote access
+      * Launch AnyDesk
+      * Or start CLion's Projector and get the machine's IP address for invite
     * All repos are pulled
 * Share any mindmaps with the team
-* Open Zoom call and AnyDesk 15 minutes early
-    * Check that both of as are co-hosts in Zoom
+* Open Zoom call and AnyDesk/Projector 15 minutes early
+    * Check that all trainers are co-hosts in Zoom
 
 ## During
 
