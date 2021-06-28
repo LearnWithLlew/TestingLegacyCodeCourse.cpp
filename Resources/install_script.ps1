@@ -7,7 +7,7 @@
 iwr -useb https://raw.githubusercontent.com/JayBazuzi/machine-setup/main/windows.ps1 | iex
 choco install typora
 
-iwr -useb https://raw.githubusercontent.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/main/install_cpp_clion_visual_studio.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/master/Resources/install_cpp_clion_visual_studio.ps1 | iex
 
 # -------------------------------------------------------
 # Clone repos
