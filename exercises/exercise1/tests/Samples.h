@@ -5,13 +5,13 @@
 
 TEST_CASE( "Test Setup" )
 {
-    TrigMath math;                                        // Arrange
+    TrigMath math;                                      // Arrange
     CHECK( math.DEG_TO_RAD == Approx( 0.0174532925 ) ); // Assert
 }
 
 TEST_CASE( "Test Function" )
 {
-    auto result = pow( 2, 3 );        // Act
+    auto result = pow( 2, 3 );      // Act
     CHECK( result == Approx( 8 ) ); // Assert
 }
 

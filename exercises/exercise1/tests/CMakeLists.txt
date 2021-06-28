@@ -8,7 +8,7 @@ set(SOURCE_FILES
         # OpenCppCoverage to show the coverage in the headers
         ../code/TrigMath.h
         ValidateDevelopmentEnvironment.cpp)
-add_executable(exercise1_tests ${SOURCE_FILES} )
+add_executable(exercise1_tests ${SOURCE_FILES})
 target_link_libraries(exercise1_tests exercise1_library Catch2::Catch2 ApprovalTests::ApprovalTests test_helpers::test_helpers)
 
 # Work around Ninja in-source build error
