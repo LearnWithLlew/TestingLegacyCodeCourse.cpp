@@ -7,7 +7,7 @@ using namespace ApprovalTests;
 // We use this during courses to allow CLion's Projector plug-in to work with Approval Tests.
 // Beware that the implementation contains
 // a hard-coded path to a CLion installation on Windows.
-std::shared_ptr<Reporter> CLionHardCodedReporter::create_clion_reporter() {
+std::shared_ptr<Reporter> CLionHardCodedReporter::create_windows_clion_reporter() {
     auto path = R"(C:\Program Files (x86)\JetBrains\CLion 2021.1.2\bin\clion64.exe)";
     auto arguments = "diff {Received} {Approved}";
     return CustomReporter::create(path, arguments);
