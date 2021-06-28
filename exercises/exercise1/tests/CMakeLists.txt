@@ -9,7 +9,7 @@ set(SOURCE_FILES
         ../code/TrigMath.h
         ValidateDevelopmentEnvironment.cpp)
 add_executable(exercise1_tests ${SOURCE_FILES} )
-target_link_libraries(exercise1_tests exercise1_library Catch2::Catch2 ApprovalTests::ApprovalTests)
+target_link_libraries(exercise1_tests exercise1_library Catch2::Catch2 ApprovalTests::ApprovalTests test_helpers::test_helpers)
 
 # Work around Ninja in-source build error
 # See https://github.com/approvals/ApprovalTests.cpp/blob/master/doc/TroubleshootingMisconfiguredBuild.md#situation-visual-studio-with-visual-c-compiler-clexe

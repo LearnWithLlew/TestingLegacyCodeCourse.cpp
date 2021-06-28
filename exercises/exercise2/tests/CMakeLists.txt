@@ -10,7 +10,7 @@ set(SOURCE_FILES
         ValidateDevelopmentEnvironment.cpp
         )
 add_executable(exercise2_tests ${SOURCE_FILES} )
-target_link_libraries(exercise2_tests exercise2_library Catch2::Catch2 ApprovalTests::ApprovalTests)
+target_link_libraries(exercise2_tests exercise2_library Catch2::Catch2 ApprovalTests::ApprovalTests test_helpers::test_helpers)
 
 
 # Work around Ninja in-source build error
