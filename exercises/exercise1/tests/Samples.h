@@ -6,13 +6,13 @@
 TEST_CASE( "Test Setup" )
 {
     TrigMath math;                                        // Arrange
-    REQUIRE( math.DEG_TO_RAD == Approx( 0.0174532925 ) ); // Assert
+    CHECK( math.DEG_TO_RAD == Approx( 0.0174532925 ) ); // Assert
 }
 
 TEST_CASE( "Test Function" )
 {
     auto result = pow( 2, 3 );        // Act
-    REQUIRE( result == Approx( 8 ) ); // Assert
+    CHECK( result == Approx( 8 ) ); // Assert
 }
 
 TEST_CASE( "Graphing" )

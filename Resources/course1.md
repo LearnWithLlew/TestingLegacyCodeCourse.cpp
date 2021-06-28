@@ -13,7 +13,7 @@
 We are going to start with code that is simpler to test, so you can figure out what it does by running it, and then preserving its behavior with tests. 
 
 * [ ] Run first test
-    * [ ] Uncomment the REQUIRE line
+    * [ ] Uncomment the CHECK line
     * Confirmation: See failure message
 * [ ] Get the test to pass
     * Confirmation: See green result

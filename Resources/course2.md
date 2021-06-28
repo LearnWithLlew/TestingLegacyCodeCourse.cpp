@@ -58,7 +58,7 @@
 
 **Scenario:** In this scenario, we are going to look at a way in C++ to add the methods being tested as one of the parameters. 
 
-* [ ] Test Sin() using a method pointer and standard Catch2 `REQUIRE`
+* [ ] Test Sin() using a method pointer and standard Catch2 `CHECK`
     * Hints:
     ```
     typedef  int (Fred::*FredMemFn)(char x, float y);
