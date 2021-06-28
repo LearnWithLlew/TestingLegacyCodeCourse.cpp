@@ -7,10 +7,6 @@
 iwr -useb https://raw.githubusercontent.com/JayBazuzi/machine-setup/main/windows.ps1 | iex
 choco install typora
 
-# cinst -y --ignore-checksums anydesk
-start C:\ProgramData\chocolatey\lib\anydesk.portable\tools\
-Write-Host -Foreground yellow "Pin AnyDesk to Task Bar - and add short cut to desktop"
-
 iwr -useb https://raw.githubusercontent.com/LearnWithLlew/TestingLegacyCodeCourse.cpp/main/install_cpp_clion_visual_studio.ps1 | iex
 
 # -------------------------------------------------------
