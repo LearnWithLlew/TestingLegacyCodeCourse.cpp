@@ -24,10 +24,18 @@ We are going to start with code that is simpler to test, so you can figure out w
         * [ ] Add a breakpoint on every line of Asin()
         * [ ] Remove breakpoint when hit
         * Confirmation: No more breakpoints in Asin()
-    * [ ] Install OpenCppCoverage in Visual Studio
-        * Confirmation: Visual Studio's Tools menu has "Run OpenCppCoverage"
-    * [ ] Run test coverage
-        * Confirmation: See what areas of TrigMath.cpp are green (covered)
+* [ ] **EITHER Set up code coverage measurement in CLion**
+    * [ ] Select "Debug-Visual Studio clang" configuration
+        * Confirmation: The CLion toolbar shows you can run "Test Asin | **Debug-Visual Studio clang**"
+    * [ ] Select "Run > Run 'Test Asin' with C/C++ Coverage Plugin"
+        *  Confirmation: You see a message "Missing compilation flags"
+    * [ ] Click the blue Create text - if you can't see it, go to CLion's Event Log.
+        * Confirmation: The CLion toolbar shows you can run "Test Asin | **Debug-Visual Studio clang-Coverage**"
+* [ ] **OR Set up code coverage measurement in Visual Studio**
+    * [ ] **Or**  OpenCppCoverage in Visual Studio
+        * Confirmation: Visual Studio's Tools menu has "**Run OpenCppCoverage**"
+* [ ] Run test coverage
+    * Confirmation: See what areas of TrigMath.cpp are green (covered)
     * Confirmation: See 100% coverage of the Asin() method
 * [ ] Test TrigMath completely
     * Confirmation: See 100% coverage of the code
