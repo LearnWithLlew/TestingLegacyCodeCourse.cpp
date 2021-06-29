@@ -1,6 +1,6 @@
 # Course Section 4
 
-## Testing non-functional code
+## Improving non-functional code
 
 ### Functional Harness
 
@@ -12,7 +12,7 @@
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 
 * [ ] Scrub Inconsistent::print() for time
-    * [ ] Poke-test print() in Inconsistent.h
+    * [ ] Poke-test print() in `Inconsistent.h`
         * Confirmation: Failing test because of date and time
     * [ ] Scrub inconsistent results
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
