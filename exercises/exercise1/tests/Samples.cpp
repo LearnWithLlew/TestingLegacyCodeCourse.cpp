@@ -7,19 +7,22 @@
 
 #include "TrigMath.h"
 
-TEST_CASE( "Test Setup" )
+// These sampled tests are all disable.
+// They are here in case they save time in explanations in courses.
+
+TEST_CASE( "Test Setup", "[.]")
 {
     TrigMath math;                                      // Arrange
     CHECK( math.DEG_TO_RAD == Approx( 0.0174532925 ) ); // Assert
 }
 
-TEST_CASE( "Test Function" )
+TEST_CASE( "Test Function", "[.]" )
 {
     auto result = pow( 2, 3 );      // Act
     CHECK( result == Approx( 8 ) ); // Assert
 }
 
-TEST_CASE( "Graphing" )
+TEST_CASE( "Graphing", "[.]" )
 {
     std::stringstream s;
     TrigMath math;
