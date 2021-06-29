@@ -31,6 +31,8 @@ Do these:
 
 ## CLion
 
+**Important Note**: If running course in Clion, you will want to un-comment the lines using `create_reporter_preferring_clion` in the main.cpp in tests in exercise1/ and exercise2/.
+
 * Run CLion
     * Answer initial setup questions
 * Set up code coverage - see [CLion section of these instructions](https://github.com/claremacrae/talks/blob/main/HowTos/Set_up_Code_Coverage_on_Windows.md)
@@ -67,6 +69,8 @@ Do these:
 
 ## Visual Studio
 
+**Important Note**: If running course in Visual Studio, you will want to comment out the lines using `create_reporter_preferring_clion` in the main.cpp in tests in exercise1/ and exercise2/.
+
 * Run all the .vsix installers downloaded by post-install script
     * 2020-09-03 On a fast VM, some of these didn't download, due to Azure rate-limiting
 * Run Visual Studio
@@ -74,16 +78,23 @@ Do these:
     * Open "C:\Code\TestingLegacyCodeCourse.cpp\cmake-build-vs2019-x64\legacy_code_course.sln"
         * If you get an error, close Visual Studio and re-open the .sln
     * Configure Extensions
+        * Tools | Options
         * Change VSColour output to "I have donated" (Clare has donated)
-        * Enable ReSharper C++
-            * Extensions -> ReSharper -> Why ReSharper is disabled -> Start Evaluation
+        * ReSharper C++
+            * Enable ReSharper C++
+                * Extensions -> ReSharper -> Why ReSharper is disabled -> Start Evaluation
+            * Put ReSharper in its own menu
+                * Extensions | Customize Menu...
+                * Turn off checkmark against ReSharper C++
+                * Restart Visual Studio
+            * Open ReSharper Unit Test Session - for Catch2 integration
         * Set up Catch2 test adapter - **Maybe**
             * Test -> Test Explorer
             * Options -> Configure Run Settings
             * Select Solution-Wide runsettings file
             * Open `Catch2Tests.runsettings`
         * Clean Build
-        * Check that tests get shown in test adapter
+        * Check that tests get shown in ReSharper Unit Test Session
         * If you have problems, go to Output and Show output fom Tests
             * Scroll to the bottom to see the newest output
     * Tools -> Options
