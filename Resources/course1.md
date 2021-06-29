@@ -7,6 +7,7 @@
 * [ ] Validate environment
     * [ ] Run the test
     * [ ] Fix the test
+
 **In File:** `exercises/exercise1/tests/TrigMathTests.cpp`
 
 **Scenario:** In this scenario, we are going to look at getting high test coverage over existing, working code.  
