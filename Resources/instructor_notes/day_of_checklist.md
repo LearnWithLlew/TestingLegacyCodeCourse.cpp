@@ -15,6 +15,8 @@
       * Launch AnyDesk
       * Or start CLion's Projector and get the machine's IP address for invite
     * All repos are pulled
+    * Start CLion
+      * Delete any Code Coverage CLion Profiles
 * Share any mindmaps with the team
 * Open Zoom call and AnyDesk/Projector 15 minutes early
     * Check that all trainers are co-hosts in Zoom
