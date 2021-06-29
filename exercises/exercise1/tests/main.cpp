@@ -8,5 +8,5 @@
 // We use this during courses to allow CLion's Projector plug-in to work with Approval Tests.
 // Beware that the CLionHardCodedReporter::create_clion_reporter() implementation contains
 // a hard-coded path to a CLion installation on Windows.
-auto defaultReporterDisposer = ApprovalTests::Approvals::useAsDefaultReporter(
-    CLionHardCodedReporter::create_reporter_preferring_clion() );
+//auto defaultReporterDisposer = ApprovalTests::Approvals::useAsDefaultReporter(
+//    CLionHardCodedReporter::create_reporter_preferring_clion() );
