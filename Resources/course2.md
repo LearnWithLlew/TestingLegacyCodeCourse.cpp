@@ -7,15 +7,15 @@
 
 **In File:** `exercises/exercise1/tests/TrigMathApprovalTests.cpp`
 
-* [ ] Basic approval of Sin() and Cos()
+* [ ] Demo: Basic approval of Sin() and Cos()
     * Confirmation:
         * a diff tool opened
         * 2 `.approved.txt` files in source control
         * tests are passing
 * [ ] Create a function that tests all 13 methods in TrigMath for one value, 1.0 -    
   `Approvals::verify(runEverything(1.0))`
-  * Use std::stringstream
-  * Hint: for atan2 , use 0.4 as the second parameter
+  * Use `std::stringstream`
+  * Hint: for `Atan2` , use 0.4 as the second parameter
   * Confirmation: A large `.approved.txt` file with 13 values
 * [ ] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
