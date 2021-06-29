@@ -1,7 +1,11 @@
 #ifndef LEGACY_CODE_COURSE_SAMPLES_H
 #define LEGACY_CODE_COURSE_SAMPLES_H
 
+#include <sstream>
 #include <catch2/catch.hpp>
+#include <ApprovalTests.hpp>
+
+#include "TrigMath.h"
 
 TEST_CASE( "Test Setup" )
 {
@@ -23,7 +27,8 @@ TEST_CASE( "Graphing" )
     {
         s << i << ',' << math.Sin( i ) << '\n';
     }
-    Approvals::verify( s.str(), Options().fileOptions().withFileExtension( ".csv" ) );
+    ApprovalTests::Approvals::verify(
+        s.str(), ApprovalTests::Options().fileOptions().withFileExtension( ".csv" ) );
 }
 
 #endif //LEGACY_CODE_COURSE_SAMPLES_H
