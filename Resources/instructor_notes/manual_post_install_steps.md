@@ -36,6 +36,7 @@ Do these:
 * Run CLion
     * Answer initial setup questions
 * Set up code coverage - see [CLion section of these instructions](https://github.com/claremacrae/talks/blob/main/HowTos/Set_up_Code_Coverage_on_Windows.md)
+* Presentation Assistant plugin
 * Projector plugin
     * Install the Projector plugin
     * Restart CLion
