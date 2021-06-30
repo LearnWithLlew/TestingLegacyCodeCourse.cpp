@@ -23,7 +23,7 @@
 
 * [ ] Peel Inconsistent::print() to pass in time
     * Hint: `ApprovalTests::DateUtils::createUtcDateTime`
-* [ ] Retro
+* [ ] **Retro**
 
 #### Random
 
@@ -43,7 +43,7 @@
     * Confirmation: working test without the test seam
 * [ ] Extract Testable function that takes a number
     * Confirmation: you can reason out what the result will be before running it.
-* [ ] Retro
+* [ ] **Retro**
 
 #### Side Effects
 
@@ -79,7 +79,7 @@
 
 ### Wrapping Up
 
-* [ ] Retro
+* [ ] **Retro**
 
 ## Homework
 

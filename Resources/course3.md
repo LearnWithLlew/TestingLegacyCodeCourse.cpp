@@ -47,7 +47,7 @@ First we are going to look at how to **capture** that state, and then we are goi
         }
         ```
     * Confirmation: You can copy the C++ code from standard output into your IDE, and it compiles
-* [ ] Retro
+* [ ] **Retro**
 
 #### Adding Logging
 
@@ -67,15 +67,15 @@ First we are going to look at how to **capture** this behaviour, and then we are
 * [ ] Allow multiple tests
     * Hint: `logger.str("")`
     * Confirmation: Tests pass when run together AND individually
-* [ ] Retro
+* [ ] **Retro**
 
 #### Files
 
-* [ ] Retro
+* [ ] **Retro**
 
 #### Database
 
-* [ ] Retro
+* [ ] **Retro**
 
 ## Homework
 
