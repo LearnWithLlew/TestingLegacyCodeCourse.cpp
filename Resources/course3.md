@@ -51,7 +51,7 @@ First we are going to look at how to **capture** that state, and then we are goi
 
 #### Adding Logging
 
-**Scenario:** In this scenario, the code is hard to test because none the results of the function are returned. Everything that occurs is a **side-effect**.   
+**Scenario:** In this scenario, the code is hard to test because none of the results of the function are returned. Everything that occurs is a **side-effect**.   
 Because a common cause of this is **calls to web service**, that will be our example.  
 First we are going to look at how to **capture** this behaviour, and then we are going to look at what to do when you **can't call the service in tests**.
 
