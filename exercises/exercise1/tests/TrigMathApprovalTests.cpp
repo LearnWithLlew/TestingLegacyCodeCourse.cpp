@@ -2,6 +2,7 @@
 #include "ApprovalTests.hpp"
 #include "TrigMath.h"
 #include <sstream>
+#include <cmath>
 
 using namespace ApprovalTests;
 

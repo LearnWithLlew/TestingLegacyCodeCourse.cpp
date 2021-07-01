@@ -7,37 +7,37 @@
 
 **In File:** `exercises/exercise1/tests/TrigMathApprovalTests.cpp`
 
-* [ ] Demo: Basic approval of Sin() and Cos()
+* [x] Demo: Basic approval of Sin() and Cos()
     * Confirmation:
         * a diff tool opened
         * 2 `.approved.txt` files in source control
         * tests are passing
-* [ ] Create a function that tests all 13 methods in TrigMath for one value, 1.0 -    
+* [x] Create a function that tests all 13 methods in TrigMath for one value, 1.0 -    
   `Approvals::verify(runEverything(1.0))`
   * Use `std::stringstream`
   * Hint: for `Atan2` , use 0.4 as the second parameter
   * Confirmation: A large `.approved.txt` file with 13 values
-* [ ] Better to-strings, to show function names
+* [x] Better to-strings, to show function names
     * Confirmation: You can tell which method was called, for each line in `.approved.txt`
-* [ ] Test all methods with input value 3.14
+* [x] Test all methods with input value 3.14
     * Confirmation: Another large `.approved.txt` file
 ### Verify List of Inputs
 
 **Scenario:** In this scenario, we are going to redo the exercise again, to explore more advanced uses of Approval Tests, to handle **large numbers of inputs**. 
 
-* [ ] Make a single test that tests everything for 1.0 and 3.14
+* [x] Make a single test that tests everything for 1.0 and 3.14
     * Hint: read [the docs](https://approvaltestscpp.readthedocs.io/en/latest/)
     * Confirmation: You should have a call to  `Approvals::verifyAll()`
-* [ ] Add values `-0.1, 0, 0.2, 0.8` to your tests for everything
+* [x] Add values `-0.1, 0, 0.2, 0.8` to your tests for everything
     * Confirmation: Everything except Atan2 should be covered
 ### Seeing Failures
 
 **Scenario:** In this scenario, we are going to look at how Approval Tests can help us, when tests fail, to identify the differences between **changes that we want**, and **changes we don't.**
 
-* [ ] Improve the precision of `PI`
+* [x] Improve the precision of `PI`
     * Hint: Use `M_PI`
     * Confirmation: Later digits in the results are different; tests are passing 
-* [ ] Turn on `IMPROVEMENT_2`
+* [x] Turn on `IMPROVEMENT_2`
     * Confirmation: You can tell us what this did; You know if you should fix the tests or undo the change 
 * [ ] Better to-strings, to show function names and input values
     * Confirmation: You can tell which method was called, with which value, for each line in `.approved.txt`

@@ -2,29 +2,29 @@ TrigMath
 
 
 angle = -0.1 => 
-math.Sin(angle)-0.0979798
-math.Cos( angle ) 0.033231
-math.Tan( angle ) -2.94845
-math.Csc( angle ) -10.2062
-math.Sec( angle ) 30.0924
-math.Cot( angle ) -0.339161
+math.Sin(angle)-0.0977983
+math.Cos( angle ) 0.0332319
+math.Tan( angle ) -2.9429
+math.Csc( angle ) -10.2251
+math.Sec( angle ) 30.0915
+math.Cot( angle ) -0.339801
 math.Asin( angle ) -0.100167
-math.Acos( angle ) 1.67092
+math.Acos( angle ) 1.67096
 math.Atan( angle ) -0.0996687
 math.Atan2( angle, 0.4 ) -0.244979
 math.Acsc( angle ) -nan(ind)
 math.Asec( angle ) nan
-math.Acot( angle ) 1.67042
+math.Acot( angle ) 1.67046
 
 angle = 0 => 
 math.Sin(angle)0
-math.Cos( angle ) 0.00854478
+math.Cos( angle ) 0.00854503
 math.Tan( angle ) 0
 math.Csc( angle ) inf
-math.Sec( angle ) 117.031
+math.Sec( angle ) 117.027
 math.Cot( angle ) inf
 math.Asin( angle ) 0
-math.Acos( angle ) 1.57075
+math.Acos( angle ) 1.5708
 math.Atan( angle ) 0
 math.Atan2( angle, 0.4 ) 0
 math.Acsc( angle ) nan
@@ -32,63 +32,63 @@ math.Asec( angle ) nan
 math.Acot( angle ) nan
 
 angle = 0.2 => 
-math.Sin(angle)0.065234
-math.Cos( angle ) 0.0977954
+math.Sin(angle)0.0652359
+math.Cos( angle ) 0.0977983
 math.Tan( angle ) 0.667046
-math.Csc( angle ) 15.3294
-math.Sec( angle ) 10.2254
+math.Csc( angle ) 15.329
+math.Sec( angle ) 10.2251
 math.Cot( angle ) 1.49915
 math.Asin( angle ) 0.201358
-math.Acos( angle ) 1.36939
+math.Acos( angle ) 1.36944
 math.Atan( angle ) 0.197396
-math.Atan2( angle, 0.4 ) 0.463624
+math.Atan2( angle, 0.4 ) 0.463648
 math.Acsc( angle ) nan
 math.Asec( angle ) nan
-math.Acot( angle ) 1.37335
+math.Acot( angle ) 1.3734
 
 angle = 0.8 => 
-math.Sin(angle)0.00980132
-math.Cos( angle ) 0.867602
-math.Tan( angle ) 0.011297
-math.Csc( angle ) 102.027
-math.Sec( angle ) 1.1526
-math.Cot( angle ) 88.5188
-math.Asin( angle ) 0.927272
-math.Acos( angle ) 0.643478
-math.Atan( angle ) 0.674718
-math.Atan2( angle, 0.4 ) 1.10713
+math.Sin(angle)0.00980161
+math.Cos( angle ) 0.867571
+math.Tan( angle ) 0.0112978
+math.Csc( angle ) 102.024
+math.Sec( angle ) 1.15264
+math.Cot( angle ) 88.5131
+math.Asin( angle ) 0.927295
+math.Acos( angle ) 0.643501
+math.Atan( angle ) 0.674741
+math.Atan2( angle, 0.4 ) 1.10715
 math.Acsc( angle ) nan
 math.Asec( angle ) nan
-math.Acot( angle ) 0.896032
+math.Acot( angle ) 0.896055
 
 angle = 1 => 
-math.Sin(angle)0.097045
-math.Cos( angle ) 0.828843
-math.Tan( angle ) 0.117085
-math.Csc( angle ) 10.3045
-math.Sec( angle ) 1.2065
-math.Cot( angle ) 8.54081
-math.Asin( angle ) 1.57075
+math.Sin(angle)0.0970479
+math.Cos( angle ) 0.828807
+math.Tan( angle ) 0.117093
+math.Csc( angle ) 10.3042
+math.Sec( angle ) 1.20655
+math.Cot( angle ) 8.54019
+math.Asin( angle ) 1.5708
 math.Acos( angle ) 0
-math.Atan( angle ) 0.785375
-math.Atan2( angle, 0.4 ) 1.19024
-math.Acsc( angle ) 1.57075
+math.Atan( angle ) 0.785398
+math.Atan2( angle, 0.4 ) 1.19029
+math.Acsc( angle ) 1.5708
 math.Asec( angle ) 0
-math.Acot( angle ) 0.785375
+math.Acot( angle ) 0.785398
 
 angle = 3.14 => 
-math.Sin(angle)0.866976
-math.Cos( angle ) -0.866633
-math.Tan( angle ) -1.0004
-math.Csc( angle ) 1.15343
-math.Sec( angle ) -1.15389
-math.Cot( angle ) -0.999604
+math.Sin(angle)0.867008
+math.Cos( angle ) -0.867634
+math.Tan( angle ) -0.999279
+math.Csc( angle ) 1.15339
+math.Sec( angle ) -1.15256
+math.Cot( angle ) -1.00072
 math.Asin( angle ) nan
 math.Acos( angle ) nan
-math.Atan( angle ) 1.26243
-math.Atan2( angle, 0.4 ) 1.44404
+math.Atan( angle ) 1.26248
+math.Atan2( angle, 0.4 ) 1.44409
 math.Acsc( angle ) 0.324116
-math.Asec( angle ) 1.24663
+math.Asec( angle ) 1.24668
 math.Acot( angle ) 0.308316
 
 

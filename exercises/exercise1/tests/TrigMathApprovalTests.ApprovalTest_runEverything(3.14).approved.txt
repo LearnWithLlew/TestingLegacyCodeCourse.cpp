@@ -1,14 +1,14 @@
-math.Sin(angle)0.866976
-math.Cos( angle ) -0.866633
-math.Tan( angle ) -1.0004
-math.Csc( angle ) 1.15343
-math.Sec( angle ) -1.15389
-math.Cot( angle ) -0.999604
+math.Sin(angle)0.867008
+math.Cos( angle ) -0.867634
+math.Tan( angle ) -0.999279
+math.Csc( angle ) 1.15339
+math.Sec( angle ) -1.15256
+math.Cot( angle ) -1.00072
 math.Asin( angle ) nan
 math.Acos( angle ) nan
-math.Atan( angle ) 1.26243
-math.Atan2( angle, 0.4 ) 1.44404
+math.Atan( angle ) 1.26248
+math.Atan2( angle, 0.4 ) 1.44409
 math.Acsc( angle ) 0.324116
-math.Asec( angle ) 1.24663
+math.Asec( angle ) 1.24668
 math.Acot( angle ) 0.308316
 
