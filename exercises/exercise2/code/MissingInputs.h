@@ -8,6 +8,11 @@ public:
     // Not all inputs passed in
     int getCategory()
     {
+        return GetCategory2( selection );
+    }
+
+    int GetCategory2( int selection ) const
+    {
         if ( selection == 5 )
         {
             return 2;

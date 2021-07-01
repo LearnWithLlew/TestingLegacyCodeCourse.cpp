@@ -7,4 +7,7 @@ using namespace ApprovalTests;
 
 TEST_CASE( "Test MissingInputs" )
 {
+    MissingInputs missingInputs;
+    Approvals::verify(missingInputs.getCategory());
+    CHECK(missingInputs.GetCategory2(5) == 2);
 }

@@ -63,9 +63,9 @@
 
 **In File:** `exercises/exercise2/tests/MissingInputsTests.cpp`
 
-* [ ] Poke-test MissingInputs::getCategory()
-* [ ] Get it to 100% coverage
-* [ ] Peel to pass in missing inputs 
+* [x] Poke-test MissingInputs::getCategory()
+* [x] Get it to 100% coverage
+* [x] Peel to pass in missing inputs 
 
 ### Reduce to functional
 
