@@ -4,37 +4,37 @@
 
 **In File:** `exercises/exercise1/tests/ValidateDevelopmentEnvironment.cpp`
 
-* [ ] Validate environment
-    * [ ] Run the test
-    * [ ] Fix the test
+* [x] Validate environment
+    * [x] Run the test
+    * [x] Fix the test
 
 **In File:** `exercises/exercise1/tests/TrigMathTests.cpp`
 
 **Scenario:** In this scenario, we are going to look at getting high test coverage over existing, working code.  
 We are going to start with code that is simpler to test, so you can figure out what it does by running it, and then preserving its behavior with tests. 
 
-* [ ] Run first test
-    * [ ] Uncomment the CHECK line
+* [x] Run first test
+    * [x] Uncomment the CHECK line
     * Confirmation: See failure message
-* [ ] Get the test to pass
+* [x] Get the test to pass
     * Confirmation: See green result
 * [ ] Test Asin() completely
-    * [ ] Write a new test for Asin()
+    * [x] Write a new test for Asin()
     * [ ] Check coverage of Asin() with break points
         * [ ] Add a breakpoint on every line of Asin()
         * [ ] Remove breakpoint when hit
         * Confirmation: No more breakpoints in Asin()
 * [ ] **EITHER Set up code coverage measurement in CLion**
-    * [ ] Select "Debug-Visual Studio clang" configuration
+    * [x] Select "Debug-Visual Studio clang" configuration
         * Confirmation: The CLion toolbar shows you can run "Test Asin | **Debug-Visual Studio clang**"
-    * [ ] Select "Run > Run 'Test Asin' with C/C++ Coverage Plugin"
+    * [x] Select "Run > Run 'Test Asin' with C/C++ Coverage Plugin"
         *  Confirmation: You see a message "Missing compilation flags"
-    * [ ] Click the blue Create text - if you can't see it, go to CLion's Event Log.
+    * [x] Click the blue Create text - if you can't see it, go to CLion's Event Log.
         * Confirmation: The CLion toolbar shows you can run "Test Asin | **Debug-Visual Studio clang-Coverage**"
 * [ ] **OR Set up code coverage measurement in Visual Studio**
     * [ ] **Or**  OpenCppCoverage in Visual Studio
         * Confirmation: Visual Studio's Tools menu has "**Run OpenCppCoverage**"
-* [ ] Run test coverage
+* [x] Run test coverage
     * Confirmation: See what areas of TrigMath.cpp are green (covered)
     * Confirmation: See 100% coverage of the Asin() method
 * [ ] Test TrigMath completely
