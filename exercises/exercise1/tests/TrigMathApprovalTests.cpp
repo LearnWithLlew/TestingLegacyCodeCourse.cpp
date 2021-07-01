@@ -7,4 +7,5 @@ using namespace ApprovalTests;
 TEST_CASE( "ApprovalTest Sin" )
 {
     TrigMath math;
+    Approvals::verify(math.Sin(1.20));
 }
