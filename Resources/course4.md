@@ -11,19 +11,19 @@
 
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 
-* [ ] Scrub Inconsistent::print() for time
-    * [ ] Poke-test print() in `Inconsistent.h`
+* [x] Scrub Inconsistent::print() for time
+    * [x] Poke-test print() in `Inconsistent.h`
         * Confirmation: Failing test because of date and time
-    * [ ] Scrub inconsistent results
+    * [x] Scrub inconsistent results
     * Hint: `Approvals::verify("text", Options(Scrubbers::createRegexScrubber(R"()", "[replacement]")));`
     * Hint: `\d` matches a digit
     * Hint: `[a-z]` matches lower-case letter
     * Hint: `\d{3}` matches 3 digits 
     * Confirmation: Passing test with scrubbed date
 
-* [ ] Peel Inconsistent::print() to pass in time
+* [x] Peel Inconsistent::print() to pass in time
     * Hint: `ApprovalTests::DateUtils::createUtcDateTime`
-* [ ] **Retro**
+* [x] **Retro**
 
 #### Random
 

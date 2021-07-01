@@ -18,6 +18,12 @@ TEST_CASE( "Scrub print" )
 
 TEST_CASE( "Peel print" )
 {
+    Inconsistent inconsistent;
+
+   auto const res = inconsistent.printWithDate(
+        "name", DateUtils::createUtcDateTime( 2000, 2, 1, 3, 4, 5 ) );
+   Approvals::verify(res);
+
 }
 
 TEST_CASE( "Poke GetID" )
