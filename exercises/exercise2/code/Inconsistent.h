@@ -20,9 +20,19 @@ public:
     {
         time_t current_time = time( 0 );
         time_t seed_for_random_number_generation = current_time;
+        return getIDWithSeed( seed_for_random_number_generation );
+    }
+    int getIDWithSeed( time_t seed_for_random_number_generation ) const
+    {
         srand( seed_for_random_number_generation );
         int random_number = rand();
-        return ( random_number % 10 + 1 );
+        return getNumber( random_number );
+
+    }
+    int getNumber( int random_number ) const
+    {
+        auto const num = ( random_number % 10 + 1 );
+        return num;
     }
 
     std::string print( const std::string& name )

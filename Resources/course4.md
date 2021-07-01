@@ -34,14 +34,14 @@
 
 **In File:** `exercises/exercise2/tests/InconsistentTests.cpp`
 
-* [ ] Poke-test getId() in Inconsistent.h
+* [x] Poke-test getId() in Inconsistent.h
   
-* [ ] Make consistent seed via #ifdef
+* [x] Make consistent seed via #ifdef
     * Confirmation: test work when run 2 times 
 
-* [ ] Extract testable function that takes a seed
+* [x] Extract testable function that takes a seed
     * Confirmation: working test without the test seam
-* [ ] Extract Testable function that takes a number
+* [x] Extract Testable function that takes a number
     * Confirmation: you can reason out what the result will be before running it.
 * [ ] **Retro**
 
@@ -53,9 +53,9 @@
 
 **In File:** `exercises/exercise2/tests/SideEffectsTests.cpp`
 
-* [ ] Poke-test SideEffects::printName1()
-* [ ] Peel SideEffects::printName1() to return a string
-* [ ] Peel/slice SideEffects::printName2() to take a stream
+* [x] Poke-test SideEffects::printName1()
+* [x] Peel SideEffects::printName1() to return a string
+* [x] Peel/slice SideEffects::printName2() to take a stream
 
 ### Missing Inputs
 
