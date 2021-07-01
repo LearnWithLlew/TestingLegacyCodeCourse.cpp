@@ -1,0 +1,11 @@
+https://postgresdatabase.acme.com, start, 42
+200
+https://kafka.acme.com, subscribe, 142
+200
+https://cache.acme.com, load, 142
+200
+https://search.acme.com, index, 142
+200
+https://creditcardprocessor.acme.com, charge, 142
+200
+

@@ -2,19 +2,29 @@
 
 #include <iostream>
 #include <sstream>
-
 #include "third_party_code.h"
 
-// std::stringstream logger;
+
+std::stringstream logger;
 
 int RestCall( std::string url, std::string action, int key )
 {
-    return _third_party_code_::rest_call( url, action, key );
+    logger << url << ", " << action << ", " << key << '\n';
+
+#ifndef TESTING
+    auto result = _third_party_code_::rest_call( url, action, key );
+    logger << result << "\n";
+    return result;
+#else
+    logger << 200 << "\n";
+    return 200;
+#endif
 }
 
 void initialiseServices()
 {
     int key = 42;
+
     int result = RestCall( "https://postgresdatabase.acme.com", "start", key );
     if ( result == 200 )
     {
