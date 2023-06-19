@@ -8,13 +8,13 @@ choco feature enable --name=allowGlobalConfirmation
 
 # -------------------------------------------------------
 # Diff Tools
-cinst  tortoisesvn
+choco install  tortoisesvn
 
 # -------------------------------------------------------
 # IDEs and editors
-cinst clion-ide
-cinst visualstudio2019community
-cinst visualstudio2019-workload-nativedesktop
+choco install clion-ide
+choco install visualstudio2022community
+choco install visualstudio2022-workload-nativedesktop
 
 cinst resharpercpp
 
