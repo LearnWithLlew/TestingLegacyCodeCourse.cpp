@@ -16,12 +16,12 @@ choco install clion-ide
 choco install visualstudio2022community
 choco install visualstudio2022-workload-nativedesktop
 
-cinst resharpercpp
+choco install resharpercpp
 
 # -------------------------------------------------------
 # Build tools
-cinst cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
-cinst ninja conan
+choco install cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
+choco install ninja conan
 
 # -------------------------------------------------------
 # CygWin
